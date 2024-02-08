@@ -67,6 +67,7 @@
     "eslint-plugin-storybook": "0.6.15",
     "http-server": "14.1.1",
     "husky": "9.0.6",
+    "jotai": "2.6.4",
     "playwright": "1.41.1",
     "postcss": "8.4.33",
     "prettier": "3.2.4",

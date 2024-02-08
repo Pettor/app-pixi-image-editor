@@ -1,6 +1,6 @@
 import { useCallback, type ReactElement } from "react";
 import { useDocumentTitle } from "usehooks-ts";
-import { ExampleCard } from "~/components/ExampleCard";
+import { ImageEditor } from "~/components/ImageEditor";
 
 export function App(): ReactElement {
   useDocumentTitle("LANDING PAGE");
@@ -11,7 +11,7 @@ export function App(): ReactElement {
 
   return (
     <div className="container flex h-screen w-full items-center justify-center">
-      <ExampleCard label="Hello World" onShare={handleShare} />
+      <ImageEditor label="Hello World" onShare={handleShare} />
     </div>
   );
 }
