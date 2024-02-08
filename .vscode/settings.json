@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.eol": "\n",
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  // Typescript
+  "typescript.preferences.importModuleSpecifier": "shortest"
+}

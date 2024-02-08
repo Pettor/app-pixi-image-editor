@@ -1,0 +1,27 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": true,
+  "extends": ["config:base", ":semanticCommits"],
+  "labels": ["dependency", "bot"],
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
+      "minimumReleaseAge": "7 days",
+      "groupName": "dev dependencies",
+      "semanticCommitType": "chore"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
+      "minimumReleaseAge": "7 days",
+      "groupName": "dependencies",
+      "semanticCommitType": "fix"
+    }
+  ],
+  "platform": "github",
+  "schedule": ["every weekend"],
+  "separateMajorMinor": false
+}

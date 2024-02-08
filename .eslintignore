@@ -1,0 +1,7 @@
+dist
+public
+node_modules
+storybook-static
+
+# Exclude Javascript
+**/*.js
