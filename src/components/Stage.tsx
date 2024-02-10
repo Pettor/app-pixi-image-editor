@@ -3,19 +3,28 @@ import { Stage as PixiStage, Sprite as PixiSprite } from "@pixi/react";
 import { useAtomValue } from "jotai/react";
 import type { Viewport as PixiViewport } from "pixi-viewport";
 import { useElementSize } from "usehooks-ts";
-import { imageUrlAtom } from "./atoms/ImageAtom";
+import { imageAtom, imageUrlAtom } from "../libs/atoms/ImageAtom";
 import { Viewport } from "./Viewport";
+import { stageOptionsAtom } from "~/libs/atoms/StageAtom";
 
 export function Stage(): ReactElement {
-  const [ref, { width = 0, height = 0 }] = useElementSize();
-  const viewportRef = useRef<PixiViewport>(null);
+  const { width: imageWidth, height: imageHeight } = useAtomValue(imageAtom) ?? { width: 0, height: 0 };
+  const [ref, { width: containerWidth, height: containerHeight }] = useElementSize();
   const imageUrl = useAtomValue(imageUrlAtom);
+  const stageOptions = useAtomValue(stageOptionsAtom);
+  const viewportRef = useRef<PixiViewport>(null);
 
   return (
-    <div ref={ref} className="flex-1 bg-amber-800">
-      <PixiStage height={height} width={width}>
-        <Viewport ref={viewportRef} worldWidth={1000} worldHeight={667} screenHeight={height} screenWidth={width}>
-          <PixiSprite image={imageUrl} x={0} y={0} />
+    <div ref={ref} className="flex-1 overflow-hidden rounded-lg border-2 border-neutral">
+      <PixiStage width={containerWidth} height={containerHeight} options={stageOptions}>
+        <Viewport
+          ref={viewportRef}
+          worldWidth={imageWidth}
+          worldHeight={imageHeight}
+          screenWidth={containerWidth}
+          screenHeight={containerHeight}
+        >
+          <PixiSprite image={imageUrl} />
         </Viewport>
       </PixiStage>
     </div>

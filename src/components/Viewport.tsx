@@ -1,9 +1,9 @@
 import { forwardRef, type ReactNode } from "react";
 import { PixiComponent, useApp } from "@pixi/react";
 import type { IViewportOptions } from "pixi-viewport";
-import { Viewport as PixiViewport } from "pixi-viewport";
 import type * as PIXI from "pixi.js";
 import { Ticker } from "pixi.js";
+import { PixiViewport } from "~/libs/react/pixi/PixiViewport";
 
 interface PixiViewComponentProps
   extends Pick<IViewportOptions, "ticker" | "screenWidth" | "screenHeight" | "worldWidth" | "worldHeight"> {
@@ -16,15 +16,15 @@ interface PixiViewComponentProps
 
 export interface ViewportProps extends Omit<PixiViewComponentProps, "app" | "ref"> {}
 
-// create and instantiate the viewport component
-// we share the ticker and interaction from app
+const ticker = Ticker.shared;
+
 export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiViewport>("Viewport", {
   create(props) {
     const { app, ...viewportProps } = props;
     const { worldWidth, worldHeight } = viewportProps;
 
     const viewport = new PixiViewport({
-      ticker: Ticker.shared,
+      ticker: ticker,
       events: app.renderer.events,
       ...viewportProps,
     });
@@ -40,11 +40,15 @@ export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiV
     });
 
     viewport.fit();
-    if (worldWidth && worldHeight) {
-      viewport.moveCenter(worldWidth / 2, worldHeight / 2);
-    }
+    viewport.moveCenter(worldWidth / 2, worldHeight / 2);
 
     return viewport;
+  },
+  willUnmount: (instance: PixiViewport) => {
+    instance.patchEvents();
+    instance.destroy({ children: true, texture: true, baseTexture: true });
+    instance.releaseDOMElement();
+    ticker.stop();
   },
 });
 
