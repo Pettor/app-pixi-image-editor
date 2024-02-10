@@ -11,6 +11,7 @@ interface PixiViewComponentProps
   app: PIXI.Application;
   worldWidth: number;
   worldHeight: number;
+  lock: boolean;
   children: ReactNode;
 }
 
@@ -30,19 +31,21 @@ export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiV
     });
 
     // activate plugins
-    viewport.drag().pinch().wheel().decelerate().clamp({
-      left: false,
-      right: false,
-      top: false,
-      bottom: false,
-      direction: "all",
-      underflow: "center",
-    });
-
+    viewport.drag().pinch().wheel().decelerate();
     viewport.fit();
     viewport.moveCenter(worldWidth / 2, worldHeight / 2);
 
     return viewport;
+  },
+  applyProps: (instance, oldProps, newProps) => {
+    if (oldProps.lock !== newProps.lock) {
+      if (newProps.lock) {
+        instance.clamp({
+          direction: "all",
+          underflow: "center",
+        });
+      }
+    }
   },
   willUnmount: (instance: PixiViewport) => {
     instance.patchEvents();

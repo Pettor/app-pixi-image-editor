@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { Provider } from "jotai/react";
-import { imageAtom, imageUrlAtom } from "../libs/atoms/ImageAtom";
+import { imageAtom, imageUrlAtom } from "../libs/atoms/ImageAtoms";
 import { HydrateAtoms } from "../libs/react/jotai/HydrateAtoms";
 import { Content } from "./Content";
 import type { WithLoadedImageProps } from "~/libs/hoc/WithImage";
