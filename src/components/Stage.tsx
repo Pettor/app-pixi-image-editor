@@ -11,12 +11,10 @@ export function Stage(): ReactElement {
   const viewportRef = useRef<PixiViewport>(null);
   const imageUrl = useAtomValue(imageUrlAtom);
 
-  console.log("Stage", { width, height });
-
   return (
     <div ref={ref} className="flex-1 bg-amber-800">
       <PixiStage height={height} width={width}>
-        <Viewport ref={viewportRef} screenHeight={height} screenWidth={width}>
+        <Viewport ref={viewportRef} worldWidth={1000} worldHeight={667} screenHeight={height} screenWidth={width}>
           <PixiSprite image={imageUrl} x={0} y={0} />
         </Viewport>
       </PixiStage>
