@@ -7,7 +7,7 @@ export function ToolbarTools(): ReactElement {
 
   return (
     <div className="absolute flex w-full justify-center p-4">
-      <div className="navbar w-6/12 rounded-box border border-neutral-content bg-base-100 shadow-xl">
+      <div className="glass navbar w-6/12 rounded-box border border-neutral-content bg-white bg-opacity-80 shadow-xl">
         <div className="ml-1 flex-1">
           <button className="btn btn-square btn-ghost btn-sm">
             <Bars3Icon />
