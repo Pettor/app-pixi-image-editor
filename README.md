@@ -1,10 +1,9 @@
-# React Web Component Template
-
+# Pixi Image Editor
 [![GitHub](https://img.shields.io/github/license/fullstackhero/dotnet-webapi-boilerplate?color=2da44e)](https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/master/LICENSE)
 [![Actions Main](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/component-pixi-image-editor/)
 
-This is a template for building web components with React. It uses Storybook to quickly start and iterate on components.
+This is a React component for using Pixi as an image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
 
 ## Getting Started
 
@@ -13,7 +12,7 @@ To get started with this template, follow these steps:
 1. Clone the repository to your local machine.
 1. Enable `corepack` by running `corepack enable`.
 1. Install the dependencies by running `pnpm i` in the project directory.
-1. Start the development server by running `pnpm dev`.
+1. Start Storybook by running `pnpm storybook`.
 
 ## Contributing
 
