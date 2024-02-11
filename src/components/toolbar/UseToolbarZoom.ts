@@ -1,5 +1,5 @@
-import { useAtom } from "jotai";
-import { zoomAtom } from "../viewport/ViewportAtoms";
+import { useAtom, useSetAtom } from "jotai";
+import { zoomAtom, zoomControlAtom } from "../viewport/ViewportAtoms";
 
 export function useToolbarZoom(): {
   zoom: number;
@@ -7,18 +7,19 @@ export function useToolbarZoom(): {
   zoomOut: () => void;
   resetZoom: () => void;
 } {
-  const [zoom, setZoom] = useAtom(zoomAtom);
+  const [zoom] = useAtom(zoomAtom);
+  const zoomControl = useSetAtom(zoomControlAtom);
 
   function zoomIn(): void {
-    setZoom((prev) => prev + 10);
+    zoomControl("increase");
   }
 
   function zoomOut(): void {
-    setZoom((prev) => prev - 10);
+    zoomControl("decrease");
   }
 
   function resetZoom(): void {
-    setZoom(100);
+    zoomControl("reset");
   }
 
   return {

@@ -1,14 +1,15 @@
-import { useAtom } from "jotai";
-import { lockAtom } from "../viewport/ViewportAtoms";
+import { useAtom, useSetAtom } from "jotai";
+import { lockAtom, lockControlAtom } from "../viewport/ViewportAtoms";
 
 export function useToolbarTools(): {
   lock: boolean;
   swapLock: () => void;
 } {
-  const [lock, setLockAtom] = useAtom(lockAtom);
+  const [lock] = useAtom(lockAtom);
+  const lockControl = useSetAtom(lockControlAtom);
 
   function swapLock(): void {
-    setLockAtom((prev) => !prev);
+    lockControl();
   }
 
   return {

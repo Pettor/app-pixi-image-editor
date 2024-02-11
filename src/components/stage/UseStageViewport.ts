@@ -1,6 +1,6 @@
-import { useAtomValue, useAtom } from "jotai";
+import { useAtomValue, useSetAtom } from "jotai";
 import type { IApplicationOptions } from "pixi.js";
-import { lockAtom, zoomAtom } from "../viewport/ViewportAtoms";
+import { lockAtom, zoomAtom, zoomControlAtom } from "../viewport/ViewportAtoms";
 import { stageOptionsAtom } from "./StageAtoms";
 
 export function useStageViewport(): {
@@ -11,10 +11,11 @@ export function useStageViewport(): {
 } {
   const stageOptions = useAtomValue(stageOptionsAtom);
   const lock = useAtomValue(lockAtom);
-  const [zoom, setZoom] = useAtom(zoomAtom);
+  const zoom = useAtomValue(zoomAtom);
+  const zoomControl = useSetAtom(zoomControlAtom);
 
   function zoomIn(value: number): void {
-    setZoom(Math.floor(value * 100));
+    zoomControl(value * 100);
   }
 
   return {
