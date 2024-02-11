@@ -5,6 +5,9 @@
 
 This is a React component for using Pixi as an image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
 
+## Demo
+To check out a demo of the latest main branch [click here](https://pettor.github.io/component-pixi-image-editor).
+
 ## Getting Started
 
 To get started with this template, follow these steps:
