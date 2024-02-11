@@ -48,6 +48,8 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
           direction: "all",
           underflow: "center",
         });
+      } else {
+        instance.plugins.remove("clamp");
       }
     }
 
