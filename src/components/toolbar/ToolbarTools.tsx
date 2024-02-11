@@ -1,14 +1,9 @@
 import type { ReactElement } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { useAtom } from "jotai";
-import { lockAtom } from "~/components/viewport/ViewportAtoms";
+import { useToolbarTools } from "./UseToolbarTools";
 
 export function ToolbarTools(): ReactElement {
-  const [lock, setLockAtom] = useAtom(lockAtom);
-
-  function handleOnChangeLock(): void {
-    setLockAtom((prev) => !prev);
-  }
+  const { lock, swapLock } = useToolbarTools();
 
   return (
     <div className="absolute flex w-full justify-center p-4">
@@ -21,7 +16,7 @@ export function ToolbarTools(): ReactElement {
         <div className="flex-none">
           <label className="label cursor-pointer gap-2">
             <span className="label-text">Lock</span>
-            <input type="checkbox" checked={lock} className="checkbox" onChange={handleOnChangeLock} />
+            <input type="checkbox" checked={lock} className="checkbox" onChange={swapLock} />
           </label>
         </div>
       </div>
