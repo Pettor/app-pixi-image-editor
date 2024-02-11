@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@fontsource/rubik": "5.0.18",
+    "@heroicons/react": "2.1.1",
     "@pixi/react": "7.1.1",
     "immer": "10.0.3",
     "pixi-viewport": "5.0.2",

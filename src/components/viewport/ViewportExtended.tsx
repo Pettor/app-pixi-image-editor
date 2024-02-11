@@ -3,7 +3,7 @@ import { Viewport } from "pixi-viewport";
 
 // this is a custom class that extends pixi-viewport's Viewport class
 // it's used to fix an issue with releasing the DOM element when the viewport is unmounted
-export class PixiViewport extends Viewport {
+export class ViewportExtended extends Viewport {
   private renderedDOMElement?: HTMLElement;
 
   constructor(options: IViewportOptions) {

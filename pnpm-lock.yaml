@@ -8,6 +8,9 @@ dependencies:
   '@fontsource/rubik':
     specifier: 5.0.18
     version: 5.0.18
+  '@heroicons/react':
+    specifier: 2.1.1
+    version: 2.1.1(react@18.2.0)
   '@pixi/react':
     specifier: 7.1.1
     version: 7.1.1(@babel/runtime@7.22.5)(@pixi/app@7.4.0)(@pixi/constants@7.4.0)(@pixi/core@7.4.0)(@pixi/display@7.4.0)(@pixi/extensions@7.4.0)(@pixi/graphics@7.4.0)(@pixi/math@7.4.0)(@pixi/mesh-extras@7.4.0)(@pixi/mesh@7.4.0)(@pixi/particle-container@7.4.0)(@pixi/sprite-animated@7.4.0)(@pixi/sprite-tiling@7.4.0)(@pixi/sprite@7.4.0)(@pixi/text-bitmap@7.4.0)(@pixi/text@7.4.0)(@pixi/ticker@7.4.0)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -2325,6 +2328,14 @@ packages:
     dependencies:
       '@hapi/hoek': 9.3.0
     dev: true
+
+  /@heroicons/react@2.1.1(react@18.2.0):
+    resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}

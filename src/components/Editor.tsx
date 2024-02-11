@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
 import { Provider } from "jotai/react";
-import { imageAtom, imageUrlAtom } from "../libs/atoms/ImageAtoms";
-import { HydrateAtoms } from "../libs/react/jotai/HydrateAtoms";
-import { Content } from "./Content";
+import { HydrateAtoms } from "../libs/react/HydrateAtoms";
+import { imageAtom, imageUrlAtom } from "./core/CoreAtoms";
+import { CoreContent } from "./core/CoreContent";
 import type { WithLoadedImageProps } from "~/libs/hoc/WithImage";
 import { withImage } from "~/libs/hoc/WithImage";
 import ErrorBoundary from "~/libs/react/ErrorBoundary";
@@ -23,7 +23,7 @@ function Editor({ url, image }: ImageEditorWithLoadedImageProps): ReactElement {
             [imageAtom, image],
           ]}
         >
-          <Content />
+          <CoreContent />
         </HydrateAtoms>
       </Provider>
     </ErrorBoundary>
