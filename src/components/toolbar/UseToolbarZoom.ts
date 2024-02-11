@@ -1,5 +1,5 @@
 import { useAtom, useSetAtom } from "jotai";
-import { zoomAtom, zoomControlAtom } from "../viewport/ViewportAtoms";
+import { zoomAtom, zoomControlAtom } from "../atoms/viewport/ZoomAtoms";
 
 export function useToolbarZoom(): {
   zoom: number;

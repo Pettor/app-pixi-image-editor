@@ -1,5 +1,5 @@
 import { type ReactNode } from "react";
-import { PixiComponent } from "@pixi/react";
+import { PixiComponent, applyDefaultProps } from "@pixi/react";
 import type { IViewportOptions } from "pixi-viewport";
 import type * as PIXI from "pixi.js";
 import { Ticker } from "pixi.js";
@@ -56,6 +56,8 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
     if (oldProps.zoom !== newProps.zoom) {
       instance.setZoom(newProps.zoom / 100, true);
     }
+
+    applyDefaultProps(instance, oldProps, newProps);
   },
   willUnmount: (instance: ViewportExtended) => {
     instance.removeAllListeners();
