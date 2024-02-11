@@ -1,10 +1,5 @@
 import { atom } from "jotai";
 
-export const lockAtom = atom(false);
-export const lockControlAtom = atom(null, (_get, set) => {
-  set(lockAtom, (prev) => !prev);
-});
-
 export const zoomAtom = atom(100);
 export const zoomControlAtom = atom(null, (_get, set, zoom: "increase" | "decrease" | "reset" | number) => {
   switch (zoom) {

@@ -1,5 +1,6 @@
 import { useAtomValue } from "jotai";
-import { imageAtom, imageUrlAtom } from "../core/CoreAtoms";
+import { imageAtom } from "../atoms/ImageAtoms";
+import { imageUrlAtom } from "../atoms/ImageUrlAtoms";
 
 export function useStageImage(): {
   imageUrl: string;

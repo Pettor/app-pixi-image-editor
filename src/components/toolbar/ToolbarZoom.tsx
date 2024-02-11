@@ -6,8 +6,8 @@ export function ToolbarZoom(): ReactElement {
   const { zoom, zoomIn, zoomOut, resetZoom } = useToolbarZoom();
 
   return (
-    <div className="absolute bottom-0 left-0 flex justify-center p-4">
-      <div className="glass navbar min-h-0 gap-4 rounded-box shadow-xl">
+    <div className="absolute bottom-0 left-0 z-10 flex justify-center p-4">
+      <div className="glass navbar min-h-0 gap-4 rounded-box bg-neutral-content bg-opacity-60 shadow-xl">
         <button className="btn btn-square btn-ghost btn-sm" onClick={zoomIn}>
           <PlusIcon />
         </button>
