@@ -1,30 +1,30 @@
-import { forwardRef, type ReactNode } from "react";
-import { PixiComponent, useApp } from "@pixi/react";
+import { type ReactNode } from "react";
+import { PixiComponent } from "@pixi/react";
 import type { IViewportOptions } from "pixi-viewport";
 import type * as PIXI from "pixi.js";
 import { Ticker } from "pixi.js";
-import { PixiViewport } from "~/libs/react/pixi/PixiViewport";
+import { ViewportExtended } from "~/components/viewport/ViewportExtended";
 
-interface PixiViewComponentProps
+export interface ViewportComponentProps
   extends Pick<IViewportOptions, "ticker" | "screenWidth" | "screenHeight" | "worldWidth" | "worldHeight"> {
-  ref: React.Ref<PixiViewport>;
+  ref: React.Ref<ViewportExtended>;
   app: PIXI.Application;
   worldWidth: number;
   worldHeight: number;
   lock: boolean;
+  zoom: number;
+  onZoomed?: (zoom: number) => void;
   children: ReactNode;
 }
 
-export interface ViewportProps extends Omit<PixiViewComponentProps, "app" | "ref"> {}
-
 const ticker = Ticker.shared;
 
-export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiViewport>("Viewport", {
+export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportExtended>("Viewport", {
   create(props) {
     const { app, ...viewportProps } = props;
-    const { worldWidth, worldHeight } = viewportProps;
+    const { worldWidth, worldHeight, onZoomed } = viewportProps;
 
-    const viewport = new PixiViewport({
+    const viewport = new ViewportExtended({
       ticker: ticker,
       events: app.renderer.events,
       ...viewportProps,
@@ -34,6 +34,10 @@ export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiV
     viewport.drag().pinch().wheel().decelerate();
     viewport.fit();
     viewport.moveCenter(worldWidth / 2, worldHeight / 2);
+
+    if (onZoomed) {
+      viewport.addListener("zoomed", () => onZoomed(viewport.scale.x));
+    }
 
     return viewport;
   },
@@ -46,19 +50,16 @@ export const PixiViewportComponent = PixiComponent<PixiViewComponentProps, PixiV
         });
       }
     }
+
+    if (oldProps.zoom !== newProps.zoom) {
+      instance.setZoom(newProps.zoom / 100, true);
+    }
   },
-  willUnmount: (instance: PixiViewport) => {
+  willUnmount: (instance: ViewportExtended) => {
+    instance.removeAllListeners();
     instance.patchEvents();
     instance.destroy({ children: true, texture: true, baseTexture: true });
     instance.releaseDOMElement();
     ticker.stop();
   },
 });
-
-export const Viewport = forwardRef<PixiViewport, ViewportProps>((props, ref) => {
-  const app = useApp();
-
-  return <PixiViewportComponent ref={ref} app={app} {...props} />;
-});
-
-Viewport.displayName = "Viewport";
