@@ -7,8 +7,8 @@ export interface LoadingViewProps {
 
 export function LoadingView(): ReactElement {
   return (
-    <BasicLayout>
-      <div className="flex h-screen w-full items-center justify-center">
+    <BasicLayout container>
+      <div className="flex h-full w-full items-center justify-center">
         <span className="loading loading-ring loading-lg" />
       </div>
     </BasicLayout>

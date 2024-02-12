@@ -2,14 +2,14 @@ import type { ReactElement, ReactNode } from "react";
 import clsx from "clsx";
 
 export interface BasicLayoutProps {
-  className?: string;
+  container?: boolean;
   children: ReactNode;
 }
 
-export function BasicLayout({ className, children }: BasicLayoutProps): ReactElement {
+export function BasicLayout({ container, children }: BasicLayoutProps): ReactElement {
   return (
-    <div className="container flex max-w-md items-center justify-center">
-      <main className={clsx(className, "w-100 mt-32")}>{children}</main>
+    <div className="flex h-full w-full flex-1 justify-center">
+      <main className={clsx(container && "container", "flex h-full w-full flex-1 justify-center")}>{children}</main>
     </div>
   );
 }

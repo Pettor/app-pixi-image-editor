@@ -7,9 +7,11 @@ export interface DropzoneViewProps {
 
 export function DropzoneView(): ReactElement {
   return (
-    <BasicLayout>
-      <h1>Home</h1>
-      <span>Attach file here</span>
+    <BasicLayout container>
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <h1>Home</h1>
+        <span>Attach file here</span>
+      </div>
     </BasicLayout>
   );
 }

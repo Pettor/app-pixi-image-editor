@@ -10,7 +10,7 @@ const meta = {
   parameters: {
     layout: "fullscreen",
   },
-  title: "Views/Dropzone",
+  title: "Views/Editor",
 } satisfies Meta<typeof Component>;
 
 export default meta;
