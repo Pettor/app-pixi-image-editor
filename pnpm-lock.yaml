@@ -20,6 +20,9 @@ dependencies:
   immer:
     specifier: 10.0.3
     version: 10.0.3
+  jotai-effect:
+    specifier: 0.5.0
+    version: 0.5.0(jotai@2.6.4)
   pixi-viewport:
     specifier: 5.0.2
     version: 5.0.2
@@ -9365,6 +9368,14 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: true
 
+  /jotai-effect@0.5.0(jotai@2.6.4):
+    resolution: {integrity: sha512-3ZuJxc2t8S7OjYc0FcI21BIm8a4nOeK1GQPSq8Hzt5mcC0YxjAVEMXdF+C8wHJEiuRevtcjBfWyVBeCUuTENJA==}
+    peerDependencies:
+      jotai: '>=2.5.0'
+    dependencies:
+      jotai: 2.6.4(@types/react@18.2.48)(react@18.2.0)
+    dev: false
+
   /jotai@2.6.4(@types/react@18.2.48)(react@18.2.0):
     resolution: {integrity: sha512-RniwQPX4893YlNR1muOtyUGHYaTD1fhEN4qnOuZJSrDHj6xdEMrqlRSN/hCm2fshwk78ruecB/P2l+NCVWe6TQ==}
     engines: {node: '>=12.20.0'}
@@ -9379,7 +9390,6 @@ packages:
     dependencies:
       '@types/react': 18.2.48
       react: 18.2.0
-    dev: true
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}

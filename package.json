@@ -26,6 +26,7 @@
     "@pixi/react": "7.1.1",
     "clsx": "2.1.0",
     "immer": "10.0.3",
+    "jotai-effect": "0.5.0",
     "pixi-viewport": "5.0.2",
     "pixi.js": "7.4.0",
     "react": "18.2.0",
