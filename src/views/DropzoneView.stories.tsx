@@ -2,13 +2,12 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { DropzoneView as Component } from "./DropzoneView";
 import type { DropzoneViewProps as ComponentProps } from "./DropzoneView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
+import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
+import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
+import { MockWindowDecorator } from "~/stories/decorators/MockWindowDecorator";
 
 const meta = {
   component: Component,
-  decorators: [FullSizeDecorator],
-  parameters: {
-    layout: "fullscreen",
-  },
   title: "Views/Dropzone",
 } satisfies Meta<typeof Component>;
 
@@ -21,26 +20,20 @@ const commonProps = {
 
 export const Fullscreen = {
   args: commonProps,
+  decorators: [FullSizeDecorator],
+} satisfies Story;
+
+export const MockBrowser = {
+  args: commonProps,
+  decorators: [MockBrowserDecorator],
+};
+
+export const MockPhone = {
+  args: commonProps,
+  decorators: [MockPhoneDecorator],
 } satisfies Story;
 
 export const MockWindow = {
   args: commonProps,
-  render: (args) => (
-    <div className="mockup-window m-8 flex flex-1 border bg-base-300">
-      <div className="flex h-full w-full justify-center p-8">
-        <Component {...args} />
-      </div>
-    </div>
-  ),
-} satisfies Story;
-
-export const MockMobile = {
-  args: commonProps,
-  render: (args) => (
-    <div className="mockup-phone m-8 flex flex-1 border bg-base-300">
-      <div className="flex h-full w-full justify-center p-8">
-        <Component {...args} />
-      </div>
-    </div>
-  ),
+  decorators: [MockWindowDecorator],
 } satisfies Story;

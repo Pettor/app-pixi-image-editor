@@ -6,7 +6,7 @@ import { ToolbarZoom } from "../toolbar/ToolbarZoom";
 
 export function Content(): ReactElement {
   return (
-    <div className="relative flex h-full w-full flex-col border-2 border-transparent">
+    <div className="relative flex h-full w-full flex-col">
       <ToolbarMenu />
       <ToolbarTools />
       <ToolbarZoom />
