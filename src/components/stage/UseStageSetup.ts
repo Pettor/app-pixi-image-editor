@@ -1,6 +1,6 @@
 import { useAtom, useSetAtom } from "jotai";
 import { viewportAtom } from "../atoms/viewport/ViewportAtoms";
-import { viewportSetupEffect } from "../atoms/viewport/ViewportSetup";
+import { viewportSetupEffect } from "../atoms/viewport/ViewportSetupAtoms";
 import type { ViewportExtended } from "../viewport/ViewportExtended";
 
 export function useStageSetup(): {
