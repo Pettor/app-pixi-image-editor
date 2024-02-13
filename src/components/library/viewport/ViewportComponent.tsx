@@ -3,7 +3,7 @@ import { PixiComponent, applyDefaultProps } from "@pixi/react";
 import type { IViewportOptions } from "pixi-viewport";
 import type * as PIXI from "pixi.js";
 import { Ticker } from "pixi.js";
-import { ViewportExtended } from "~/components/viewport/ViewportExtended";
+import { ViewportExtended } from "./ViewportExtended";
 
 export interface ViewportComponentProps
   extends Pick<IViewportOptions, "ticker" | "screenWidth" | "screenHeight" | "worldWidth" | "worldHeight"> {

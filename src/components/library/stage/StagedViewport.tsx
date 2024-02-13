@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { useApp } from "@pixi/react";
 import type { ViewportComponentProps } from "../viewport/ViewportComponent";
 import { ViewportComponent } from "../viewport/ViewportComponent";
-import type { ViewportExtended } from "~/components/viewport/ViewportExtended";
+import type { ViewportExtended } from "~/components/image-editor/viewport/ViewportExtended";
 
 export interface ViewportProps extends Omit<ViewportComponentProps, "app" | "ref"> {}
 

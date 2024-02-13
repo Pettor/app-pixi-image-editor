@@ -1,6 +1,6 @@
 import { type ReactElement } from "react";
 import { useDocumentTitle } from "usehooks-ts";
-import { ImageEditor } from "~/components/Editor";
+import { ImageEditor } from "~/components/library/Editor";
 
 export function App(): ReactElement {
   useDocumentTitle("Image Editor");

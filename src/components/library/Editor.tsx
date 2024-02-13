@@ -1,12 +1,12 @@
 import type { ReactElement } from "react";
 import { Provider } from "jotai/react";
-import { HydrateAtoms } from "../libs/react/HydrateAtoms";
 import { imageAtom } from "./atoms/ImageAtoms";
 import { imageUrlAtom } from "./atoms/ImageUrlAtoms";
 import { Content } from "./content/Content";
 import type { WithLoadedImageProps } from "~/libs/hoc/WithImage";
 import { withImage } from "~/libs/hoc/WithImage";
 import ErrorBoundary from "~/libs/react/ErrorBoundary";
+import { HydrateAtoms } from "~/libs/react/HydrateAtoms";
 
 export interface ImageEditorProps {
   url: string;

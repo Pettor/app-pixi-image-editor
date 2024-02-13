@@ -4,6 +4,7 @@ module.exports = {
   darkMode: ["class"],
   daisyui: {
     darkTheme: "dark",
+    logs: false,
   },
   mode: "jit",
   theme: {

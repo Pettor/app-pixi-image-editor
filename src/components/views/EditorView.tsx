@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { ImageEditor } from "~/components/Editor";
+import { ImageEditor } from "../library/Editor";
 import { BasicLayout } from "~/components/layout/BasicLayout";
 
 export interface EditorViewProps {

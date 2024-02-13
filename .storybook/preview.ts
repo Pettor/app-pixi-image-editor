@@ -22,21 +22,14 @@ export const decorators = [
 ];
 
 export const parameters = {
+  layout: "fullscreen",
   options: {
     storySort: {
       method: "alphabetical",
-      order: ["Library", "Design System"],
+      order: ["Library", "Layout", "Views", "Design System"],
     },
   },
   viewport: {
     viewports: INITIAL_VIEWPORTS,
   },
 };
-
-const preview = {
-  parameters: {
-    layout: "fullscreen",
-  },
-};
-
-export default preview;
