@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { DropzoneView as Component } from "./DropzoneView";
-import type { DropzoneViewProps as ComponentProps } from "./DropzoneView";
+import { DropzoneView as Component } from "./HomeView";
+import type { DropzoneViewProps as ComponentProps } from "./HomeView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
@@ -8,7 +8,7 @@ import { MockWindowDecorator } from "~/stories/decorators/MockWindowDecorator";
 
 const meta = {
   component: Component,
-  title: "Views/Dropzone",
+  title: "Views/Home",
 } satisfies Meta<typeof Component>;
 
 export default meta;

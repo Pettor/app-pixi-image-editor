@@ -11,9 +11,12 @@ export function DropzoneView({ onDrop }: DropzoneViewProps): ReactElement {
     <BasicLayout container footer>
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-3xl font-bold md:text-5xl">Pixi Image Editor</h1>
+          <h1 className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text p-2 text-3xl font-bold text-transparent md:text-5xl">
+            Pixi Image Editor
+          </h1>
           <p className="py-6">
-            This is a image editor built using <b>PixiJS</b> and React. You can upload an image to get started.
+            This is a image editor built using <b className="text-secondary">PixiJS</b> and React. You can upload an
+            image to get started.
           </p>
           <div className="flex h-full w-full items-center justify-center">
             <Dropzone onDrop={onDrop} />

@@ -4,6 +4,9 @@ import type { DropzoneProps as ComponentProps } from "./Dropzone";
 
 const meta = {
   component: Component,
+  parameters: {
+    layout: "centered",
+  },
   tags: ["autodocs"],
   title: "Library/Dropzone",
 } satisfies Meta<typeof Component>;
