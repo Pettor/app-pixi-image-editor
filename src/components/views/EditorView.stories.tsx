@@ -16,7 +16,12 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  imageUrl: cardImgUrl,
+  url: cardImgUrl,
+  toolbarMenuProps: {
+    onNewImage: () => {},
+  },
+  ErrorComponent: () => <div>Error</div>,
+  LoaderComponent: () => <div>Loading</div>,
 } satisfies ComponentProps;
 
 export const Fullscreen = {

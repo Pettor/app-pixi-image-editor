@@ -2,11 +2,11 @@ import type { ReactElement } from "react";
 import { Dropzone } from "../library/dropzone/Dropzone";
 import { BasicLayout } from "~/components/layout/BasicLayout";
 
-export interface DropzoneViewProps {
+export interface HomeViewProps {
   onDrop: (acceptedFiles: File[]) => void;
 }
 
-export function DropzoneView({ onDrop }: DropzoneViewProps): ReactElement {
+export function HomeView({ onDrop }: HomeViewProps): ReactElement {
   return (
     <BasicLayout container footer>
       <div className="hero-content text-center">

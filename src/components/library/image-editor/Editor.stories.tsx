@@ -1,6 +1,6 @@
+import type { ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ImageEditor as Component } from "./Editor";
-import type { ImageEditorProps as ComponentProps } from "./Editor";
 import cardImgUrl from "~/assets/images/card-image.jpg";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 
@@ -15,7 +15,12 @@ type Story = StoryObj<typeof meta>;
 
 const commonProps = {
   url: cardImgUrl,
-} satisfies ComponentProps;
+  toolbarMenuProps: {
+    onNewImage: () => {},
+  },
+  ErrorComponent: () => <div>Error</div>,
+  LoaderComponent: () => <div>Loading</div>,
+} satisfies ComponentProps<typeof Component>;
 
 export const Standard = {
   args: commonProps,

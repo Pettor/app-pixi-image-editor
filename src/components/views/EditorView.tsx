@@ -1,15 +1,13 @@
-import type { ReactElement } from "react";
+import type { ComponentProps, ReactElement } from "react";
 import { ImageEditor } from "../library/image-editor/Editor";
 import { BasicLayout } from "~/components/layout/BasicLayout";
 
-export interface EditorViewProps {
-  imageUrl: string;
-}
+export interface EditorViewProps extends ComponentProps<typeof ImageEditor> {}
 
-export function EditorView({ imageUrl }: EditorViewProps): ReactElement {
+export function EditorView(props: EditorViewProps): ReactElement {
   return (
     <BasicLayout>
-      <ImageEditor url={imageUrl} />
+      <ImageEditor {...props} />
     </BasicLayout>
   );
 }
