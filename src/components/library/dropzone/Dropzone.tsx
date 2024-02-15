@@ -29,13 +29,13 @@ export function Dropzone({ onDrop }: DropzoneProps): ReactElement {
         <label
           htmlFor="dropzone-file"
           className={clsx(
-            "flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral transition-all hover:bg-base-300 md:h-48",
+            "glass flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral transition-all hover:bg-base-300 dark:bg-none md:h-48",
             getBackgroundClass()
           )}
         >
           <input {...getInputProps()} />
           <div className="flex flex-col items-center justify-center">
-            <DocumentArrowUpIcon className="mb-4 h-8 w-8 fill-secondary" />
+            <DocumentArrowUpIcon className="mb-4 h-8 w-8 fill-primary" />
             <p className="mb-2">
               <span className="font-semibold">Click to upload</span> or drag and drop
             </p>

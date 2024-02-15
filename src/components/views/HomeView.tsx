@@ -11,7 +11,7 @@ export function DropzoneView({ onDrop }: DropzoneViewProps): ReactElement {
     <BasicLayout container footer>
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text p-2 text-3xl font-bold text-transparent md:text-5xl">
+          <h1 className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text p-2 text-3xl font-bold text-transparent md:text-5xl lg:text-7xl">
             Pixi Image Editor
           </h1>
           <p className="py-6">
