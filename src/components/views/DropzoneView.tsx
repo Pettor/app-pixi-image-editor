@@ -8,10 +8,10 @@ export interface DropzoneViewProps {
 
 export function DropzoneView({ onDrop }: DropzoneViewProps): ReactElement {
   return (
-    <BasicLayout container>
+    <BasicLayout container footer>
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Pixi Image Editor</h1>
+          <h1 className="text-3xl font-bold md:text-5xl">Pixi Image Editor</h1>
           <p className="py-6">
             This is a image editor built using <b>PixiJS</b> and React. You can upload an image to get started.
           </p>
