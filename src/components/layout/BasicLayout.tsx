@@ -11,9 +11,13 @@ export interface BasicLayoutProps {
 
 export function BasicLayout({ container, footer, children }: BasicLayoutProps): ReactElement {
   return (
-    <div className="flex flex-1 flex-col">
-      <div className="flex flex-1 flex-col">
-        <main className={clsx(container && "container", "flex flex-1 justify-center")}>{children}</main>
+    <div className="flex h-full w-full flex-1 flex-col">
+      <div className="flex h-full w-full flex-1 flex-col items-center">
+        <main
+          className={clsx(container && "container", "flex h-full w-full flex-1 flex-col items-center justify-center")}
+        >
+          {children}
+        </main>
       </div>
       {footer && (
         <footer className="footer footer-center gap-y-2 bg-base-300 p-4 text-base-content">
