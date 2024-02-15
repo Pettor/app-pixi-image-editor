@@ -4,13 +4,6 @@ import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import "../src/assets/styling/main.css";
 
 export const decorators = [
-  withThemeByClassName({
-    themes: {
-      light: "light",
-      dark: "dark",
-    },
-    defaultTheme: "light",
-  }),
   withThemeByDataAttribute({
     themes: {
       light: "light",

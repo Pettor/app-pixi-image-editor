@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { BasicLayout as Component } from "./BasicLayout";
-import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 
 const meta = {
   component: Component,
-  decorators: [FullSizeDecorator],
   parameters: {
     layout: "fullscreen",
   },
