@@ -44,13 +44,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Application
-        run: pnpm storybook:build --quiet
+      - name: Build deployment
+        run: pnpm build:deployment --quiet
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
-      - name: Build Storybook
-        run: pnpm storybook:build --quiet
+      - name: Move files to deployment folder
+        run: pnpm build:move --quiet
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
