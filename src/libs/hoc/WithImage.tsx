@@ -7,17 +7,17 @@ interface WithImageInjectedProps {
   image: HTMLImageElement;
 }
 
-export interface WithLoadedImageProps extends WithImageInjectedProps {
+export interface WithImageProps extends WithImageInjectedProps {
   url: string;
+  LoaderComponent: FC;
+  ErrorComponent: FC;
 }
 
-export function withImage<T extends WithLoadedImageProps>(
-  Component: FC<T>,
-  LoaderComponent: FC,
-  ErrorComponent: FC
+export function withImage<T extends WithImageProps>(
+  Component: FC<T>
 ): FC<DistributiveOmit<T, keyof WithImageInjectedProps>> {
   function WithImage(props: DistributiveOmit<T, keyof WithImageInjectedProps>): ReactElement {
-    const { url: imageUrl } = props;
+    const { url: imageUrl, LoaderComponent, ErrorComponent } = props;
     const [image, setImage] = useState<HTMLImageElement | null>(null);
     const [failed, setFailed] = useState<boolean>(false);
 
