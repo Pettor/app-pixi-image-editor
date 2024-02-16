@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import type { ReactElement } from "react";
-import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements, Outlet } from "react-router-dom";
+import { RouterProvider, Route, createRoutesFromElements, Outlet, createHashRouter } from "react-router-dom";
 import { GlobalRoutes } from "./GlobalRoutes";
 
 export function AppRoutes(): ReactElement {
   return (
     <RouterProvider
-      router={createBrowserRouter(
+      router={createHashRouter(
         createRoutesFromElements(
           <Route path="/" element={<Outlet />}>
             <Route>
