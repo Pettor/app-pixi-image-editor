@@ -4,7 +4,7 @@
 [![Actions Main](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/component-pixi-image-editor/storybook/)
 
-This is a React component for using Pixi as an image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
+This is a React web application using PixiJS to create a basic image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
 
 ## Demo
 
