@@ -1,11 +1,13 @@
 # Pixi Image Editor
+
 [![GitHub](https://img.shields.io/github/license/fullstackhero/dotnet-webapi-boilerplate?color=2da44e)](https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/master/LICENSE)
 [![Actions Main](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/component-pixi-image-editor/)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/component-pixi-image-editor/storybook/)
 
 This is a React component for using Pixi as an image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
 
 ## Demo
+
 To check out a demo of the latest main branch [click here](https://pettor.github.io/component-pixi-image-editor).
 
 ## Getting Started

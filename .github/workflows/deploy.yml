@@ -1,4 +1,4 @@
-name: "storybook"
+name: "deploy"
 
 on:
   pull_request:
@@ -44,6 +44,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build Application
+        run: pnpm storybook:build --quiet
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
+
       - name: Build Storybook
         run: pnpm storybook:build --quiet
         env:
@@ -52,10 +57,10 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          build_dir: storybook-static
-          commit_message: "chore(deploy): Storybook"
+          build_dir: deployment
+          commit_message: "chore(deploy): deploy to github pages"
           jekyll: false
           keep_history: false
-          target_branch: deploy/storybook/main
+          target_branch: deploy/deploy/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
