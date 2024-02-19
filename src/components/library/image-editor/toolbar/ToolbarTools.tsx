@@ -15,7 +15,7 @@ export function ToolbarTools(): ReactElement {
 
   return (
     <div className="absolute z-10 mr-2 flex w-full justify-center p-4 md:mr-0">
-      <div className="glass navbar h-10 min-h-0 w-auto rounded-box border border-neutral bg-base-300 bg-opacity-60 shadow-xl md:h-12 dark:bg-opacity-80 dark:bg-none">
+      <div className="glass navbar h-10 min-h-0 w-auto rounded-box border border-neutral bg-base-300 bg-opacity-60 shadow-xl dark:bg-opacity-80 dark:bg-none md:h-12">
         <div className="tooltip tooltip-bottom" data-tip={lock ? undefined : "Lock image to center"}>
           <button
             className={clsx("btn btn-square btn-ghost swap btn-sm ml-2", lock && "btn-active")}

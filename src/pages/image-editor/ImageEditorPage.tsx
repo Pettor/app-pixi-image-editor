@@ -18,7 +18,7 @@ export function ImageEditorPage({ url }: ImageEditorPageProps): ReactElement {
   return (
     <ImageEditor
       url={url}
-      toolbarMenuProps={{
+      appdrawerProps={{
         onNewImage: handleOnNewImage,
       }}
       LoaderComponent={() => <LoadingView />}

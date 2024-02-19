@@ -29,7 +29,7 @@ export function Dropzone({ onDrop }: DropzoneProps): ReactElement {
         <label
           htmlFor="dropzone-file"
           className={clsx(
-            "glass flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral transition-all hover:bg-base-300 md:h-48 dark:bg-none",
+            "glass flex h-32 cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral transition-all hover:bg-base-300 dark:bg-none md:h-48",
             getBackgroundClass()
           )}
         >
