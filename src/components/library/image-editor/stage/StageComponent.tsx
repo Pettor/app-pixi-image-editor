@@ -1,5 +1,7 @@
 import { type ReactElement } from "react";
-import { Stage } from "@pixi/react";
+import { AdjustmentFilter } from "@pixi/filter-adjustment";
+import { Container, Stage, withFilters } from "@pixi/react";
+import * as PIXI from "pixi.js";
 import { useElementSize } from "usehooks-ts";
 import { MAXIMUM_ZOOM, MINIMUM_ZOOM } from "../constants/ZoomConstants";
 import { StagedImage } from "./StagedImage";
@@ -7,6 +9,11 @@ import { StagedViewport } from "./StagedViewport";
 import { useStageImage } from "./UseStageImage";
 import { useStageSetup } from "./UseStageSetup";
 import { useStageViewport } from "./UseStageViewport";
+
+const Filters = withFilters(Container, {
+  adjustement: AdjustmentFilter,
+  blur: PIXI.BlurFilter,
+});
 
 export function StageComponent(): ReactElement {
   const [ref, { width: containerWidth, height: containerHeight }] = useElementSize();
@@ -29,13 +36,15 @@ export function StageComponent(): ReactElement {
           minZoom={MINIMUM_ZOOM}
           onZoomed={setZoom}
         >
-          <StagedImage
-            imageUrl={imageUrl}
-            imageWidth={imageWidth}
-            imageHeight={imageHeight}
-            scale={scale}
-            rotation={rotation}
-          />
+          <Filters adjustement={{ gamma: 0.5, brightness: 0.5 }} blur={{ blur: 3 }}>
+            <StagedImage
+              imageUrl={imageUrl}
+              imageWidth={imageWidth}
+              imageHeight={imageHeight}
+              scale={scale}
+              rotation={rotation}
+            />
+          </Filters>
         </StagedViewport>
       </Stage>
     </div>
