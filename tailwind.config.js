@@ -2,9 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   daisyui: {
+    darkMode: "class",
     darkTheme: "dark",
     logs: false,
   },
+  darkMode: "class",
   mode: "jit",
   theme: {
     extend: {

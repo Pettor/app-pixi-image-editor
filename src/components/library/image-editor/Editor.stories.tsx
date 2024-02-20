@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 const commonProps = {
   url: cardImgUrl,
-  toolbarMenuProps: {
+  appdrawerProps: {
     onNewImage: () => {},
   },
   ErrorComponent: () => <div>Error</div>,
