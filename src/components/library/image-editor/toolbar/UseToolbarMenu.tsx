@@ -1,5 +1,5 @@
 import { useSetAtom } from "jotai";
-import { toggleAppMenuState } from "../atoms/tools/AppMenuAtoms";
+import { toggleAppMenuState } from "../atoms/menu/AppMenuAtoms";
 
 export function useToolbarMenu(): {
   toggleDrawer: () => void;

@@ -1,6 +1,8 @@
 import { atom } from "jotai";
 
 export const rotationAtom = atom(0);
+
+// Derived atoms
 export const rotationControlAtom = atom(
   null,
   (_get, set, rotation: "rotate-left" | "rotate-right" | "reset" | number) => {
@@ -19,3 +21,8 @@ export const rotationControlAtom = atom(
     }
   }
 );
+
+export const isRotated = atom((get) => {
+  const rotation = get(rotationAtom);
+  return (rotation / (Math.PI / 2)) % 2 !== 0;
+});

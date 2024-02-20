@@ -15,7 +15,7 @@ export function FilterDrawer({ open, onClose, blur, onBlurChange }: FilterDrawer
 
   return (
     <div className="drawer drawer-end z-30">
-      <input id="app-drawer" type="checkbox" checked={open} className="drawer-toggle" />
+      <input id="app-drawer" readOnly type="checkbox" checked={open} className="drawer-toggle" />
       <div className="drawer-side overflow-hidden">
         <label htmlFor="app-drawer" aria-label="close sidebar" />
         <ul className="menu bg-neutral-content dark:bg-neutral shadow-xl min-h-full w-60 p-4 text-base text-base-content md:w-96">

@@ -14,7 +14,7 @@ export function AppDrawer({ open, onClose, onNewImage }: AppDrawerProps): ReactE
 
   return (
     <div className="drawer z-30">
-      <input id="app-drawer" type="checkbox" checked={open} className="drawer-toggle" />
+      <input id="app-drawer" readOnly type="checkbox" checked={open} className="drawer-toggle" />
       <div className="drawer-side">
         <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" />
         <ul

@@ -3,6 +3,7 @@ import { PixiComponent, applyDefaultProps } from "@pixi/react";
 import type { IViewportOptions } from "pixi-viewport";
 import type * as PIXI from "pixi.js";
 import { Ticker } from "pixi.js";
+import { ZOOM_BASE } from "../constants/ZoomConstants";
 import { ViewportExtended } from "./ViewportExtended";
 
 export interface ViewportComponentProps
@@ -13,8 +14,8 @@ export interface ViewportComponentProps
   worldHeight: number;
   lock: boolean;
   zoom: number;
-  maxZoom?: number;
-  minZoom?: number;
+  maxZoom: number;
+  minZoom: number;
   onZoomed?: (zoom: number) => void;
   children: ReactNode;
 }
@@ -37,12 +38,10 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
     viewport.fit();
     viewport.moveCenter(worldWidth / 2, worldHeight / 2);
 
-    if (maxZoom && minZoom) {
-      viewport.clampZoom({
-        maxScale: maxZoom / 100,
-        minScale: minZoom / 100,
-      });
-    }
+    viewport.clampZoom({
+      maxScale: maxZoom / ZOOM_BASE,
+      minScale: minZoom / ZOOM_BASE,
+    });
 
     if (onZoomed) {
       viewport.addListener("zoomed", () => onZoomed(viewport.scale.x));
@@ -64,6 +63,14 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
 
     if (oldProps.zoom !== newProps.zoom) {
       instance.setZoom(newProps.zoom / 100, true);
+    }
+
+    // Update zoom limits
+    if (newProps.minZoom !== oldProps.minZoom || newProps.maxZoom !== oldProps.maxZoom) {
+      instance.clampZoom({
+        maxScale: newProps.maxZoom / ZOOM_BASE,
+        minScale: newProps.minZoom / ZOOM_BASE,
+      });
     }
 
     applyDefaultProps(instance, oldProps, newProps);

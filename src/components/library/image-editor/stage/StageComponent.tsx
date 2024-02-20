@@ -1,7 +1,8 @@
 import { type ReactElement } from "react";
 import { Stage } from "@pixi/react";
+import { useAtomValue } from "jotai";
 import { useElementSize } from "usehooks-ts";
-import { MAXIMUM_ZOOM, MINIMUM_ZOOM } from "../constants/ZoomConstants";
+import { maxZoomAtom, minZoomAtom } from "../atoms/viewport/ZoomAtoms";
 import { StagedFilters } from "./StagedFilters";
 import { StagedImage } from "./StagedImage";
 import { StagedViewport } from "./StagedViewport";
@@ -16,6 +17,8 @@ export function StageComponent(): ReactElement {
   const { imageUrl, imageWidth, imageHeight } = useStageImage();
   const { registerViewport } = useStageSetup();
   const { blur } = useStageFilters();
+  const minZoom = useAtomValue(minZoomAtom);
+  const maxZoom = useAtomValue(maxZoomAtom);
 
   return (
     <div ref={ref} className="flex-1 overflow-hidden rounded-lg border-4 border-base-100">
@@ -29,8 +32,8 @@ export function StageComponent(): ReactElement {
             screenHeight={containerHeight}
             lock={lock}
             zoom={zoom}
-            maxZoom={MAXIMUM_ZOOM}
-            minZoom={MINIMUM_ZOOM}
+            maxZoom={maxZoom}
+            minZoom={minZoom}
             onZoomed={setZoom}
           >
             <StagedImage

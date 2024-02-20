@@ -1,5 +1,5 @@
 import { useAtomValue, useSetAtom } from "jotai";
-import { appMenuStateAtom, toggleAppMenuState } from "../atoms/tools/AppMenuAtoms";
+import { appMenuStateAtom, toggleAppMenuState } from "../atoms/menu/AppMenuAtoms";
 import type { AppDrawerProps } from "./AppDrawer";
 
 export function useAppDrawer(): Pick<AppDrawerProps, "open" | "onClose"> {
