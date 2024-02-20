@@ -1,8 +1,6 @@
 import { type ReactElement } from "react";
 import { Stage } from "@pixi/react";
-import { useAtomValue } from "jotai";
 import { useElementSize } from "usehooks-ts";
-import { maxZoomAtom, minZoomAtom } from "../atoms/viewport/ZoomAtoms";
 import { StagedFilters } from "./StagedFilters";
 import { StagedImage } from "./StagedImage";
 import { StagedViewport } from "./StagedViewport";
@@ -13,12 +11,10 @@ import { useStageViewport } from "./UseStageViewport";
 
 export function StageComponent(): ReactElement {
   const [ref, { width: containerWidth, height: containerHeight }] = useElementSize();
-  const { stageOptions, lock, scale, rotation, zoom, setZoom } = useStageViewport();
+  const { stageOptions, lock, scale, rotation, zoom, minZoom, maxZoom, setZoom } = useStageViewport();
   const { imageUrl, imageWidth, imageHeight } = useStageImage();
   const { registerViewport } = useStageSetup();
   const { blur } = useStageFilters();
-  const minZoom = useAtomValue(minZoomAtom);
-  const maxZoom = useAtomValue(maxZoomAtom);
 
   return (
     <div ref={ref} className="flex-1 overflow-hidden rounded-lg border-4 border-base-100">
