@@ -1,18 +1,14 @@
 import { useRef, type ReactElement } from "react";
 import { FolderPlusIcon } from "@heroicons/react/24/solid";
-import { useAtomValue, useSetAtom } from "jotai";
-import { useOnClickOutside } from "usehooks-ts";
-import { drawerOpenedAtom, toggleDrawerAtom } from "../atoms/DrawerAtoms";
+import { useAppDrawer } from "./UseAppDrawer";
 
 export interface AppDrawerProps {
   onNewImage: () => void;
 }
 
 export function AppDrawer({ onNewImage }: AppDrawerProps): ReactElement {
-  const drawerState = useAtomValue(drawerOpenedAtom);
-  const swapDrawer = useSetAtom(toggleDrawerAtom);
   const menuRef = useRef<HTMLUListElement>(null);
-  useOnClickOutside(menuRef, () => drawerState && swapDrawer());
+  const { drawerState } = useAppDrawer(menuRef);
 
   return (
     <div className="drawer z-30">

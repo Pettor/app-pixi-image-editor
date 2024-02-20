@@ -36,15 +36,15 @@ export function StageComponent(): ReactElement {
           minZoom={MINIMUM_ZOOM}
           onZoomed={setZoom}
         >
-          <Filters adjustement={{ gamma: 0.5, brightness: 0.5 }} blur={{ blur: 3 }}>
-            <StagedImage
-              imageUrl={imageUrl}
-              imageWidth={imageWidth}
-              imageHeight={imageHeight}
-              scale={scale}
-              rotation={rotation}
-            />
-          </Filters>
+          {/* <Filters adjustement={{ gamma: 0.5, brightness: 0.5 }} blur={{ blur: 3 }}> */}
+          <StagedImage
+            imageUrl={imageUrl}
+            imageWidth={imageWidth}
+            imageHeight={imageHeight}
+            scale={scale}
+            rotation={rotation}
+          />
+          {/* </Filters> */}
         </StagedViewport>
       </Stage>
     </div>

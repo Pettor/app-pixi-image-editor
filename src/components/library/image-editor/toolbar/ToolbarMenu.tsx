@@ -1,10 +1,9 @@
 import { type ReactElement } from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import { useSetAtom } from "jotai";
-import { toggleDrawerAtom } from "../atoms/DrawerAtoms";
+import { useToolbarMenu } from "./UseToolbarMenu";
 
 export function ToolbarMenu(): ReactElement {
-  const toggleDrawer = useSetAtom(toggleDrawerAtom);
+  const { toggleDrawer } = useToolbarMenu();
 
   return (
     <div className="absolute z-20 flex items-center justify-center p-4 max-sm:bottom-0 max-sm:right-0">
