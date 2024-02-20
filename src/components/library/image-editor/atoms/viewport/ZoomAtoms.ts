@@ -1,6 +1,12 @@
 import { atom } from "jotai";
+import { ZOOM_BASE, ZOOM_MAX_DEFAULT, ZOOM_MIN_DEFAULT } from "../../constants/ZoomConstants";
 
-export const zoomAtom = atom(100);
+export const zoomAtom = atom(ZOOM_BASE);
+export const fitZoomAtom = atom(ZOOM_BASE);
+export const minZoomAtom = atom(ZOOM_MIN_DEFAULT);
+export const maxZoomAtom = atom(ZOOM_MAX_DEFAULT);
+
+// Derived atoms
 export const zoomControlAtom = atom(null, (_get, set, zoom: "increase" | "decrease" | "reset" | number) => {
   switch (zoom) {
     case "increase":

@@ -1,17 +1,17 @@
 import { useAtomValue, useSetAtom } from "jotai";
+import { toggleFilterMenuState } from "../atoms/menu/FilterMenuAtoms";
 import { rotationControlAtom } from "../atoms/transform/RotationAtoms";
 import { scaleControlAtom } from "../atoms/transform/ScaleAtoms";
-import { fitScreenAtom } from "../atoms/viewport/FitScreenAtoms";
 import { lockAtom, lockControlAtom } from "../atoms/viewport/LockAtoms";
 
 export function useToolbarTools(): {
-  fitScreen: () => void;
   lock: boolean;
+  toggleFilterMenu: () => void;
   swapLock: () => void;
   rotate: (value: Parameters<typeof rotationControl>[0]) => void;
   flip: (value: Parameters<typeof scaleControl>[0]) => void;
 } {
-  const fitScreen = useSetAtom(fitScreenAtom);
+  const toggleFilterMenu = useSetAtom(toggleFilterMenuState);
   const lock = useAtomValue(lockAtom);
   const lockControl = useSetAtom(lockControlAtom);
   const scaleControl = useSetAtom(scaleControlAtom);
@@ -30,7 +30,7 @@ export function useToolbarTools(): {
   }
 
   return {
-    fitScreen,
+    toggleFilterMenu,
     lock,
     swapLock,
     rotate,

@@ -1,6 +1,6 @@
-import type { ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ImageEditor as Component } from "./Editor";
+import type { ImageEditorProps as ComponentProps } from "./Editor";
 import cardImgUrl from "~/assets/images/card-image.jpg";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 
@@ -20,7 +20,7 @@ const commonProps = {
   },
   ErrorComponent: () => <div>Error</div>,
   LoaderComponent: () => <div>Loading</div>,
-} satisfies ComponentProps<typeof Component>;
+} satisfies ComponentProps;
 
 export const Standard = {
   args: commonProps,

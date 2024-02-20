@@ -1,26 +1,27 @@
 import { useRef, type ReactElement } from "react";
 import { FolderPlusIcon } from "@heroicons/react/24/solid";
-import { useAtomValue, useSetAtom } from "jotai";
 import { useOnClickOutside } from "usehooks-ts";
-import { drawerOpenedAtom, toggleDrawerAtom } from "../atoms/DrawerAtoms";
 
 export interface AppDrawerProps {
+  open: boolean;
+  onClose: () => void;
   onNewImage: () => void;
 }
 
-export function AppDrawer({ onNewImage }: AppDrawerProps): ReactElement {
-  const drawerState = useAtomValue(drawerOpenedAtom);
-  const swapDrawer = useSetAtom(toggleDrawerAtom);
+export function AppDrawer({ open, onClose, onNewImage }: AppDrawerProps): ReactElement {
   const menuRef = useRef<HTMLUListElement>(null);
-  useOnClickOutside(menuRef, () => drawerState && swapDrawer());
+  useOnClickOutside(menuRef, onClose);
 
   return (
     <div className="drawer z-30">
-      <input id="my-drawer" type="checkbox" checked={drawerState} className="drawer-toggle" />
+      <input id="app-drawer" readOnly type="checkbox" checked={open} className="drawer-toggle" />
       <div className="drawer-side">
-        <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay" />
-
-        <ul ref={menuRef} className="menu min-h-full w-60 bg-base-200 p-4 text-base text-base-content md:w-80">
+        <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" />
+        <ul
+          ref={menuRef}
+          className="menu shadow-xl min-h-full w-60 bg-base-100 p-4 text-base text-base-content md:w-80"
+        >
+          <span className="p-4 text-xl font-bold">Image Editor</span>
           <li onClick={onNewImage}>
             <a>
               <FolderPlusIcon className="h-6 w-6" />

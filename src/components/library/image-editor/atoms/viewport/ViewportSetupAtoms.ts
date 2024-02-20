@@ -13,6 +13,7 @@ export const viewportSetupEffect = atomEffect((get, set) => {
   if (!viewport) {
     return;
   }
+
   set(viewportSetupHasRunAtom, true);
 
   // Run setup for viewport
