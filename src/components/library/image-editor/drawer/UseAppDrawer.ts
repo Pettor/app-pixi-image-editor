@@ -1,16 +1,13 @@
-import type { RefObject } from "react";
 import { useAtomValue, useSetAtom } from "jotai";
-import { useOnClickOutside } from "usehooks-ts";
 import { appMenuStateAtom, toggleAppMenuState } from "../atoms/tools/AppMenuAtoms";
+import type { AppDrawerProps } from "./AppDrawer";
 
-export function useAppDrawer(menuRef: RefObject<HTMLElement>): {
-  drawerState: boolean;
-} {
+export function useAppDrawer(): Pick<AppDrawerProps, "open" | "onClose"> {
   const drawerState = useAtomValue(appMenuStateAtom);
   const toggleDrawer = useSetAtom(toggleAppMenuState);
-  useOnClickOutside(menuRef, () => drawerState && toggleDrawer());
 
   return {
-    drawerState,
+    open: drawerState,
+    onClose: () => drawerState && toggleDrawer(),
   };
 }

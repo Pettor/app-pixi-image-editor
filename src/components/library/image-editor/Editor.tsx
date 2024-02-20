@@ -1,3 +1,4 @@
+import type { ComponentProps } from "react";
 import type { ReactElement } from "react";
 import { Provider } from "jotai/react";
 import { imageAtom } from "./atoms/ImageAtoms";
@@ -9,11 +10,9 @@ import { withImage } from "~/libs/hoc/WithImage";
 import ErrorBoundary from "~/libs/react/ErrorBoundary";
 import { HydrateAtoms } from "~/libs/react/HydrateAtoms";
 
-export interface ImageEditorProps extends ContentProps {
+interface ImageEditorWithImageProps extends ContentProps, WithImageProps {
   url: string;
 }
-
-interface ImageEditorWithImageProps extends ImageEditorProps, WithImageProps {}
 
 function Editor({ url, image, ...contentProps }: ImageEditorWithImageProps): ReactElement {
   return (
@@ -33,5 +32,7 @@ function Editor({ url, image, ...contentProps }: ImageEditorWithImageProps): Rea
 }
 
 const editorWithImage = withImage(Editor);
+
+export interface ImageEditorProps extends ComponentProps<typeof editorWithImage> {}
 
 export { editorWithImage as ImageEditor };

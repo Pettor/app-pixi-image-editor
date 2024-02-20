@@ -1,18 +1,20 @@
 import { useRef, type ReactElement } from "react";
 import { FolderPlusIcon } from "@heroicons/react/24/solid";
-import { useAppDrawer } from "./UseAppDrawer";
+import { useOnClickOutside } from "usehooks-ts";
 
 export interface AppDrawerProps {
+  open: boolean;
+  onClose: () => void;
   onNewImage: () => void;
 }
 
-export function AppDrawer({ onNewImage }: AppDrawerProps): ReactElement {
+export function AppDrawer({ open, onClose, onNewImage }: AppDrawerProps): ReactElement {
   const menuRef = useRef<HTMLUListElement>(null);
-  const { drawerState } = useAppDrawer(menuRef);
+  useOnClickOutside(menuRef, onClose);
 
   return (
     <div className="drawer z-30">
-      <input id="app-drawer" type="checkbox" checked={drawerState} className="drawer-toggle" />
+      <input id="app-drawer" type="checkbox" checked={open} className="drawer-toggle" />
       <div className="drawer-side">
         <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" />
         <ul
