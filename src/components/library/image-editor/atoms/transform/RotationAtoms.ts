@@ -22,7 +22,7 @@ export const rotationControlAtom = atom(
   }
 );
 
-export const isRotated = atom((get) => {
+export const isRotatedAtom = atom((get) => {
   const rotation = get(rotationAtom);
   return (rotation / (Math.PI / 2)) % 2 !== 0;
 });
