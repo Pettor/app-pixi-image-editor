@@ -13,6 +13,8 @@ export interface ViewportComponentProps
   worldHeight: number;
   lock: boolean;
   zoom: number;
+  maxZoom?: number;
+  minZoom?: number;
   onZoomed?: (zoom: number) => void;
   children: ReactNode;
 }
@@ -22,7 +24,7 @@ const ticker = Ticker.shared;
 export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportExtended>("Viewport", {
   create(props) {
     const { app, ...viewportProps } = props;
-    const { worldWidth, worldHeight, onZoomed } = viewportProps;
+    const { worldWidth, worldHeight, onZoomed, maxZoom, minZoom } = viewportProps;
 
     const viewport = new ViewportExtended({
       ticker: ticker,
@@ -34,6 +36,13 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
     viewport.drag().pinch().wheel().decelerate();
     viewport.fit();
     viewport.moveCenter(worldWidth / 2, worldHeight / 2);
+
+    if (maxZoom && minZoom) {
+      viewport.clampZoom({
+        maxScale: maxZoom / 100,
+        minScale: minZoom / 100,
+      });
+    }
 
     if (onZoomed) {
       viewport.addListener("zoomed", () => onZoomed(viewport.scale.x));

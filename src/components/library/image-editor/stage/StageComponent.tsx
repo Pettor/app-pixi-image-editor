@@ -1,6 +1,7 @@
 import { type ReactElement } from "react";
 import { Stage } from "@pixi/react";
 import { useElementSize } from "usehooks-ts";
+import { MAXIMUM_ZOOM, MINIMUM_ZOOM } from "../constants/ZoomConstants";
 import { StagedImage } from "./StagedImage";
 import { StagedViewport } from "./StagedViewport";
 import { useStageImage } from "./UseStageImage";
@@ -24,6 +25,8 @@ export function StageComponent(): ReactElement {
           screenHeight={containerHeight}
           lock={lock}
           zoom={zoom}
+          maxZoom={MAXIMUM_ZOOM}
+          minZoom={MINIMUM_ZOOM}
           onZoomed={setZoom}
         >
           <StagedImage
