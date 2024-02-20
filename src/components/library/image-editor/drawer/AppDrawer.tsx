@@ -16,11 +16,14 @@ export function AppDrawer({ onNewImage }: AppDrawerProps): ReactElement {
 
   return (
     <div className="drawer z-30">
-      <input id="my-drawer" type="checkbox" checked={drawerState} className="drawer-toggle" />
+      <input id="app-drawer" type="checkbox" checked={drawerState} className="drawer-toggle" />
       <div className="drawer-side">
-        <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay" />
-
-        <ul ref={menuRef} className="menu min-h-full w-60 bg-base-200 p-4 text-base text-base-content md:w-80">
+        <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" />
+        <ul
+          ref={menuRef}
+          className="menu shadow-xl min-h-full w-60 bg-base-100 p-4 text-base text-base-content md:w-80"
+        >
+          <span className="p-4 text-xl font-bold">Image Editor</span>
           <li onClick={onNewImage}>
             <a>
               <FolderPlusIcon className="h-6 w-6" />
