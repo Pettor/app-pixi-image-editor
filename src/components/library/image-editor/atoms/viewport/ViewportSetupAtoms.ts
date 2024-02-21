@@ -4,7 +4,9 @@ import { fitScreenAtom } from "./FitScreenAtoms";
 import { viewportAtom } from "./ViewportAtoms";
 
 const viewportSetupHasRunAtom = atom(false);
-export const viewportSetupEffect = atomEffect((get, set) => {
+
+// Effects
+export const viewportSetupAtomEffect = atomEffect((get, set) => {
   if (get(viewportSetupHasRunAtom)) {
     return;
   }

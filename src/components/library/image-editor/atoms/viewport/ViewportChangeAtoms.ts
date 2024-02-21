@@ -4,7 +4,8 @@ import { isRotatedAtom } from "../transform/RotationAtoms";
 import { viewportAtom } from "./ViewportAtoms";
 import { fitZoomAtom } from "./ZoomAtoms";
 
-export const viewportChangeAtom = atomEffect((get, set) => {
+// Effects
+export const viewportChangeAtomEffect = atomEffect((get, set) => {
   const viewport = get(viewportAtom);
   if (!viewport) {
     return;

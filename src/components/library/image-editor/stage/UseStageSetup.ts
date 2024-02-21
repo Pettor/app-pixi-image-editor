@@ -1,14 +1,14 @@
 import { useAtom, useSetAtom } from "jotai";
 import { viewportAtom } from "../atoms/viewport/ViewportAtoms";
-import { viewportChangeAtom } from "../atoms/viewport/ViewportChangeAtoms";
-import { viewportSetupEffect } from "../atoms/viewport/ViewportSetupAtoms";
+import { viewportChangeAtomEffect } from "../atoms/viewport/ViewportChangeAtoms";
+import { viewportSetupAtomEffect } from "../atoms/viewport/ViewportSetupAtoms";
 import type { ViewportExtended } from "../viewport/ViewportExtended";
 
 export function useStageSetup(): {
   registerViewport: (viewport: ViewportExtended) => void;
 } {
-  useAtom(viewportChangeAtom);
-  useAtom(viewportSetupEffect);
+  useAtom(viewportChangeAtomEffect);
+  useAtom(viewportSetupAtomEffect);
 
   const setViewport = useSetAtom(viewportAtom);
 
