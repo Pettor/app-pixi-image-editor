@@ -13,7 +13,7 @@ export function HomeView({ themeSwitchProps, onDrop }: HomeViewProps): ReactElem
     <BasicLayout container footer>
       <div className="w-full flex items-center justify-center">
         <div className="flex flex-1" />
-        <div className="relative top-5 right-5 sm:top-10">
+        <div className="relative top-5 right-5 sm:top-10 z-20">
           <ThemeSwitch {...themeSwitchProps} />
         </div>
       </div>
