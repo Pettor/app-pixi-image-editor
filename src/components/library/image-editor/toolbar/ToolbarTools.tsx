@@ -28,7 +28,7 @@ export function ToolbarTools(): ReactElement {
         <div className="divider divider-horizontal w-0 mx-0" />
         <div className="tooltip tooltip-bottom mt-1" data-tip={showFitScreen ? "Actual size" : "Fit to window"}>
           <button className="btn btn-square btn-ghost swap btn-sm" onClick={adjustZoom}>
-            {showFitScreen ? <FitViewIcon /> : <FullscreenIcon />}
+            {showFitScreen ? <FullscreenIcon /> : <FitViewIcon />}
           </button>
         </div>
         <div className="divider divider-horizontal w-0 mx-0" />
