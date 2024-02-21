@@ -11,7 +11,7 @@ import { useStageViewport } from "./UseStageViewport";
 
 export function StageComponent(): ReactElement {
   const [ref, { width: containerWidth, height: containerHeight }] = useElementSize();
-  const { stageOptions, lock, scale, rotation, zoom, minZoom, maxZoom, setZoom } = useStageViewport();
+  const { stageOptions, lock, scale, rotation, isRotated, zoom, minZoom, maxZoom, setZoom } = useStageViewport();
   const { imageUrl, imageWidth, imageHeight } = useStageImage();
   const { registerViewport } = useStageSetup();
   const { blur } = useStageFilters();
@@ -31,6 +31,7 @@ export function StageComponent(): ReactElement {
             maxZoom={maxZoom}
             minZoom={minZoom}
             onZoomed={setZoom}
+            rotated={isRotated}
           >
             <StagedImage
               imageUrl={imageUrl}

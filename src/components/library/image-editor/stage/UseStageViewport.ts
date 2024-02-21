@@ -1,7 +1,7 @@
 import { useAtomValue, useSetAtom } from "jotai";
 import type { IApplicationOptions, IPointData } from "pixi.js";
 import { stageOptionsAtom } from "../atoms/StageOptionsAtoms";
-import { rotationAtom } from "../atoms/transform/RotationAtoms";
+import { isRotatedAtom, rotationAtom } from "../atoms/transform/RotationAtoms";
 import { scaleAtom } from "../atoms/transform/ScaleAtoms";
 import { lockAtom } from "../atoms/viewport/LockAtoms";
 import { maxZoomAtom, minZoomAtom, zoomAtom, zoomControlAtom } from "../atoms/viewport/ZoomAtoms";
@@ -11,6 +11,7 @@ export function useStageViewport(): {
   lock: boolean;
   scale: IPointData;
   rotation: number;
+  isRotated: boolean;
   zoom: number;
   minZoom: number;
   maxZoom: number;
@@ -24,6 +25,7 @@ export function useStageViewport(): {
   const maxZoom = useAtomValue(maxZoomAtom);
   const zoomControl = useSetAtom(zoomControlAtom);
   const rotation = useAtomValue(rotationAtom);
+  const isRotated = useAtomValue(isRotatedAtom);
 
   function setZoom(value: number): void {
     zoomControl(value * 100);
@@ -34,6 +36,7 @@ export function useStageViewport(): {
     lock,
     scale,
     rotation,
+    isRotated,
     zoom,
     minZoom: minZoom,
     maxZoom: maxZoom,
