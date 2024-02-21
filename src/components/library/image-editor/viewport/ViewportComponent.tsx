@@ -16,6 +16,7 @@ export interface ViewportComponentProps
   zoom: number;
   maxZoom: number;
   minZoom: number;
+  rotated: boolean;
   onZoomed?: (zoom: number) => void;
   children: ReactNode;
 }
@@ -71,6 +72,12 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
         maxScale: newProps.maxZoom / ZOOM_BASE,
         minScale: newProps.minZoom / ZOOM_BASE,
       });
+    }
+
+    // Rotation impact center
+    if (oldProps.rotated !== newProps.rotated) {
+      instance.moveCenter(newProps.worldWidth / 2, newProps.worldHeight / 2);
+      instance.fit();
     }
 
     applyDefaultProps(instance, oldProps, newProps);

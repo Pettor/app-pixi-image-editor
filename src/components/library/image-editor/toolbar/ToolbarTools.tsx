@@ -33,13 +33,13 @@ export function ToolbarTools(): ReactElement {
         </div>
         <div className="divider divider-horizontal w-0 mx-0" />
         <div className="flex gap-1">
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° right">
-            <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-right")}>
+          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° left">
+            <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-left")}>
               <RotateCcwIcon />
             </button>
           </div>
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° left">
-            <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-left")}>
+          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° right">
+            <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-right")}>
               <RotateCwIcon />
             </button>
           </div>

@@ -1,6 +1,6 @@
 import { atom } from "jotai";
 
-export const lockAtom = atom(false);
+export const lockAtom = atom(true);
 
 // Derived atoms
 export const lockControlAtom = atom(null, (_get, set) => {
