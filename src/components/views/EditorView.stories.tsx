@@ -18,6 +18,10 @@ type Story = StoryObj<typeof meta>;
 const commonProps = {
   url: cardImgUrl,
   appdrawerProps: {
+    themeSwitchProps: {
+      mode: "light",
+      onSwitch: () => console.log("Switched"),
+    },
     onNewImage: () => {},
   },
   ErrorComponent: () => <div>Error</div>,

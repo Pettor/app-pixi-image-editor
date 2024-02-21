@@ -13,6 +13,10 @@ type Story = StoryObj<typeof meta>;
 
 const commonProps = {
   open: true,
+  themeSwitchProps: {
+    mode: "light",
+    onSwitch: () => console.log("Switched"),
+  },
   onClose: () => {},
   onNewImage: () => {},
 } satisfies ComponentProps;
