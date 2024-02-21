@@ -61,6 +61,6 @@ jobs:
           commit_message: "chore(deploy): deploy to github pages"
           jekyll: false
           keep_history: false
-          target_branch: deploy/deploy/main
+          target_branch: deploy/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
