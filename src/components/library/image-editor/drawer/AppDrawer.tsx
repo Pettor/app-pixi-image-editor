@@ -3,6 +3,7 @@ import { FolderPlusIcon } from "@heroicons/react/24/solid";
 import { useOnClickOutside } from "usehooks-ts";
 import type { ThemeSwitchProps } from "../../theme-controller/ThemeSwitch";
 import { ThemeSwitch } from "../../theme-controller/ThemeSwitch";
+import LogoImageSrc from "~/assets/images/logo/Logo180.png";
 
 export interface AppDrawerProps {
   open: boolean;
@@ -24,19 +25,20 @@ export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage }: AppDr
           ref={menuRef}
           className="menu shadow-xl min-h-full w-60 bg-base-100 p-4 text-base text-base-content md:w-80"
         >
-          <div className="flex">
-            <span className="flex flex-1 p-4 text-xl font-bold">Image Editor</span>
-            <div className="flex items-center flex-row">
-              <ThemeSwitch {...themeSwitchProps} />
-            </div>
+          <div className="flex items-center">
+            <img className="w-10 h-10" src={LogoImageSrc} alt="Pixi Image Editor Logo" />
+            <span className="flex flex-1 p-4 text-xl font-bold">Pixi Image Editor</span>
           </div>
-          <li onClick={onNewImage}>
+          <li className="mt-4" onClick={onNewImage}>
             <a>
               <FolderPlusIcon className="h-6 w-6" />
               New Image
             </a>
           </li>
-          <div className="flex flex-1"></div>
+          <div className="flex flex-1" />
+          <div className="flex items-center flex-row justify-end">
+            <ThemeSwitch {...themeSwitchProps} />
+          </div>
         </ul>
       </div>
     </div>

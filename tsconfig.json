@@ -23,6 +23,6 @@
     "strict": true,
     "useDefineForClassFields": true
   },
-  "include": ["./src", "types/reset.d.ts", "types/jpg.d.ts"],
+  "include": ["./src", "types/reset.d.ts", "types/jpg.d.ts", "types/png.d.ts"],
   "exclude": ["storybook-static"]
 }
