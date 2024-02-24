@@ -3,13 +3,24 @@ import clsx from "clsx";
 import { GithubIcon } from "~/components/icons/GithubIcon";
 import { LinkedInIcon } from "~/components/icons/LinkedInIcon";
 
-export interface BasicLayoutProps {
+export interface SocialLinkProps {
+  onGithubClick?: () => void;
+  onLinkedInClick?: () => void;
+}
+
+export interface BasicLayoutProps extends SocialLinkProps {
   container?: boolean;
   footer?: boolean;
   children: ReactNode;
 }
 
-export function BasicLayout({ container, footer, children }: BasicLayoutProps): ReactElement {
+export function BasicLayout({
+  container,
+  footer,
+  onGithubClick,
+  onLinkedInClick,
+  children,
+}: BasicLayoutProps): ReactElement {
   return (
     <div className="flex h-full w-full flex-1 flex-col">
       <div className="flex h-full w-full flex-1 flex-col items-center">
@@ -27,10 +38,10 @@ export function BasicLayout({ container, footer, children }: BasicLayoutProps): 
           </aside>
           <nav>
             <div className="grid grid-flow-col gap-2">
-              <button className="btn btn-square btn-ghost fill-primary p-2">
+              <button className="btn btn-square btn-ghost fill-primary p-2" onClick={onGithubClick}>
                 <GithubIcon />
               </button>
-              <button className="btn btn-square btn-ghost fill-primary p-2">
+              <button className="btn btn-square btn-ghost fill-primary p-2" onClick={onLinkedInClick}>
                 <LinkedInIcon />
               </button>
             </div>
