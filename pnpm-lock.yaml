@@ -23,6 +23,9 @@ dependencies:
   immer:
     specifier: 10.0.3
     version: 10.0.3
+  jotai:
+    specifier: 2.6.4
+    version: 2.6.4(@types/react@18.2.48)(react@18.2.0)
   jotai-effect:
     specifier: 0.5.0
     version: 0.5.0(jotai@2.6.4)
@@ -157,9 +160,6 @@ devDependencies:
   husky:
     specifier: 9.0.6
     version: 9.0.6
-  jotai:
-    specifier: 2.6.4
-    version: 2.6.4(@types/react@18.2.48)(react@18.2.0)
   move-cli:
     specifier: 2.0.0
     version: 2.0.0
@@ -9458,6 +9458,7 @@ packages:
     dependencies:
       '@types/react': 18.2.48
       react: 18.2.0
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
