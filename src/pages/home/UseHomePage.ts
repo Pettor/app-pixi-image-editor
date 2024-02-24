@@ -1,7 +1,7 @@
 import { useSetAtom } from "jotai";
 import { useNavigate } from "react-router-dom";
 import { useThemeSwitcher } from "~/components/library/theme-controller/UseThemeSwitcher";
-import type { HomeViewProps } from "~/components/views/HomeView";
+import type { HomeViewProps } from "~/components/views/home/HomeView";
 import { droppedFileAtom } from "~/core/routes/atoms/DroppedFileAtoms";
 
 export function useHomePage(): HomeViewProps {

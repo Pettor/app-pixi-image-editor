@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { HomeView as Component } from "./HomeView";
-import type { HomeViewProps as ComponentProps } from "./HomeView";
+import { LoadingView as Component } from "./LoadingView";
+import type { LoadingViewProps as ComponentProps } from "./LoadingView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
@@ -8,17 +8,13 @@ import { MockWindowDecorator } from "~/stories/decorators/MockWindowDecorator";
 
 const meta = {
   component: Component,
-  title: "Views/Home",
+  title: "Views/Loading",
 } satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  themeSwitchProps: {
-    mode: "light",
-    onSwitch: () => console.log("Switched"),
-  },
   onDrop: () => console.log("Dropped"),
 } satisfies ComponentProps;
 
@@ -35,6 +31,7 @@ export const MockBrowser = {
 export const MockPhone = {
   args: commonProps,
   decorators: [MockPhoneDecorator],
+  parameters: { viewport: { defaultViewport: "iphonex" } },
 } satisfies Story;
 
 export const MockWindow = {

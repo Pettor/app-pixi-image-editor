@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { HomePage } from "./HomePage";
-import { ErrorView } from "~/components/views/ErrorView";
+import { ErrorView } from "~/components/views/error/ErrorView";
 
 export function Component(): ReactElement {
   return <HomePage />;

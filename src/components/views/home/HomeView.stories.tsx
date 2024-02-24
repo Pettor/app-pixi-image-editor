@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { EditorView as Component } from "./EditorView";
-import type { EditorViewProps as ComponentProps } from "./EditorView";
-import cardImgUrl from "~/assets/images/card-image.jpg";
+import { HomeView as Component } from "./HomeView";
+import type { HomeViewProps as ComponentProps } from "./HomeView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
@@ -9,23 +8,22 @@ import { MockWindowDecorator } from "~/stories/decorators/MockWindowDecorator";
 
 const meta = {
   component: Component,
-  title: "Views/Editor",
+  title: "Views/Home",
 } satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  url: cardImgUrl,
-  appdrawerProps: {
-    themeSwitchProps: {
-      mode: "light",
-      onSwitch: () => console.log("Switched"),
-    },
-    onNewImage: () => {},
+  socialLinkProps: {
+    onGithubClick: () => console.log("Github"),
+    onLinkedInClick: () => console.log("Linkedin"),
   },
-  ErrorComponent: () => <div>Error</div>,
-  LoaderComponent: () => <div>Loading</div>,
+  themeSwitchProps: {
+    mode: "light",
+    onSwitch: () => console.log("Switched"),
+  },
+  onDrop: () => console.log("Dropped"),
 } satisfies ComponentProps;
 
 export const Fullscreen = {
@@ -41,6 +39,7 @@ export const MockBrowser = {
 export const MockPhone = {
   args: commonProps,
   decorators: [MockPhoneDecorator],
+  parameters: { viewport: { defaultViewport: "iphonex" } },
 } satisfies Story;
 
 export const MockWindow = {

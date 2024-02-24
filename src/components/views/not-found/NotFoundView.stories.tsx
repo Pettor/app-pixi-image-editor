@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { NotFoundView as Component } from "./NotFoundView";
+import { NotFoundView as Component } from "../not-found/NotFoundView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
@@ -23,6 +23,7 @@ export const MockBrowser = {
 
 export const MockPhone = {
   decorators: [MockPhoneDecorator],
+  parameters: { viewport: { defaultViewport: "iphonex" } },
 } satisfies Story;
 
 export const MockWindow = {

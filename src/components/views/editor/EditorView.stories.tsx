@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ErrorView as Component } from "./ErrorView";
-import type { ErrorViewProps as ComponentProps } from "./ErrorView";
+import { EditorView as Component } from "./EditorView";
+import type { EditorViewProps as ComponentProps } from "./EditorView";
+import cardImgUrl from "~/assets/images/card-image.jpg";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";
@@ -8,14 +9,23 @@ import { MockWindowDecorator } from "~/stories/decorators/MockWindowDecorator";
 
 const meta = {
   component: Component,
-  title: "Views/Error",
+  title: "Views/Editor",
 } satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  message: "Something went wrong",
+  url: cardImgUrl,
+  appdrawerProps: {
+    themeSwitchProps: {
+      mode: "light",
+      onSwitch: () => console.log("Switched"),
+    },
+    onNewImage: () => {},
+  },
+  ErrorComponent: () => <div>Error</div>,
+  LoaderComponent: () => <div>Loading</div>,
 } satisfies ComponentProps;
 
 export const Fullscreen = {
@@ -31,6 +41,7 @@ export const MockBrowser = {
 export const MockPhone = {
   args: commonProps,
   decorators: [MockPhoneDecorator],
+  parameters: { viewport: { defaultViewport: "iphonex" } },
 } satisfies Story;
 
 export const MockWindow = {

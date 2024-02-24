@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { BasicLayout } from "../layout/BasicLayout";
+import { BasicLayout } from "../../layout/BasicLayout";
 
 export function NotFoundView(): ReactElement {
   return (
