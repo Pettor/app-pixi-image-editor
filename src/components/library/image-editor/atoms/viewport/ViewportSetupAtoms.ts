@@ -1,18 +1,12 @@
 import { atom } from "jotai";
 import { atomEffect } from "jotai-effect";
 import { fitScreenAtom } from "./FitScreenAtoms";
-import { viewportAtom } from "./ViewportAtoms";
 
 const viewportSetupHasRunAtom = atom(false);
 
 // Effects
 export const viewportSetupAtomEffect = atomEffect((get, set) => {
   if (get(viewportSetupHasRunAtom)) {
-    return;
-  }
-
-  const viewport = get(viewportAtom);
-  if (!viewport) {
     return;
   }
 

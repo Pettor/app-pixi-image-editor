@@ -2,6 +2,13 @@ import { atom } from "jotai";
 
 export const rotationAtom = atom(0);
 
+// Getters
+
+export const isRotatedAtom = atom((get) => {
+  const rotation = get(rotationAtom);
+  return (rotation / (Math.PI / 2)) % 2 !== 0;
+});
+
 // Derived atoms
 export const rotationControlAtom = atom(
   null,
@@ -21,8 +28,3 @@ export const rotationControlAtom = atom(
     }
   }
 );
-
-export const isRotatedAtom = atom((get) => {
-  const rotation = get(rotationAtom);
-  return (rotation / (Math.PI / 2)) % 2 !== 0;
-});
