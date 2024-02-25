@@ -18,7 +18,7 @@ export function ToolbarTools(): ReactElement {
   return (
     <div className="absolute max-md:bottom-0 max-md:left-0 md:top-0 z-10 mr-2 flex w-full justify-center p-4 md:mr-0">
       <div className="glass gap-1 md:gap-2 navbar h-10 min-h-0 w-auto rounded-box border border-neutral bg-base-300 bg-opacity-80 shadow-xl md:h-12 dark:bg-opacity-80 dark:bg-none">
-        <div className="tooltip tooltip-bottom" data-tip={lock ? undefined : "Lock image to center"}>
+        <div className="md:tooltip md:tooltip-bottom" data-tip={lock ? undefined : "Lock image to center"}>
           <button className={clsx("btn btn-square btn-ghost swap btn-sm", lock && "btn-active")} onClick={swapLock}>
             <input type="checkbox" checked={lock} onChange={swapLock} />
             <LockClosedIcon className="swap-on h-6 w-6" />
@@ -26,29 +26,29 @@ export function ToolbarTools(): ReactElement {
           </button>
         </div>
         <div className="divider divider-horizontal w-0 mx-0" />
-        <div className="tooltip tooltip-bottom mt-1" data-tip={showFitScreen ? "Actual size" : "Fit to window"}>
+        <div className="md:tooltip md:tooltip-bottom mt-1" data-tip={showFitScreen ? "Actual size" : "Fit to window"}>
           <button className="btn btn-square btn-ghost swap btn-sm" onClick={adjustZoom}>
             {showFitScreen ? <FullscreenIcon /> : <FitViewIcon />}
           </button>
         </div>
         <div className="divider divider-horizontal w-0 mx-0" />
         <div className="flex gap-1">
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° left">
+          <div className="md:tooltip md:tooltip-bottom mt-1" data-tip="Rotate 90° left">
             <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-left")}>
               <RotateCcwIcon />
             </button>
           </div>
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Rotate 90° right">
+          <div className="md:tooltip md:tooltip-bottom mt-1" data-tip="Rotate 90° right">
             <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => rotate("rotate-right")}>
               <RotateCwIcon />
             </button>
           </div>
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Flip vertical">
+          <div className="md:tooltip md:tooltip-bottom mt-1" data-tip="Flip vertical">
             <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => flip("flip-vertical")}>
               <FlipVerticalIcon />
             </button>
           </div>
-          <div className="tooltip tooltip-bottom mt-1" data-tip="Flip horizontal">
+          <div className="md:tooltip md:tooltip-bottom mt-1" data-tip="Flip horizontal">
             <button className="btn btn-square btn-ghost swap btn-sm" onClick={() => flip("flip-horizontal")}>
               <FlipHorizontalIcon />
             </button>

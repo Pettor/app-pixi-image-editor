@@ -1,27 +1,14 @@
 import type { ReactElement } from "react";
 import { DocumentArrowUpIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
-import { useDropzone } from "react-dropzone";
+import { useDropzone } from "./UseDropzone";
 
 export interface DropzoneProps {
   onDrop: (acceptedFiles: File[]) => void;
 }
 
 export function Dropzone({ onDrop }: DropzoneProps): ReactElement {
-  const { getRootProps, getInputProps, isDragActive, isDragAccept, isDragReject } = useDropzone({
-    onDrop,
-    multiple: false,
-    accept: {
-      "image/*": [".png", ".jpg", ".jpeg", ".gif", ".webp"],
-    },
-  });
-
-  function getBackgroundClass(): string {
-    if (isDragAccept) return "bg-success dark:text-black";
-    if (isDragReject) return "bg-error dark:text-black";
-    if (isDragActive) return "bg-base-300";
-    return "bg-base-200";
-  }
+  const { getRootProps, getInputProps, getBackgroundClass } = useDropzone(onDrop);
 
   return (
     <div className="m-2 flex w-full max-w-screen-sm items-center justify-center md:min-w-96">
