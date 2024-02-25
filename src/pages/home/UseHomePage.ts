@@ -28,7 +28,7 @@ export function useHomePage(): HomeViewProps {
   return {
     socialLinkProps: {
       onGithubClick: () =>
-        window.open("https://github.com/Pettor/component-pixi-image-editor", "_blank", "noopener noreferrer"),
+        window.open("https://github.com/Pettor/app-pixi-image-editor", "_blank", "noopener noreferrer"),
       onLinkedInClick: () =>
         window.open("https://www.linkedin.com/in/petter-hancock/", "_blank", "noopener noreferrer"),
     },
