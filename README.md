@@ -2,13 +2,13 @@
 
 [![GitHub](https://img.shields.io/github/license/fullstackhero/dotnet-webapi-boilerplate?color=2da44e)](https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/master/LICENSE)
 [![Actions Main](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/component-pixi-image-editor/storybook/)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/app-pixi-image-editor/storybook/)
 
 This is a React web application using PixiJS to create a basic image editor. The editor can load an image and contains several different tools and mechanics to view and adjust the content.
 
 ## Demo
 
-To check out a demo of the latest main branch [click here](https://pettor.github.io/component-pixi-image-editor).
+To check out a demo of the latest main branch [click here](https://pettor.github.io/app-pixi-image-editor).
 
 ## Getting Started
 
