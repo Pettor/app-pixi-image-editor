@@ -15,7 +15,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  message: "Something went wrong",
+  onHome: () => console.log("onHome"),
 } satisfies ComponentProps;
 
 export const Fullscreen = {

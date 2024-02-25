@@ -1,12 +1,7 @@
 import type { ReactElement } from "react";
-import { redirect } from "react-router-dom";
 import { NotFoundPage } from "./NotFoundPage";
 import { ErrorView } from "~/components/views/error/ErrorView";
-
-export function loader(): Response {
-  // For now redirect to root
-  return redirect("/");
-}
+import { useErrorView } from "~/components/views/error/UseErrorView";
 
 export function Component(): ReactElement {
   return <NotFoundPage />;
@@ -14,5 +9,6 @@ export function Component(): ReactElement {
 Component.displayName = "NotFoundPage";
 
 export function ErrorBoundary(): ReactElement {
-  return <ErrorView />;
+  const errorViewProps = useErrorView();
+  return <ErrorView {...errorViewProps} />;
 }
