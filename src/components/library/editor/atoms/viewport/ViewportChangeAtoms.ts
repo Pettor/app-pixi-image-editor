@@ -1,19 +1,14 @@
 import { atomEffect } from "jotai-effect";
 import { ZOOM_BASE } from "../../constants/ZoomConstants";
 import { isRotatedAtom } from "../transform/RotationAtoms";
-import { viewportAtom } from "./ViewportAtoms";
+import { getViewportDimensionsAtom } from "./ViewportAtoms";
 import { fitZoomAtom } from "./ZoomAtoms";
 
 // Effects
 export const viewportChangeAtomEffect = atomEffect((get, set) => {
-  const viewport = get(viewportAtom);
-  if (!viewport) {
-    return;
-  }
-
+  const { screenWidth, screenHeight, worldWidth, worldHeight } = get(getViewportDimensionsAtom);
   const isRotated = get(isRotatedAtom);
 
-  const { screenWidth, screenHeight, worldWidth, worldHeight } = viewport;
   const imageWidth = isRotated ? worldHeight : worldWidth;
   const imageHeight = isRotated ? worldWidth : worldHeight;
 

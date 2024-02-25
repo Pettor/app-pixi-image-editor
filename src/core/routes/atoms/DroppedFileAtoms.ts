@@ -1,7 +1,9 @@
 import { atom } from "jotai";
 
 export const droppedFileAtom = atom<File | null>(null);
-export const downloadUrlAtom = atom<string | null>((get) => {
+
+// Getters
+export const getDownloadUrlAtom = atom<string | null>((get) => {
   const file = get(droppedFileAtom);
   if (file === null) {
     return null;

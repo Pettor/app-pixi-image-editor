@@ -1,9 +1,9 @@
 import { useRef, type ReactElement } from "react";
 import { FolderPlusIcon } from "@heroicons/react/24/solid";
 import { useOnClickOutside } from "usehooks-ts";
-import type { ThemeSwitchProps } from "../../theme-controller/ThemeSwitch";
-import { ThemeSwitch } from "../../theme-controller/ThemeSwitch";
-import LogoImageSrc from "~/assets/images/logo/Logo180.png";
+import type { ThemeSwitchProps } from "../../theme/ThemeSwitch";
+import { ThemeSwitch } from "../../theme/ThemeSwitch";
+import LogoImageSrc from "~/assets/images/logo/Logo320.png";
 
 export interface AppDrawerProps {
   open: boolean;

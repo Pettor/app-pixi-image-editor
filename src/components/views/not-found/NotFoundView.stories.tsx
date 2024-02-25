@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { NotFoundView as Component } from "../not-found/NotFoundView";
+import { NotFoundView as Component } from "./NotFoundView";
 import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 import { MockBrowserDecorator } from "~/stories/decorators/MockBrowserDecorator";
 import { MockPhoneDecorator } from "~/stories/decorators/MockPhoneDecorator";

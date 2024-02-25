@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { HomePage } from "./HomePage";
 import { ErrorView } from "~/components/views/error/ErrorView";
+import { useErrorView } from "~/components/views/error/UseErrorView";
 
 export function Component(): ReactElement {
   return <HomePage />;
@@ -8,5 +9,6 @@ export function Component(): ReactElement {
 Component.displayName = "HomePage";
 
 export function ErrorBoundary(): ReactElement {
-  return <ErrorView />;
+  const errorViewProps = useErrorView();
+  return <ErrorView {...errorViewProps} />;
 }

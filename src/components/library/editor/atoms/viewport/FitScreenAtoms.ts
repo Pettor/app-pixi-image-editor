@@ -1,17 +1,11 @@
 import { atom } from "jotai";
-import { viewportAtom } from "./ViewportAtoms";
+import { getViewportAtom, getViewportDimensionsAtom } from "./ViewportAtoms";
 import { fitZoomAtom, zoomControlAtom } from "./ZoomAtoms";
 
 // Derived atoms
 export const fitScreenAtom = atom(null, (get, set) => {
-  const viewport = get(viewportAtom);
-
-  if (!viewport) {
-    console.error("Viewport is not set");
-    return;
-  }
-
-  const { worldWidth, worldHeight } = viewport;
+  const viewport = get(getViewportAtom);
+  const { worldWidth, worldHeight } = get(getViewportDimensionsAtom);
   const defaultZoom = get(fitZoomAtom);
 
   viewport.fit(true);
