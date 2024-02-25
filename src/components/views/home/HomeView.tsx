@@ -5,8 +5,8 @@ import { LinkedInIcon } from "~/components/icons/LinkedInIcon";
 import type { SocialLinkProps } from "~/components/layout/BasicLayout";
 import { BasicLayout } from "~/components/layout/BasicLayout";
 import { Dropzone } from "~/components/library/dropzone/Dropzone";
-import type { ThemeSwitchProps } from "~/components/library/theme-controller/ThemeSwitch";
-import { ThemeSwitch } from "~/components/library/theme-controller/ThemeSwitch";
+import type { ThemeSwitchProps } from "~/components/library/theme/ThemeSwitch";
+import { ThemeSwitch } from "~/components/library/theme/ThemeSwitch";
 
 export interface HomeViewProps {
   themeSwitchProps: ThemeSwitchProps;
