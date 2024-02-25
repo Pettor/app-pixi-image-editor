@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import type { ErrorViewProps } from "./ErrorView";
+import type { NotFoundViewProps } from "./NotFoundView";
 
-export function useErrorView(): ErrorViewProps {
+export function useNotFoundView(): NotFoundViewProps {
   const navigate = useNavigate();
 
   return {

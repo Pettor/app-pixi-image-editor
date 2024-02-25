@@ -3,10 +3,10 @@ import { BasicLayout } from "../../layout/BasicLayout";
 
 export interface ErrorViewProps {
   message?: string;
-  onHome(): void;
+  onBack(): void;
 }
 
-export function ErrorView({ message, onHome }: ErrorViewProps): ReactElement {
+export function ErrorView({ message, onBack }: ErrorViewProps): ReactElement {
   return (
     <BasicLayout>
       <div className="flex flex-col gap-4">
@@ -14,8 +14,7 @@ export function ErrorView({ message, onHome }: ErrorViewProps): ReactElement {
           <h3 className="text-center">Ops! 😅 </h3>
           <strong>{message ?? "Something went wrong! 😱"}</strong>
         </article>
-        {/* <div className="divider divider-vertical w-full h-2" /> */}
-        <button className="btn btn-primary mt-4" onClick={onHome}>
+        <button className="btn btn-primary mt-4" onClick={onBack}>
           Start over 🦖
         </button>
       </div>

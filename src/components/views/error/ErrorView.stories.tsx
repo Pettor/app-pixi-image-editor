@@ -15,7 +15,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const commonProps = {
-  onHome: () => console.log("onHome"),
+  onBack: () => console.log("onHome"),
 } satisfies ComponentProps;
 
 export const Fullscreen = {

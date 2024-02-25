@@ -9,7 +9,7 @@ export function GlobalRoutes(): RouteProps[] {
     },
     {
       path: "/editor",
-      lazy: () => import("~/pages/editor/ImageEditorRoute"),
+      lazy: () => import("~/pages/editor/EditorRoute"),
     },
   ];
 }

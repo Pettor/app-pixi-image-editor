@@ -5,11 +5,11 @@ import { useThemeSwitcher } from "~/components/library/theme/UseThemeSwitcher";
 import { ErrorView } from "~/components/views/error/ErrorView";
 import { LoadingView } from "~/components/views/loading/LoadingView";
 
-export interface ImageEditorPageProps {
+export interface EditorPageProps {
   url: string;
 }
 
-export function ImageEditorPage({ url }: ImageEditorPageProps): ReactElement {
+export function EditorPage({ url }: EditorPageProps): ReactElement {
   const navigate = useNavigate();
   const themeSwitchProps = useThemeSwitcher();
 
@@ -25,7 +25,7 @@ export function ImageEditorPage({ url }: ImageEditorPageProps): ReactElement {
         themeSwitchProps,
       }}
       LoaderComponent={() => <LoadingView />}
-      ErrorComponent={() => <ErrorView />}
+      ErrorComponent={() => <ErrorView onBack={() => console.log("onBack")} />}
     />
   );
 }

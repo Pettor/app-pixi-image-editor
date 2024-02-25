@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import { useAtomValue } from "jotai";
-import { ImageEditorPage } from "./ImageEditorPage";
+import { EditorPage } from "./EditorPage";
 import { ErrorView } from "~/components/views/error/ErrorView";
 import { useErrorView } from "~/components/views/error/UseErrorView";
 import { getDownloadUrlAtom } from "~/core/routes/atoms/DroppedFileAtoms";
@@ -13,9 +13,9 @@ export function Component(): ReactElement {
     return <ErrorView {...errorViewProps} message="File somehow went missing 🤔" />;
   }
 
-  return <ImageEditorPage url={fileUrl} />;
+  return <EditorPage url={fileUrl} />;
 }
-Component.displayName = "ImageEditorPage";
+Component.displayName = "EditorPage";
 
 export function ErrorBoundary(): ReactElement {
   const errorViewProps = useErrorView();
