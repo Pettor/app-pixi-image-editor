@@ -3,7 +3,7 @@ import { FolderPlusIcon } from "@heroicons/react/24/solid";
 import { useOnClickOutside } from "usehooks-ts";
 import type { ThemeSwitchProps } from "../../theme/ThemeSwitch";
 import { ThemeSwitch } from "../../theme/ThemeSwitch";
-import LogoImageSrc from "~/assets/images/logo/Logo180.png";
+import LogoImageSrc from "~/assets/images/logo/Logo320.png";
 
 export interface AppDrawerProps {
   open: boolean;

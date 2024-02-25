@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import LogoImageSrc from "~/assets/images/logo/Logo180.png";
+import LogoImageSrc from "~/assets/images/logo/Logo320.png";
 import { GithubIcon } from "~/components/icons/GithubIcon";
 import { LinkedInIcon } from "~/components/icons/LinkedInIcon";
 import type { SocialLinkProps } from "~/components/layout/BasicLayout";
