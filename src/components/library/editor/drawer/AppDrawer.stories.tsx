@@ -5,7 +5,7 @@ import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 
 const meta = {
   component: Component,
-  title: "Library/Image Editor/Drawer",
+  title: "Library/Editor/Drawer",
 } satisfies Meta<typeof Component>;
 
 export default meta;

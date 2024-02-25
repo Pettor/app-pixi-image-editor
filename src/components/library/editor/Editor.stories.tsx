@@ -7,7 +7,7 @@ import { FullSizeDecorator } from "~/stories/decorators/FullSizeDecorator";
 const meta = {
   component: Component,
   tags: ["autodocs"],
-  title: "Library/Image Editor",
+  title: "Library/Editor",
 } satisfies Meta<typeof Component>;
 
 export default meta;

@@ -8,7 +8,7 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  title: "Library/ThemeSwitch",
+  title: "Library/Theme",
 } satisfies Meta<typeof Component>;
 
 export default meta;
@@ -19,6 +19,6 @@ const commonProps = {
   onSwitch: () => console.log("Switched"),
 } satisfies ComponentProps;
 
-export const Standard = {
+export const Switch = {
   args: commonProps,
 } satisfies Story;

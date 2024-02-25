@@ -16,7 +16,7 @@ export function ToolbarTools(): ReactElement {
   const { adjustZoom, showFitScreen } = useToolbarAdjustZoom();
 
   return (
-    <div className="absolute z-10 mr-2 flex w-full justify-center p-4 md:mr-0">
+    <div className="absolute max-md:bottom-0 max-md:left-0 md:top-0 z-10 mr-2 flex w-full justify-center p-4 md:mr-0">
       <div className="glass gap-1 md:gap-2 navbar h-10 min-h-0 w-auto rounded-box border border-neutral bg-base-300 bg-opacity-80 shadow-xl md:h-12 dark:bg-opacity-80 dark:bg-none">
         <div className="tooltip tooltip-bottom" data-tip={lock ? undefined : "Lock image to center"}>
           <button className={clsx("btn btn-square btn-ghost swap btn-sm", lock && "btn-active")} onClick={swapLock}>
