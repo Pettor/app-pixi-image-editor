@@ -1,11 +1,18 @@
 import { useAtomValue } from "jotai";
-import { blurFilterAtom } from "../atoms/filters/BlurFilterAtom";
+import { controlFilterAtom } from "../atoms/filters/FilterAtoms";
 
 export function useStageFilters(): {
   blur: number;
+  brightness: number;
+  contrast: number;
+  saturation: number;
 } {
-  const blur = useAtomValue(blurFilterAtom);
+  const { blur, brightness, contrast, saturation } = useAtomValue(controlFilterAtom);
+
   return {
     blur,
+    brightness,
+    contrast,
+    saturation,
   };
 }

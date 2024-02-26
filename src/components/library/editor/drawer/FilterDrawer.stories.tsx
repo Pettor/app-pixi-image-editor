@@ -13,9 +13,12 @@ type Story = StoryObj<typeof meta>;
 
 const commonProps = {
   open: true,
-  onClose: () => console.log("onClose"),
   blur: 40,
-  onBlurChange: () => console.log("onBlurChange"),
+  brightness: 1,
+  contrast: 1,
+  saturation: 1,
+  onFilterChange: () => console.log("onFilterChange"),
+  onClose: () => console.log("onClose"),
 } satisfies ComponentProps;
 
 export const Filter = {
