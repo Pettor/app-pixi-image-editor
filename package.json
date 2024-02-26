@@ -5,7 +5,7 @@
   "license": "MIT",
   "packageManager": "pnpm@8.15.1",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "clean": "rimraf dist storybook-static deployment",
     "dev": "vite --open",
     "build": "tsc && vite build",

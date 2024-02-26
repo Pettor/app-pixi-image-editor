@@ -14,12 +14,12 @@ export function StageComponent(): ReactElement {
   const { stageOptions, lock, scale, rotation, isRotated, zoom, minZoom, maxZoom, setZoom } = useStageViewport();
   const { imageUrl, imageWidth, imageHeight } = useStageImage();
   const { registerViewport } = useStageSetup();
-  const { blur } = useStageFilters();
+  const { blur, brightness, contrast, saturation } = useStageFilters();
 
   return (
     <div ref={ref} className="flex-1 overflow-hidden rounded-lg border-4 border-base-100">
       <Stage width={containerWidth} height={containerHeight} options={stageOptions}>
-        <StagedFilters blur={{ blur }}>
+        <StagedFilters blur={{ blur }} adjustement={{ brightness, contrast, saturation }}>
           <StagedViewport
             ref={registerViewport}
             worldWidth={imageWidth}
