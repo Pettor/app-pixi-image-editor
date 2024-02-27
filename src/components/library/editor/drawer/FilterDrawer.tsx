@@ -54,10 +54,10 @@ export function FilterDrawer({
           </div>
           <div className="divider divider-vertical h-1/2" />
           <li className="flex gap-2">
-            <span className="menu-title text-base font-bold my-2 flex flex-row gap-2">
+            <button className="text-base font-bold my-2" onClick={() => onFilterChange({ brightness: 1 })}>
               <SunHighIcon />
               Brightness
-            </span>
+            </button>
             <input
               type="range"
               min="0"
@@ -65,13 +65,12 @@ export function FilterDrawer({
               step="0.1"
               value={brightness}
               onChange={(e) => onFilterChange({ brightness: Number(e.target.value) })}
-              onDoubleClick={() => onFilterChange({ brightness: 1 })}
               className="range range-primary"
             />
-            <span className="menu-title text-base font-bold flex flex-row gap-2">
+            <button className="text-base font-bold" onClick={() => onFilterChange({ contrast: 1 })}>
               <ContrastIcon />
               Contrast
-            </span>
+            </button>
             <input
               type="range"
               min="0"
@@ -81,10 +80,10 @@ export function FilterDrawer({
               onChange={(e) => onFilterChange({ contrast: Number(e.target.value) })}
               className="range range-secondary"
             />
-            <span className="menu-title text-base font-bold flex flex-row gap-2">
+            <button className="text-base font-bold" onClick={() => onFilterChange({ saturation: 1 })}>
               <DropletIcon />
               Saturation
-            </span>
+            </button>
             <input
               type="range"
               min="0"
@@ -97,7 +96,9 @@ export function FilterDrawer({
           </li>
           <li className="divider divider-vertical h-1/2 mt-8" />
           <li className="flex gap-4">
-            <span className="menu-title text-base font-bold flex flex-row gap-2">RGB</span>
+            <button className="text-base font-bold" onClick={() => onFilterChange({ red: 1, green: 1, blue: 1 })}>
+              RGB
+            </button>
             <input
               type="range"
               min="0"
@@ -128,10 +129,10 @@ export function FilterDrawer({
           </li>
           <li className="divider divider-vertical h-1/2 mt-8" />
           <li className="flex gap-2">
-            <span className="menu-title text-base font-bold flex flex-row gap-2">
+            <button className="text-base font-bold" onClick={() => onFilterChange({ blur: 0 })}>
               <BlurIcon />
               Blur
-            </span>
+            </button>
             <input
               type="range"
               min="0"
@@ -141,10 +142,10 @@ export function FilterDrawer({
               onChange={(e) => onFilterChange({ blur: Number(e.target.value) })}
               className="range range-warning"
             />
-            <span className="menu-title text-base font-bold flex flex-row gap-2">
+            <button className="text-base font-bold" onClick={() => onFilterChange({ pixelate: 0 })}>
               <PixelateIcon />
               Pixelate
-            </span>
+            </button>
             <input
               type="range"
               min="0"

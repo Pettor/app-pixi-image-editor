@@ -17,12 +17,6 @@ dependencies:
   '@pixi/filter-pixelate':
     specifier: 5.1.1
     version: 5.1.1(@pixi/core@7.4.0)
-  '@pixi/filter-tilt-shift':
-    specifier: 5.2.0
-    version: 5.2.0(@pixi/core@7.4.0)
-  '@pixi/filter-twist':
-    specifier: 5.1.1
-    version: 5.1.1(@pixi/core@7.4.0)
   '@pixi/react':
     specifier: 7.1.1
     version: 7.1.1(@babel/runtime@7.23.9)(@pixi/app@7.4.0)(@pixi/constants@7.4.0)(@pixi/core@7.4.0)(@pixi/display@7.4.0)(@pixi/extensions@7.4.0)(@pixi/graphics@7.4.0)(@pixi/math@7.4.0)(@pixi/mesh-extras@7.4.0)(@pixi/mesh@7.4.0)(@pixi/particle-container@7.4.0)(@pixi/sprite-animated@7.4.0)(@pixi/sprite-tiling@7.4.0)(@pixi/sprite@7.4.0)(@pixi/text-bitmap@7.4.0)(@pixi/text@7.4.0)(@pixi/ticker@7.4.0)(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -2902,22 +2896,6 @@ packages:
 
   /@pixi/filter-pixelate@5.1.1(@pixi/core@7.4.0):
     resolution: {integrity: sha512-qTs0Sv10aIbMFW//BPlhcFh1ByyKiVmvXfytYTTXNLrlK5DU3H3x8Pgy5Vy4lacS9VtOO69/CQ1QObBFCHnEBQ==}
-    peerDependencies:
-      '@pixi/core': ^7.0.0-X
-    dependencies:
-      '@pixi/core': 7.4.0
-    dev: false
-
-  /@pixi/filter-tilt-shift@5.2.0(@pixi/core@7.4.0):
-    resolution: {integrity: sha512-bCQE/BTGsqu8EhRMyiGg+9/FXsPBYxjfODbGTWWQNsXtbFVqZXvg1vEjUZQXvuso1v/Fh/BtZ3u+t2kFfWpBXA==}
-    peerDependencies:
-      '@pixi/core': ^7.0.0-X
-    dependencies:
-      '@pixi/core': 7.4.0
-    dev: false
-
-  /@pixi/filter-twist@5.1.1(@pixi/core@7.4.0):
-    resolution: {integrity: sha512-ZUxLmSHu7ZcP1OYmO9EsKgWDV/Ophf622N7YVei4opBrj/gBMuQZNvFIfnsm4l8yhqAwwzndSTVLNehq1A2ONw==}
     peerDependencies:
       '@pixi/core': ^7.0.0-X
     dependencies:
