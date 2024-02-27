@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
 import LogoImageSrc from "~/assets/images/logo/Logo320.png";
-import { GithubIcon } from "~/components/icons/GithubIcon";
-import { LinkedInIcon } from "~/components/icons/LinkedInIcon";
+import { GithubIcon } from "~/components/icons/social/GithubIcon";
+import { LinkedInIcon } from "~/components/icons/social/LinkedInIcon";
 import type { SocialLinkProps } from "~/components/layout/BasicLayout";
 import { BasicLayout } from "~/components/layout/BasicLayout";
 import { Dropzone } from "~/components/library/dropzone/Dropzone";

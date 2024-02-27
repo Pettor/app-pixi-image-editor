@@ -6,13 +6,14 @@ export function useStageFilters(): {
   brightness: number;
   contrast: number;
   saturation: number;
+  pixelate: number;
+  red: number;
+  green: number;
+  blue: number;
 } {
-  const { blur, brightness, contrast, saturation } = useAtomValue(controlFilterAtom);
+  const filters = useAtomValue(controlFilterAtom);
 
   return {
-    blur,
-    brightness,
-    contrast,
-    saturation,
+    ...filters,
   };
 }
