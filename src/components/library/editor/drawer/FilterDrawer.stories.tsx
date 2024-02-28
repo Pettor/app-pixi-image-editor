@@ -17,6 +17,10 @@ const commonProps = {
   brightness: 1,
   contrast: 1,
   saturation: 1,
+  pixelate: 0,
+  red: 0,
+  green: 0,
+  blue: 0,
   onFilterChange: () => console.log("onFilterChange"),
   onClose: () => console.log("onClose"),
 } satisfies ComponentProps;

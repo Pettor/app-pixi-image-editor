@@ -1,7 +1,7 @@
 import type { ReactElement, ReactNode } from "react";
 import clsx from "clsx";
-import { GithubIcon } from "~/components/icons/GithubIcon";
-import { LinkedInIcon } from "~/components/icons/LinkedInIcon";
+import { GithubIcon } from "~/components/icons/social/GithubIcon";
+import { LinkedInIcon } from "~/components/icons/social/LinkedInIcon";
 
 export interface SocialLinkProps {
   onGithubClick?: () => void;

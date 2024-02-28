@@ -3,13 +3,13 @@ import { LockOpenIcon, LockClosedIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
 import { useToolbarAdjustZoom } from "./UseToolbarAdjustZoom";
 import { useToolbarTools } from "./UseToolbarTools";
-import { FitViewIcon } from "~/components/icons/FitViewIcon";
-import { FlipHorizontalIcon } from "~/components/icons/FlipHorizontalIcon";
-import { FlipVerticalIcon } from "~/components/icons/FlipVerticalIcon";
-import { FullscreenIcon } from "~/components/icons/FullscreenIcon";
-import { RotateCcwIcon } from "~/components/icons/RotateCcwIcon";
-import { RotateCwIcon } from "~/components/icons/RotateCwIcon";
-import { SparklesIcon } from "~/components/icons/SparklesIcon";
+import { SparklesIcon } from "~/components/icons/filters/SparklesIcon";
+import { FitViewIcon } from "~/components/icons/tools/FitViewIcon";
+import { FlipHorizontalIcon } from "~/components/icons/tools/FlipHorizontalIcon";
+import { FlipVerticalIcon } from "~/components/icons/tools/FlipVerticalIcon";
+import { FullscreenIcon } from "~/components/icons/tools/FullscreenIcon";
+import { RotateCcwIcon } from "~/components/icons/tools/RotateCcwIcon";
+import { RotateCwIcon } from "~/components/icons/tools/RotateCwIcon";
 
 export function ToolbarTools(): ReactElement {
   const { lock, swapLock, rotate, flip, toggleFilterMenu } = useToolbarTools();

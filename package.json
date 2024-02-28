@@ -29,6 +29,7 @@
     "@fontsource/rubik": "5.0.18",
     "@heroicons/react": "2.1.1",
     "@pixi/filter-adjustment": "5.1.1",
+    "@pixi/filter-pixelate": "5.1.1",
     "@pixi/react": "7.1.1",
     "clsx": "2.1.0",
     "immer": "10.0.3",
