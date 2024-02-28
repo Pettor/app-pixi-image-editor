@@ -19,6 +19,7 @@ const commonProps = {
   },
   onClose: () => {},
   onNewImage: () => {},
+  onSaveImage: () => {},
 } satisfies ComponentProps;
 
 export const App = {

@@ -1,5 +1,5 @@
 import { useRef, type ReactElement } from "react";
-import { FolderPlusIcon } from "@heroicons/react/24/solid";
+import { FolderPlusIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 import { useOnClickOutside } from "usehooks-ts";
 import type { ThemeSwitchProps } from "../../theme/ThemeSwitch";
 import { ThemeSwitch } from "../../theme/ThemeSwitch";
@@ -10,9 +10,10 @@ export interface AppDrawerProps {
   themeSwitchProps: ThemeSwitchProps;
   onClose: () => void;
   onNewImage: () => void;
+  onSaveImage: () => void;
 }
 
-export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage }: AppDrawerProps): ReactElement {
+export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage, onSaveImage }: AppDrawerProps): ReactElement {
   const menuRef = useRef<HTMLUListElement>(null);
   useOnClickOutside(menuRef, onClose);
 
@@ -33,6 +34,12 @@ export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage }: AppDr
             <a>
               <FolderPlusIcon className="h-6 w-6" />
               New Image
+            </a>
+          </li>
+          <li className="mt-4" onClick={onSaveImage}>
+            <a>
+              <ArrowDownTrayIcon className="h-6 w-6" />
+              Save Image
             </a>
           </li>
           <div className="flex flex-1" />

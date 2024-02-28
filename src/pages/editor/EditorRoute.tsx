@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { useAtomValue } from "jotai";
+import { EditorContext } from "./EditorContext";
 import { EditorPage } from "./EditorPage";
 import { ErrorView } from "~/components/views/error/ErrorView";
 import { useErrorView } from "~/components/views/error/UseErrorView";
@@ -13,7 +14,11 @@ export function Component(): ReactElement {
     return <ErrorView {...errorViewProps} message="File somehow went missing 🤔" />;
   }
 
-  return <EditorPage url={fileUrl} />;
+  return (
+    <EditorContext>
+      <EditorPage url={fileUrl} />
+    </EditorContext>
+  );
 }
 Component.displayName = "EditorPage";
 
