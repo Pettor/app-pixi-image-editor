@@ -28,7 +28,7 @@ export const ViewportComponent = PixiComponent<ViewportComponentProps, ViewportE
     const { app, ...viewportProps } = props;
     const { worldWidth, worldHeight, onZoomed, maxZoom, minZoom } = viewportProps;
 
-    const viewport = new ViewportExtended({
+    const viewport = new ViewportExtended(app, {
       ticker: ticker,
       events: app.renderer.events,
       ...viewportProps,

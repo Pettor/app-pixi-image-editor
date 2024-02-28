@@ -21,6 +21,7 @@ const commonProps = {
       onSwitch: () => console.log("Switched"),
     },
     onNewImage: () => {},
+    onSaveImage: () => {},
   },
   ErrorComponent: () => <div>Error</div>,
   LoaderComponent: () => <div>Loading</div>,

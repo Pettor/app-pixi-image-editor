@@ -19,23 +19,23 @@ export function StageComponent(): ReactElement {
   return (
     <div ref={ref} className="flex-1 overflow-hidden rounded-lg border-4 border-base-100">
       <Stage width={containerWidth} height={containerHeight} options={stageOptions}>
-        <StagedFilters
-          blur={{ blur }}
-          adjustement={{ brightness, contrast, saturation, red, green, blue }}
-          pixelate={{ enabled: pixelate > 0, size: pixelate }}
+        <StagedViewport
+          ref={registerViewport}
+          worldWidth={imageWidth}
+          worldHeight={imageHeight}
+          screenWidth={containerWidth}
+          screenHeight={containerHeight}
+          lock={lock}
+          zoom={zoom}
+          maxZoom={maxZoom}
+          minZoom={minZoom}
+          onZoomed={setZoom}
+          rotated={isRotated}
         >
-          <StagedViewport
-            ref={registerViewport}
-            worldWidth={imageWidth}
-            worldHeight={imageHeight}
-            screenWidth={containerWidth}
-            screenHeight={containerHeight}
-            lock={lock}
-            zoom={zoom}
-            maxZoom={maxZoom}
-            minZoom={minZoom}
-            onZoomed={setZoom}
-            rotated={isRotated}
+          <StagedFilters
+            blur={{ blur }}
+            adjustement={{ brightness, contrast, saturation, red, green, blue }}
+            pixelate={{ enabled: pixelate > 0, size: pixelate }}
           >
             <StagedImage
               imageUrl={imageUrl}
@@ -44,8 +44,8 @@ export function StageComponent(): ReactElement {
               scale={scale}
               rotation={rotation}
             />
-          </StagedViewport>
-        </StagedFilters>
+          </StagedFilters>
+        </StagedViewport>
       </Stage>
     </div>
   );
