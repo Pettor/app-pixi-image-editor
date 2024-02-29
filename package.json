@@ -41,7 +41,9 @@
     "react-dom": "18.2.0",
     "react-dropzone": "14.2.3",
     "react-intl": "6.6.2",
-    "react-router-dom": "6.22.0"
+    "react-router-dom": "6.22.0",
+    "vite-plugin-pwa": "0.19.1",
+    "workbox-window": "7.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "18.6.0",
