@@ -11,10 +11,10 @@ export function PwaProvider({ children }: Props): ReactElement {
   const { needRefresh, offlineReady, handleOfflineClose, handleRefresh } = usePwaProvider();
 
   return (
-    <div className="z-20">
+    <>
       <PwaUpdateDialog open={needRefresh} onUpdate={handleRefresh} />
       <PwaOfflineDialog open={offlineReady} onClose={handleOfflineClose} />
       {children}
-    </div>
+    </>
   );
 }

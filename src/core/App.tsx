@@ -7,10 +7,10 @@ export function App(): ReactElement {
   useDocumentTitle("Pixi Image Editor");
 
   return (
-    <AppProviders>
-      <div className="flex h-svh w-svw">
+    <div className="flex h-svh w-svw">
+      <AppProviders>
         <AppRoutes />
-      </div>
-    </AppProviders>
+      </AppProviders>
+    </div>
   );
 }
