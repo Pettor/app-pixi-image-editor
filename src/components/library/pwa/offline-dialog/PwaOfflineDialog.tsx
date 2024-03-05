@@ -10,7 +10,7 @@ export function PwaOfflineDialog({ open, onClose }: PwaOfflineDialogProps): Reac
   return (
     <>
       {open && (
-        <div className="toast z-20">
+        <div className="toast z-50">
           <div className="alert alert-info shadow-lg">
             <span>Ready to work offline</span>
             <button className="btn btn-square btn-ghost btn-sm" onClick={onClose}>
