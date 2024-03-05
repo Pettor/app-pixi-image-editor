@@ -1,0 +1,3 @@
+import{D as s}from"./Dropzone-5gJpm-St.js";import"./jsx-runtime-5BUNAZ9W.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./clsx-Zbgk8kpT.js";import"./index-tvtfaFq4.js";const u={component:s,parameters:{layout:"centered"},tags:["autodocs"],title:"Library/Dropzone"},m={onDrop:e=>console.log(e)},o={args:m};var r,t,a;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: commonProps
+} satisfies Story`,...(a=(t=o.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const g=["Standard"];export{o as Standard,g as __namedExportsOrder,u as default};

@@ -1,0 +1,5 @@
+import{j as e,F as l,a as c}from"./jsx-runtime-5BUNAZ9W.js";import{X as d}from"./XMarkIcon-O8nD9AeD.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";function r({open:o,onClose:i}){return e(l,{children:o&&e("div",{className:"toast z-50",children:c("div",{className:"alert alert-info shadow-lg",children:[e("span",{children:"Ready to work offline"}),e("button",{className:"btn btn-square btn-ghost btn-sm",onClick:i,children:e(d,{})})]})})})}try{r.displayName="PwaOfflineDialog",r.__docgenInfo={description:"",displayName:"PwaOfflineDialog",props:{open:{defaultValue:null,description:"",name:"open",required:!0,type:{name:"boolean"}},onClose:{defaultValue:null,description:"",name:"onClose",required:!0,type:{name:"() => void"}}}}}catch{}const g={component:r,title:"Library/Pwa"},a={args:{open:!0}};var n,t,s;a.parameters={...a.parameters,docs:{...(n=a.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  args: {
+    open: true
+  }
+} satisfies Story`,...(s=(t=a.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const _=["OfflineDialog"];export{a as OfflineDialog,_ as __namedExportsOrder,g as default};

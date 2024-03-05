@@ -1,0 +1,3 @@
+import{T as s}from"./ThemeSwitch-nkAPJMzx.js";import"./jsx-runtime-5BUNAZ9W.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";const p={component:s,parameters:{layout:"centered"},tags:["autodocs"],title:"Library/Theme"},a={mode:"light",onSwitch:()=>console.log("Switched")},o={args:a};var t,e,r;o.parameters={...o.parameters,docs:{...(t=o.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: commonProps
+} satisfies Story`,...(r=(e=o.parameters)==null?void 0:e.docs)==null?void 0:r.source}}};const d=["Switch"];export{o as Switch,d as __namedExportsOrder,p as default};

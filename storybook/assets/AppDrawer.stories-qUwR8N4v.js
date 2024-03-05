@@ -1,0 +1,4 @@
+import{A as s}from"./AppDrawer-_bMC5P3c.js";import{F as a}from"./FullSizeDecorator-iRenWh6T.js";import"./jsx-runtime-5BUNAZ9W.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./ThemeSwitch-nkAPJMzx.js";import"./Logo320-SruUjmkH.js";import"./useOnClickOutside-PpctMmkJ.js";const u={component:s,title:"Library/Editor/Drawer"},m={open:!0,themeSwitchProps:{mode:"light",onSwitch:()=>console.log("Switched")},onClose:()=>{},onNewImage:()=>{},onSaveImage:()=>{}},o={args:m,decorators:[a]};var r,e,t;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: commonProps,
+  decorators: [FullSizeDecorator]
+} satisfies Story`,...(t=(e=o.parameters)==null?void 0:e.docs)==null?void 0:t.source}}};const w=["App"];export{o as App,w as __namedExportsOrder,u as default};

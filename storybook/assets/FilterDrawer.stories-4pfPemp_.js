@@ -1,0 +1,4 @@
+import{F as s}from"./FilterDrawer-wi5G2SWr.js";import{F as a}from"./FullSizeDecorator-iRenWh6T.js";import"./jsx-runtime-5BUNAZ9W.js";import"./index-4g5l5LRQ.js";import"./_commonjsHelpers-4gQjN7DL.js";import"./XMarkIcon-O8nD9AeD.js";import"./useOnClickOutside-PpctMmkJ.js";const g={component:s,title:"Library/Editor/Drawer"},n={open:!0,blur:40,brightness:1,contrast:1,saturation:1,pixelate:0,red:0,green:0,blue:0,onFilterChange:()=>console.log("onFilterChange"),onClose:()=>console.log("onClose")},r={args:n,decorators:[a]};var o,e,t;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: commonProps,
+  decorators: [FullSizeDecorator]
+} satisfies Story`,...(t=(e=r.parameters)==null?void 0:e.docs)==null?void 0:t.source}}};const F=["Filter"];export{r as Filter,F as __namedExportsOrder,g as default};
