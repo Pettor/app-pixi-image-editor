@@ -31,7 +31,7 @@ export function BasicLayout({
         </main>
       </div>
       {footer && (
-        <footer className="footer footer-center gap-y-2 bg-base-300 lg:p-4 text-base-content py-2">
+        <footer className="footer footer-center gap-y-2 bg-base-300 py-2 text-base-content lg:p-4">
           <aside className="lg:mt-2">
             <p className="text-base font-bold">Made with ☕ by Petter Hancock</p>
             <p>Copyright © 2024 - All right reserved</p>

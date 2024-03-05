@@ -43,18 +43,18 @@ export function FilterDrawer({
       <input id="app-drawer" readOnly type="checkbox" checked={open} className="drawer-toggle" />
       <div className="drawer-side overflow-hidden">
         <label htmlFor="app-drawer" aria-label="close sidebar" />
-        <ul className="menu flex flex-col flex-wrap bg-neutral-content dark:bg-neutral shadow-xl min-h-full w-60 p-4 text-base text-base-content md:w-96">
+        <ul className="menu flex min-h-full w-60 flex-col flex-wrap bg-neutral-content p-4 text-base text-base-content shadow-xl dark:bg-neutral md:w-96">
           <div className="flex flex-row">
             <span className="flex flex-1 p-4 text-2xl font-bold">Filters</span>
-            <div className="flex items-center flex-row">
-              <button className="btn btn-circle btn-sm btn-ghost" onClick={onClose}>
+            <div className="flex flex-row items-center">
+              <button className="btn btn-circle btn-ghost btn-sm" onClick={onClose}>
                 <XMarkIcon />
               </button>
             </div>
           </div>
           <div className="divider divider-vertical h-1/2" />
           <li className="flex gap-2">
-            <button className="text-base font-bold my-2" onClick={() => onFilterChange({ brightness: 1 })}>
+            <button className="my-2 text-base font-bold" onClick={() => onFilterChange({ brightness: 1 })}>
               <SunHighIcon />
               Brightness
             </button>
@@ -94,7 +94,7 @@ export function FilterDrawer({
               className="range range-accent"
             />
           </li>
-          <li className="divider divider-vertical h-1/2 mt-8" />
+          <li className="divider divider-vertical mt-8 h-1/2" />
           <li className="flex gap-4">
             <button className="text-base font-bold" onClick={() => onFilterChange({ red: 1, green: 1, blue: 1 })}>
               RGB
@@ -127,7 +127,7 @@ export function FilterDrawer({
               className="range range-info"
             />
           </li>
-          <li className="divider divider-vertical h-1/2 mt-8" />
+          <li className="divider divider-vertical mt-8 h-1/2" />
           <li className="flex gap-2">
             <button className="text-base font-bold" onClick={() => onFilterChange({ blur: 0 })}>
               <BlurIcon />

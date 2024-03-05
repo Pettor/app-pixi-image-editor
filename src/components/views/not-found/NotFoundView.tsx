@@ -8,8 +8,8 @@ export interface NotFoundViewProps {
 export function NotFoundView({ onBack }: NotFoundViewProps): ReactElement {
   return (
     <BasicLayout container>
-      <div className="flex flex-col gap-4 items-center">
-        <article className="prose lg:prose-xl p-4 text-pretty max-w-64 lg:max-w-full">
+      <div className="flex flex-col items-center gap-4">
+        <article className="prose max-w-64 text-pretty p-4 lg:prose-xl lg:max-w-full">
           <strong>{"Could not find the page you were looking for! 🕵️"}</strong>
         </article>
         <button className="btn btn-primary mt-4 w-48" onClick={onBack}>
