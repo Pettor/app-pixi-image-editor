@@ -24,10 +24,10 @@ export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage, onSaveI
         <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" />
         <ul
           ref={menuRef}
-          className="menu shadow-xl min-h-full w-60 bg-base-100 p-4 text-base text-base-content md:w-80"
+          className="menu min-h-full w-60 bg-base-100 p-4 text-base text-base-content shadow-xl md:w-80"
         >
           <div className="flex items-center">
-            <img className="w-10 h-10" src={LogoImageSrc} alt="Pixi Image Editor Logo" />
+            <img className="h-10 w-10" src={LogoImageSrc} alt="Pixi Image Editor Logo" />
             <span className="flex flex-1 p-4 text-xl font-bold">Pixi Image Editor</span>
           </div>
           <li className="mt-4" onClick={onNewImage}>
@@ -43,7 +43,7 @@ export function AppDrawer({ open, themeSwitchProps, onClose, onNewImage, onSaveI
             </a>
           </li>
           <div className="flex flex-1" />
-          <div className="flex items-center flex-row justify-end">
+          <div className="flex flex-row items-center justify-end">
             <ThemeSwitch {...themeSwitchProps} />
           </div>
         </ul>

@@ -9,10 +9,10 @@ export function PwaUpdateDialog({ open, onUpdate }: PwaUpdateDialogProps): React
   return (
     <>
       {open && (
-        <div className="toast toast-bottom toast-center">
+        <div className="toast toast-center toast-bottom">
           <div className="alert alert-info">
             <div className="flex rounded-md">
-              <div className="flex flex-1 flex-row gap-4 items-center">
+              <div className="flex flex-1 flex-row items-center gap-4">
                 <div>A new version is available</div>
                 <button className="btn btn-accent" onClick={onUpdate}>
                   Update
