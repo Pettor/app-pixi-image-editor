@@ -12,9 +12,16 @@ export default defineConfig(() => {
       tsconfigPaths(),
       VitePWA({
         devOptions: {
-          enabled: true,
+          enabled: false,
         },
-        includeAssets: ["favicon.ico", "apple-touch-icon.png"],
+        includeAssets: [
+          "favicon.ico",
+          "apple-touch-icon.png",
+          "pwa-192x192.png",
+          "pwa-512x512.png",
+          "screenshot-mobile.png",
+          "screenshot-desktop.png",
+        ],
         injectRegister: "auto",
         manifest: {
           name: "Pixi Image Editor",
