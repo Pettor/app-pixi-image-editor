@@ -11,7 +11,7 @@ export function PwaOfflineDialog({ open, onClose }: PwaOfflineDialogProps): Reac
     <>
       {open && (
         <div className="toast">
-          <div className="alert alert-info">
+          <div className="alert alert-info shadow-lg">
             <span>Ready to work offline</span>
             <button className="btn btn-square btn-ghost btn-sm" onClick={onClose}>
               <XMarkIcon />
