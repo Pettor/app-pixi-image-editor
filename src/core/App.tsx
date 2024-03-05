@@ -4,7 +4,7 @@ import { AppProviders } from "./AppProviders";
 import { AppRoutes } from "./routes/AppRoutes";
 
 export function App(): ReactElement {
-  useDocumentTitle("Image Editor");
+  useDocumentTitle("Pixi Image Editor");
 
   return (
     <AppProviders>

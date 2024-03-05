@@ -32,6 +32,7 @@ export function usePwaProvider(): {
 
   async function handleRefresh(): Promise<void> {
     await updateServiceWorker(true);
+    window.location.reload();
   }
 
   function handleOfflineClose(): void {
