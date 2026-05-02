@@ -22,6 +22,7 @@ export default defineConfig({
         "**/src/**/*.d.ts",
         "**/src/**/index.ts",
         "**/{storybook,Storybook}/**/*.{ts,tsx}",
+        "**/apps/web/src/views/**",
       ],
       reporter: ["cobertura"],
     },
