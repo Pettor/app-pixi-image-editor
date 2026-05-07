@@ -1,23 +1,22 @@
-import { defineConfig, minimalPreset } from "@vite-pwa/assets-generator/config";
+import { defineConfig } from "@vite-pwa/assets-generator/config";
 
 export default defineConfig({
   preset: {
-    ...minimalPreset,
+    transparent: {
+      sizes: [192, 512],
+      favicons: [
+        [16, "favicon-16x16.png"],
+        [32, "favicon-32x32.png"],
+        [48, "favicon.ico"],
+        [180, "apple-touch-icon.png"],
+      ],
+    },
     maskable: {
-      sizes: [512],
-      resizeOptions: {
-        background: "#c952a8",
-      },
-      padding: 0.1,
+      sizes: [],
     },
     apple: {
-      sizes: [180],
-      resizeOptions: {
-        background: "#c952a8",
-      },
-      padding: 0.1,
+      sizes: [],
     },
   },
-  images: ["public/logo.svg"],
-  overrideAssets: true,
+  images: ["src/assets/logo/template-512x512.svg"],
 });

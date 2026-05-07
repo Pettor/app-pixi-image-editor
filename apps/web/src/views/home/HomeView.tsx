@@ -4,7 +4,7 @@ import type { SocialLinkProps } from "@package/ui";
 import { FullscreenLayout } from "@package/ui";
 import { useIntl } from "react-intl";
 import { HomePageHeader } from "./HomePageHeader";
-import LogoImageSrc from "~/assets/images/logo/logo.svg";
+import LogoImageSrc from "~/assets/logo/template-512x512.svg";
 import type { ThemeSwitchProps } from "~/components/actions/theme-switch/ThemeSwitch";
 import { Dropzone } from "~/components/input/dropzone/Dropzone";
 
