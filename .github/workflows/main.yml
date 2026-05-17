@@ -31,7 +31,7 @@ jobs:
           node-version: "24"
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v6.0.1
+        uses: pnpm/action-setup@v6.0.8
         id: pnpm-install
         with:
           run_install: false
