@@ -50,7 +50,7 @@ catalogs:
     react-dropzone: 14.2.3
     react-intl: 10.1.2
     rimraf: 6.1.3
-    workbox-window: 7.4.0
+    workbox-window: 7.4.1
   design:
     '@fontsource/rubik': 5.2.8
     '@heroicons/react': 2.2.0
