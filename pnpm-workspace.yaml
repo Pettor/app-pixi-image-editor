@@ -111,7 +111,7 @@ catalogs:
     '@vitejs/plugin-basic-ssl': 2.3.0
     '@vitejs/plugin-react': 6.0.2
     '@vite-pwa/assets-generator': 1.0.2
-    vite: 8.0.8
+    vite: 8.0.13
     vite-plugin-http2-proxy: 0.5.1
     vite-plugin-pwa: 1.2.0
   tanstack:
