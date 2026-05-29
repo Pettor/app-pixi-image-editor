@@ -52,7 +52,7 @@
     "rimraf": "catalog:common",
     "sherif": "1.11.1",
     "tsup": "8.5.1",
-    "turbo": "2.9.12"
+    "turbo": "2.9.14"
   },
   "pnpm": {
     "onlyBuiltDependencies": ["sharp"]
