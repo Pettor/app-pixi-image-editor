@@ -1,7 +1,7 @@
 {
-  "name": "template-web-app-react-enterprise",
+  "name": "app-pixi-image-editor",
   "version": "0.5.0",
-  "description": "A template for building enterprise-grade web applications using React, TypeScript, and modern tooling.",
+  "description": "An image editor built with PixiJS and React, designed for web applications",
   "license": "MIT",
   "private": true,
   "type": "module",
