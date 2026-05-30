@@ -115,7 +115,7 @@ catalogs:
     vite-plugin-http2-proxy: 0.5.1
     vite-plugin-pwa: 1.2.0
   tanstack:
-    '@tanstack/react-form': 1.32.0
+    '@tanstack/react-form': 1.33.0
     '@tanstack/react-query': 5.99.2
     '@tanstack/react-router': 1.168.23
     '@tanstack/router-plugin': 1.167.22
