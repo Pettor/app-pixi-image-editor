@@ -42,7 +42,7 @@ catalogs:
     '@formatjs/cli': 6.14.2
     clsx: 2.1.1
     cross-env: 10.1.0
-    framer-motion: 12.38.0
+    framer-motion: 12.40.0
     immer: 11.1.8
     jotai: 2.19.1
     jotai-effect: 2.2.3
