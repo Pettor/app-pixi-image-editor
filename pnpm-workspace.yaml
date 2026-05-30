@@ -104,7 +104,7 @@ catalogs:
   typescript:
     typescript: 6.0.3
   validation:
-    '@hookform/resolvers': 5.2.2
+    '@hookform/resolvers': 5.4.0
     zod: 4.3.6
   vite:
     '@rolldown/plugin-babel': 0.2.3
