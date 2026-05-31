@@ -121,7 +121,7 @@ catalogs:
     '@tanstack/router-plugin': 1.168.13
   coverage:
     nyc: 18.0.0
-    vite-plugin-istanbul: 8.0.0
+    vite-plugin-istanbul: 9.0.1
   vitest:
     vitest: 4.1.7
     '@vitest/browser': 4.1.7
