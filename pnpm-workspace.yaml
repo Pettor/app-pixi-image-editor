@@ -97,10 +97,10 @@ catalogs:
     '@storybook/react-vite': 10.4.1
     storybook: 10.4.1
   tailwind:
-    tailwindcss: 4.2.2
+    tailwindcss: 4.3.0
     '@tailwindcss/aspect-ratio': 0.4.2
     '@tailwindcss/typography': 0.5.19
-    '@tailwindcss/vite': 4.2.2
+    '@tailwindcss/vite': 4.3.0
   typescript:
     typescript: 6.0.3
   validation:
