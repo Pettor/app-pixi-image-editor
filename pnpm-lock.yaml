@@ -241,7 +241,7 @@ overrides:
   rollup@4: ^4.59.0
   send: ^1.0.0
   serialize-javascript: ^7.0.5
-  serve-static: ^1.16.0
+  serve-static: ^2.0.0
   tmp: ^0.2.4
   yaml@1: ^1.10.3
   yaml@2: ^2.8.3
