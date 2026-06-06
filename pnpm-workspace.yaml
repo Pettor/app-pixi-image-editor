@@ -60,7 +60,7 @@ catalogs:
     '@pixi/react': 8.0.5
     pixi-filters: 6.1.5
     pixi-viewport: 6.0.3
-    pixi.js: 8.18.1
+    pixi.js: 8.19.0
   eslint:
     '@eslint/js': 10.0.1
     eslint: 10.4.1

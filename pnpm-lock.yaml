@@ -107,8 +107,8 @@ catalogs:
       specifier: 6.0.3
       version: 6.0.3
     pixi.js:
-      specifier: 8.18.1
-      version: 8.18.1
+      specifier: 8.19.0
+      version: 8.19.0
   playwright:
     '@playwright/test':
       specifier: 1.60.0
@@ -425,7 +425,7 @@ importers:
         version: link:../../packages/ui
       '@pixi/react':
         specifier: catalog:pixi
-        version: 8.0.5(@types/react@19.2.17)(pixi.js@8.18.1)(react@19.2.7)
+        version: 8.0.5(@types/react@19.2.17)(pixi.js@8.19.0)(react@19.2.7)
       '@tanstack/react-router':
         specifier: catalog:tanstack
         version: 1.170.15(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -446,13 +446,13 @@ importers:
         version: 2.2.3(jotai@2.19.1(@babel/core@7.29.7)(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7))
       pixi-filters:
         specifier: catalog:pixi
-        version: 6.1.5(pixi.js@8.18.1)
+        version: 6.1.5(pixi.js@8.19.0)
       pixi-viewport:
         specifier: catalog:pixi
-        version: 6.0.3(pixi.js@8.18.1)
+        version: 6.0.3(pixi.js@8.19.0)
       pixi.js:
         specifier: catalog:pixi
-        version: 8.18.1
+        version: 8.19.0
       react:
         specifier: 19.2.7
         version: 19.2.7
@@ -2362,7 +2362,7 @@ packages:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: ^4.0.0
+      rollup: ^4.59.0
 
   '@rollup/pluginutils@5.4.0':
     resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
@@ -2578,7 +2578,7 @@ packages:
     resolution: {integrity: sha512-GqX/2DeF3/jKs5D7gpDiuT9gd0c/f2TKcnQ5av4/s3YqeN+0nhm7btkCrDfgF16uzE1Zj3OrkxvB3AOkfxWgDg==}
     peerDependencies:
       esbuild: '*'
-      rollup: ^4.59.0
+      rollup: ^4.0.0
       storybook: ^10.4.2
       vite: '*'
       webpack: '*'
@@ -4044,9 +4044,6 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
-  eventemitter3@5.0.1:
-    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
-
   eventemitter3@5.0.4:
     resolution: {integrity: sha512-mlsTRyGaPBjPedk6Bvw+aqbsXDtoAyAzm5MO7JgU+yVRyMQ5O8bD4Kcci7BS85f93veegeCPkL8R4GLClnjLFw==}
 
@@ -5058,8 +5055,8 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
 
-  parse-svg-path@0.1.2:
-    resolution: {integrity: sha512-JyPSBnkTJ0AI8GGJLfMXvKq42cj5c006fnLz6fXy6zfoVjJizi8BNTpu8on8ziI1cKy9d9DGNuY17Ce7wuejpQ==}
+  parse-svg-path@0.2.0:
+    resolution: {integrity: sha512-Tf7FFIrguPKQwzD4pWnYkR2VOv3raoHeKED80Bm+BYHI3KxC8KsgsGC5+fSMzAGDA6UEk4bHvmi+RsjmL3khpg==}
 
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
@@ -5121,8 +5118,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8'
 
-  pixi.js@8.18.1:
-    resolution: {integrity: sha512-6LUPWYgulZhp/w4kam2XHXB0QedISZIqrJbRdHLLQ3csn5a38uzKxAp6B5j6s89QFYaIJbg95kvgTRcbgpO1ow==}
+  pixi.js@8.19.0:
+    resolution: {integrity: sha512-pq1O6emA/GFjjeF+8d3Pb5t7knD8FsnfWGqQcRjYjsqFZ7QdzG1XgjLDUu0DFJRbafjV5+g8iNLFBx0b9649lg==}
 
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
@@ -7909,10 +7906,10 @@ snapshots:
 
   '@pixi/colord@2.9.6': {}
 
-  '@pixi/react@8.0.5(@types/react@19.2.17)(pixi.js@8.18.1)(react@19.2.7)':
+  '@pixi/react@8.0.5(@types/react@19.2.17)(pixi.js@8.19.0)(react@19.2.7)':
     dependencies:
       its-fine: 2.0.0(@types/react@19.2.17)(react@19.2.7)
-      pixi.js: 8.18.1
+      pixi.js: 8.19.0
       react: 19.2.7
       react-reconciler: 0.31.0(react@19.2.7)
     transitivePeerDependencies:
@@ -9822,8 +9819,6 @@ snapshots:
 
   esutils@2.0.3: {}
 
-  eventemitter3@5.0.1: {}
-
   eventemitter3@5.0.4: {}
 
   events@3.3.0: {}
@@ -10870,7 +10865,7 @@ snapshots:
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
 
-  parse-svg-path@0.1.2: {}
+  parse-svg-path@0.2.0: {}
 
   path-exists@4.0.0: {}
 
@@ -10906,26 +10901,26 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  pixi-filters@6.1.5(pixi.js@8.18.1):
+  pixi-filters@6.1.5(pixi.js@8.19.0):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.18.1
+      pixi.js: 8.19.0
 
-  pixi-viewport@6.0.3(pixi.js@8.18.1):
+  pixi-viewport@6.0.3(pixi.js@8.19.0):
     dependencies:
-      pixi.js: 8.18.1
+      pixi.js: 8.19.0
 
-  pixi.js@8.18.1:
+  pixi.js@8.19.0:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/earcut': 3.0.0
       '@webgpu/types': 0.1.69
       '@xmldom/xmldom': 0.8.13
       earcut: 3.0.2
-      eventemitter3: 5.0.1
+      eventemitter3: 5.0.4
       gifuct-js: 2.1.2
       ismobilejs: 1.1.1
-      parse-svg-path: 0.1.2
+      parse-svg-path: 0.2.0
       tiny-lru: 11.4.7
 
   pkg-dir@4.2.0:
