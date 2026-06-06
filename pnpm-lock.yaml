@@ -60,8 +60,8 @@ catalogs:
       specifier: 5.5.20
       version: 5.5.20
     style-dictionary:
-      specifier: 5.4.2
-      version: 5.4.2
+      specifier: 5.4.3
+      version: 5.4.3
   eslint:
     '@eslint/js':
       specifier: 10.0.1
@@ -630,7 +630,7 @@ importers:
     dependencies:
       style-dictionary:
         specifier: catalog:design
-        version: 5.4.2
+        version: 5.4.3
     devDependencies:
       '@config/typescript':
         specifier: workspace:*
@@ -1423,8 +1423,8 @@ packages:
   '@blazediff/core@1.9.1':
     resolution: {integrity: sha512-ehg3jIkYKulZh+8om/O25vkvSsXXwC+skXmyA87FFx6A/45eqOkZsBltMw/TVteb0mloiGT8oGRTcjRAz66zaA==}
 
-  '@bundled-es-modules/deepmerge@4.3.1':
-    resolution: {integrity: sha512-Rk453EklPUPC3NRWc3VUNI/SSUjdBaFoaQvFRmNBNtMHVtOFD5AntiWg5kEE1hqcPqedYFDzxE3ZcMYPcA195w==}
+  '@bundled-es-modules/deepmerge@4.3.2':
+    resolution: {integrity: sha512-q8doe7ndrY2IolUOFIn0A0++JBX38pMhN7kFhTF4cnjIcILf6X6H2yWczInyv8ZFdR0lrE8088X8XS5efxXz8A==}
 
   '@bundled-es-modules/glob@13.0.6':
     resolution: {integrity: sha512-x9nR2e1pt8LF0yLPC6yz/aUoiN7qJJwZ1znLxIXCxGyH+8BI+yO/sklBdn1+QbUyWXQBM+CjfZz3IhqtgIoDVg==}
@@ -2390,7 +2390,7 @@ packages:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: ^4.59.0
+      rollup: ^4.0.0
 
   '@rollup/pluginutils@5.4.0':
     resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
@@ -2606,7 +2606,7 @@ packages:
     resolution: {integrity: sha512-WdPepGBxDGOUDjYd8KxMtcf+us/2PAcnBczl77XtrnxxHNs0jWesxKkiJ9yiuGrge4BPhDeAj6rxjbBoaHxLBA==}
     peerDependencies:
       esbuild: '*'
-      rollup: ^4.0.0
+      rollup: ^4.59.0
       storybook: ^10.4.1
       vite: '*'
       webpack: '*'
@@ -5765,8 +5765,8 @@ packages:
   strnum@2.3.0:
     resolution: {integrity: sha512-ums3KNd42PGyx5xaoVTO1mjU1bH3NpY4vsrVlnv9PNGqQj8wd7rJ6nEypLrJ7z5vxK5RP0yMLo6J/Gsm62DI5Q==}
 
-  style-dictionary@5.4.2:
-    resolution: {integrity: sha512-Mienm46H28PWnydBiLFN7nR1QXqTO2FA+Aa/W7jcBJV8N0QGDDTfPQbb10TqwRybdY0rvp1G4pjdVM2HklGI0g==}
+  style-dictionary@5.4.3:
+    resolution: {integrity: sha512-VpIXPFqIJXR5bLzWhV9PjB7NBteyAVHq9THk5Hyw6zRqAjgfJkH9zalC9szLthkQlS+S8szmmq6tlnLWFksmTQ==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -7316,7 +7316,7 @@ snapshots:
 
   '@blazediff/core@1.9.1': {}
 
-  '@bundled-es-modules/deepmerge@4.3.1':
+  '@bundled-es-modules/deepmerge@4.3.2':
     dependencies:
       deepmerge: 4.3.1
 
@@ -11605,9 +11605,9 @@ snapshots:
 
   strnum@2.3.0: {}
 
-  style-dictionary@5.4.2:
+  style-dictionary@5.4.3:
     dependencies:
-      '@bundled-es-modules/deepmerge': 4.3.1
+      '@bundled-es-modules/deepmerge': 4.3.2
       '@bundled-es-modules/glob': 13.0.6
       '@bundled-es-modules/memfs': 4.17.0
       '@zip.js/zip.js': 2.7.62
