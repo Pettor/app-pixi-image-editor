@@ -215,8 +215,8 @@ catalogs:
       version: 4.1.8
 
 overrides:
-  '@tanstack/react-query': 5.100.14
-  '@tanstack/query-core': 5.100.14
+  '@tanstack/react-query': 5.101.0
+  '@tanstack/query-core': 5.101.0
   react: 19.2.7
   react-dom: 19.2.7
   ajv@8: ^8.18.0
