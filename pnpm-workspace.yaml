@@ -123,7 +123,7 @@ catalogs:
     nyc: 18.0.0
     vite-plugin-istanbul: 9.0.1
   vitest:
-    vitest: 4.1.7
-    '@vitest/browser': 4.1.7
-    '@vitest/browser-playwright': 4.1.7
-    '@vitest/coverage-v8': 4.1.7
+    vitest: 4.1.8
+    '@vitest/browser': 4.1.8
+    '@vitest/browser-playwright': 4.1.8
+    '@vitest/coverage-v8': 4.1.8
