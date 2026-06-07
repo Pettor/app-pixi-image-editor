@@ -57,8 +57,8 @@ catalogs:
       specifier: 2.2.0
       version: 2.2.0
     daisyui:
-      specifier: 5.5.20
-      version: 5.5.20
+      specifier: 5.5.23
+      version: 5.5.23
     style-dictionary:
       specifier: 5.4.3
       version: 5.4.3
@@ -434,7 +434,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:design
-        version: 5.5.20
+        version: 5.5.23
       immer:
         specifier: catalog:common
         version: 11.1.8
@@ -3691,6 +3691,9 @@ packages:
 
   daisyui@5.5.20:
     resolution: {integrity: sha512-HemJcjl0Gk9rQ8BcgofN6p+EURrqftQG9wK1Hkxs98i49xe68+QxpNvry+PyxwkIUgrbMpNmZ5ZWjmtffAjfhQ==}
+
+  daisyui@5.5.23:
+    resolution: {integrity: sha512-xuheNUSL4T6ZVtWXoioqcNkjoyGX85QTDz4HTw2aBPfqk4fuMjax5HDo8qCmpV6M1YN8bGvfx5BpYCoDeRlt+A==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -9345,6 +9348,8 @@ snapshots:
   csstype@3.2.3: {}
 
   daisyui@5.5.20: {}
+
+  daisyui@5.5.23: {}
 
   data-view-buffer@1.0.2:
     dependencies:

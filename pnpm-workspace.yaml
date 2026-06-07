@@ -54,7 +54,7 @@ catalogs:
   design:
     '@fontsource/rubik': 5.2.8
     '@heroicons/react': 2.2.0
-    daisyui: 5.5.20
+    daisyui: 5.5.23
     style-dictionary: 5.4.3
   pixi:
     '@pixi/react': 8.0.5
