@@ -60,8 +60,8 @@ catalogs:
       specifier: 5.5.23
       version: 5.5.23
     style-dictionary:
-      specifier: 5.4.3
-      version: 5.4.3
+      specifier: 5.4.4
+      version: 5.4.4
   eslint:
     '@eslint/js':
       specifier: 10.0.1
@@ -630,7 +630,7 @@ importers:
     dependencies:
       style-dictionary:
         specifier: catalog:design
-        version: 5.4.3
+        version: 5.4.4
     devDependencies:
       '@config/typescript':
         specifier: workspace:*
@@ -5757,8 +5757,8 @@ packages:
   strnum@2.3.0:
     resolution: {integrity: sha512-ums3KNd42PGyx5xaoVTO1mjU1bH3NpY4vsrVlnv9PNGqQj8wd7rJ6nEypLrJ7z5vxK5RP0yMLo6J/Gsm62DI5Q==}
 
-  style-dictionary@5.4.3:
-    resolution: {integrity: sha512-VpIXPFqIJXR5bLzWhV9PjB7NBteyAVHq9THk5Hyw6zRqAjgfJkH9zalC9szLthkQlS+S8szmmq6tlnLWFksmTQ==}
+  style-dictionary@5.4.4:
+    resolution: {integrity: sha512-Sd7dkEOLn33EpvlMyS8ykUu0us2EIFUqsysf4DSwZQ46nqQkZ2Q9o5mozu8cSizj3t7E220HaPk7EV1O7LjvDQ==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -11606,7 +11606,7 @@ snapshots:
 
   strnum@2.3.0: {}
 
-  style-dictionary@5.4.3:
+  style-dictionary@5.4.4:
     dependencies:
       '@bundled-es-modules/deepmerge': 4.3.2
       '@bundled-es-modules/glob': 13.0.6
