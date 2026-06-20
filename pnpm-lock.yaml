@@ -228,7 +228,7 @@ overrides:
   got: ^15.0.0
   handlebars: ^4.7.9
   js-yaml@3: ^5.0.0
-  js-yaml@4: ^4.1.1
+  js-yaml@4: ^5.0.0
   lodash: ^4.18.0
   minimatch@3: ^10.0.0
   minimatch@5: ^10.0.0
@@ -4764,10 +4764,6 @@ packages:
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-
-  js-yaml@4.1.1:
-    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
-    hasBin: true
 
   js-yaml@5.0.0:
     resolution: {integrity: sha512-GSvaPUbk1U+FMZ7rJzF+F8e5YVtu7KnD40et/5rBXXRBv2jCO9L3qCewvIDDdudC0QycTFlf6EAA+h3kxBsuUw==}
@@ -9546,7 +9542,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.1.1
+      js-yaml: 5.0.0
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 6.0.3
@@ -10605,10 +10601,6 @@ snapshots:
   js-tokens@10.0.0: {}
 
   js-tokens@4.0.0: {}
-
-  js-yaml@4.1.1:
-    dependencies:
-      argparse: 2.0.1
 
   js-yaml@5.0.0:
     dependencies:
