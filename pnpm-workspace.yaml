@@ -16,7 +16,7 @@ overrides:
   form-data: ^4.0.4
   got: ^15.0.0
   handlebars: ^4.7.9
-  js-yaml@3: ^4.0.0
+  js-yaml@3: ^5.0.0
   js-yaml@4: ^4.1.1
   lodash: ^4.18.0
   minimatch@3: ^10.0.0
