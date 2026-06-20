@@ -37,7 +37,7 @@ overrides:
   glob@10: ^13.0.0
 catalogs:
   common:
-    '@faker-js/faker': 10.4.0
+    '@faker-js/faker': 10.5.0
     '@fontsource/rubik': 5.2.8
     '@formatjs/cli': 6.16.11
     clsx: 2.1.1
