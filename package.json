@@ -41,18 +41,18 @@
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
     "@commitlint/types": "21.0.1",
-    "@types/node": "24.13.1",
+    "@types/node": "24.13.2",
     "husky": "9.1.7",
     "fast-xml-parser": "5.8.0",
     "lint-staged": "17.0.7",
     "move-cli": "catalog:common",
     "nyc": "catalog:coverage",
-    "prettier": "3.8.3",
+    "prettier": "3.8.4",
     "prettier-plugin-tailwindcss": "0.8.0",
     "rimraf": "catalog:common",
     "sherif": "1.11.1",
     "tsup": "8.5.1",
-    "turbo": "2.9.16"
+    "turbo": "2.9.18"
   },
   "pnpm": {
     "onlyBuiltDependencies": ["sharp"]
