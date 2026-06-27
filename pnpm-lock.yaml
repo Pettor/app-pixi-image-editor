@@ -215,8 +215,8 @@ catalogs:
       version: 4.1.9
 
 overrides:
-  '@tanstack/react-query': 5.101.0
-  '@tanstack/query-core': 5.101.0
+  '@tanstack/react-query': 5.101.1
+  '@tanstack/query-core': 5.101.1
   react: 19.2.7
   react-dom: 19.2.7
   ajv@8: ^8.18.0
@@ -2362,7 +2362,7 @@ packages:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: ^4.0.0
+      rollup: ^4.59.0
 
   '@rollup/pluginutils@5.4.0':
     resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
