@@ -63,7 +63,7 @@ catalogs:
     pixi.js: 8.19.0
   eslint:
     '@eslint/js': 10.0.1
-    eslint: 10.5.0
+    eslint: 10.6.0
     eslint-config-prettier: 10.1.8
     eslint-plugin-formatjs: 6.4.16
     eslint-plugin-import-x: 4.16.2
