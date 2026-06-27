@@ -57,8 +57,8 @@ catalogs:
       specifier: 2.2.0
       version: 2.2.0
     daisyui:
-      specifier: 5.5.23
-      version: 5.5.23
+      specifier: 5.6.3
+      version: 5.6.3
     style-dictionary:
       specifier: 5.5.0
       version: 5.5.0
@@ -434,7 +434,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:design
-        version: 5.5.23
+        version: 5.6.3
       immer:
         specifier: catalog:common
         version: 11.1.8
@@ -2362,7 +2362,7 @@ packages:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: ^4.59.0
+      rollup: ^4.0.0
 
   '@rollup/pluginutils@5.4.0':
     resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
@@ -3829,6 +3829,9 @@ packages:
 
   daisyui@5.5.23:
     resolution: {integrity: sha512-xuheNUSL4T6ZVtWXoioqcNkjoyGX85QTDz4HTw2aBPfqk4fuMjax5HDo8qCmpV6M1YN8bGvfx5BpYCoDeRlt+A==}
+
+  daisyui@5.6.3:
+    resolution: {integrity: sha512-QvdtXnQ/tD5a18Y/+NJkJ1+ggwRtMF84GHTHCCAto5SNqYwZj8SUQQviKMpe1cKR7vMo/evTBDExkYd19KloBQ==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -9563,6 +9566,8 @@ snapshots:
   csstype@3.2.3: {}
 
   daisyui@5.5.23: {}
+
+  daisyui@5.6.3: {}
 
   data-view-buffer@1.0.2:
     dependencies:
