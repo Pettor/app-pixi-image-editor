@@ -215,8 +215,8 @@ catalogs:
       version: 4.1.9
 
 overrides:
-  '@tanstack/react-query': 5.101.1
-  '@tanstack/query-core': 5.101.1
+  '@tanstack/react-query': 5.101.2
+  '@tanstack/query-core': 5.101.2
   react: 19.2.7
   react-dom: 19.2.7
   ajv@8: ^8.18.0
@@ -2713,7 +2713,7 @@ packages:
     resolution: {integrity: sha512-NILLxDqpA/JR/AazGWpsz+4fadJwRU4uhHephGtYpVOWnQA/DkJfKT6zpcJVq8+QA8A2zKMLX3GVKsXIrxjuDA==}
     peerDependencies:
       esbuild: '*'
-      rollup: ^4.59.0
+      rollup: ^4.0.0
       storybook: ^10.4.6
       vite: '*'
       webpack: '*'
