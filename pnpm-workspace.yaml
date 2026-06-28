@@ -45,7 +45,7 @@ catalogs:
     framer-motion: 12.42.0
     immer: 11.1.8
     jotai: 2.19.1
-    jotai-effect: 2.2.3
+    jotai-effect: 2.3.1
     move-cli: 2.0.0
     react-dropzone: 15.0.0
     react-intl: 10.1.14
