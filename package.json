@@ -47,7 +47,7 @@
     "lint-staged": "17.0.8",
     "move-cli": "catalog:dev",
     "nyc": "catalog:dev",
-    "prettier": "3.8.5",
+    "prettier": "3.9.0",
     "prettier-plugin-tailwindcss": "0.8.0",
     "rimraf": "catalog:dev",
     "sherif": "1.12.0",
