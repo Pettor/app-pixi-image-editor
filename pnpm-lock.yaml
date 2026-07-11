@@ -194,6 +194,9 @@ catalogs:
     clsx:
       specifier: 2.1.1
       version: 2.1.1
+    daisyui:
+      specifier: 5.6.13
+      version: 5.6.13
     react-dropzone:
       specifier: 15.0.0
       version: 15.0.0
@@ -275,8 +278,8 @@ importers:
         specifier: catalog:dev
         version: 6.1.3
       sherif:
-        specifier: 1.12.0
-        version: 1.12.0
+        specifier: 1.13.0
+        version: 1.13.0
       tsup:
         specifier: 8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.16)(tsx@4.21.0)(typescript@6.0.3)(yaml@2.8.3)
@@ -5517,48 +5520,52 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  sherif-darwin-arm64@1.12.0:
-    resolution: {integrity: sha512-qihvPmHoWqUkXRc+VIdRcmPcUbA3CNh2W3NuwCWiR7drJisgD1l8Uw0RjdOkVID249CH+K3AIA4pxRlj+lgqBQ==}
+  sherif-darwin-arm64@1.13.0:
+    resolution: {integrity: sha512-k38jpGpZIEWS5dpSRLSvVi53LZuGO3hDqB88jgdLMDN11LZM6yTDcP0GytnQ8OpE6Br/Js6bDCLsdWDarZdV9g==}
     cpu: [arm64]
     os: [darwin]
 
-  sherif-darwin-x64@1.12.0:
-    resolution: {integrity: sha512-Otwdsg+YrGs121wiGvyiivR81QsmFHKaMkziURnYodbZf4V8LTQ2zrHOxlBUJlAVoy5NwuHBX4k9EWaJ/wfbVA==}
+  sherif-darwin-x64@1.13.0:
+    resolution: {integrity: sha512-W2bOj0Ya9A0fPSWzbeaaNg2RRRr48l2lArN8sGbfc9SZuJSJWXcdWkTVC3sEUiiXwpxNeLY/CsGNyQz5Izbfig==}
     cpu: [x64]
     os: [darwin]
 
-  sherif-linux-arm64-musl@1.12.0:
-    resolution: {integrity: sha512-NRVambAd7aA0q2YrtBXstH5BzDr0hDXqq+xnkIRvXW57CHQ1BlY7K0QDYiy3zCLRKeZsMwKFQHILRKekUsh4ng==}
+  sherif-linux-arm64-musl@1.13.0:
+    resolution: {integrity: sha512-9IDAlwYT5Ay2nex9Da3R98cvnPKVveT57i7pJXnnY/DC90qdqqz6Twlp7STRv+7qo4k4ES+2J9zQ0k6SDe888A==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
-  sherif-linux-arm64@1.12.0:
-    resolution: {integrity: sha512-obcIYS6dRbt9LQHr+RUD2L1VwhKt18dI28yCWFCQfXLyz8Zq6gHpr9P5PjXJcB+BByPEpyfj96oZBoBekHajTw==}
+  sherif-linux-arm64@1.13.0:
+    resolution: {integrity: sha512-Z94SgKNClWarVJj4LsayOmL7zccCUAvy3ugZnIO860FoJofh812KAyF8CdWrSho8qfmmoAzNcqSSc1OZh7+ckQ==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
-  sherif-linux-x64-musl@1.12.0:
-    resolution: {integrity: sha512-/lkogUDVhGM+WbFhIthUGBBDKAvNQsV1CxR1RG40wUguxyyBM+uEVM/5ibIJsaYwn7NUZxgf8OwqpbwCFRcedQ==}
+  sherif-linux-x64-musl@1.13.0:
+    resolution: {integrity: sha512-2L+A8jF5ylojFwl7eAePR1h3Bzx24IcMgEoWObXgD70k6xF+GOJaM/n+q4MQ9YDntAKbJfMDr6ETjt6Bt/hosA==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
-  sherif-linux-x64@1.12.0:
-    resolution: {integrity: sha512-wG1gH6XDh/lQ3s+neAF6O5/VFaORN7nDjd/9RmnLa4c0axnjPKwFAAH60Sine/P7gMzET7EYfygJll4k3zVpjQ==}
+  sherif-linux-x64@1.13.0:
+    resolution: {integrity: sha512-xGB9iiet8l/i8/YLZje8icpZyt4pVgoxB2+SoC6JCB8iDWsCVSuixebwX2t9yeGqXBXO1kphaW0TLf8Tmwy9JQ==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
-  sherif-windows-arm64@1.12.0:
-    resolution: {integrity: sha512-UYkR14H/PaBv/Aqy4JclswRCyPnl5vKr2wVfcJa6UutzJ7ee/qKtr+sBn0H9+sFBZJWop1yv7ZI+IZVmVFRgfA==}
+  sherif-windows-arm64@1.13.0:
+    resolution: {integrity: sha512-jHzJ/EcG4HuNLf/3AEDzbRkAofLPBHRJKJJMjAosampAe9861atu4q+Z2IZ1/sHg5oVnNgaNg/Xc5DDhGcQ/3w==}
     cpu: [arm64]
     os: [win32]
 
-  sherif-windows-x64@1.12.0:
-    resolution: {integrity: sha512-GUnTT54M4XN7C3GCl5nd0FSZzGoN8Edcd+i1jELqD5n/utshoRe+ohdHUob6GaZV6kXih27BhWLO3d6Ix+9Xmw==}
+  sherif-windows-x64@1.13.0:
+    resolution: {integrity: sha512-KyMqQY62Eb3O+wePlw433mH2XBPVPLXdDjWPneg9pB6jeK0B1sgEzM2yks+aAP5asZ1Y8Q7C7iR7ZtbJKdsAtA==}
     cpu: [x64]
     os: [win32]
 
-  sherif@1.12.0:
-    resolution: {integrity: sha512-fNJ5oWOsiMEAniYhhXTlRYfzZmWT5xQnzrp0c/oJ01L4ecvq4PczGrhb28JDt0Mq/t1gipM2Eo/6/BZH756yxg==}
+  sherif@1.13.0:
+    resolution: {integrity: sha512-Ld2nUOlwW1nmYDA2Q/5o7SC8WcCzVS7XjImmzW4a4z1o8DXJnt+2xYLvI42N5UYlNb/EevPahdC/XxIP6C38TQ==}
     hasBin: true
 
   side-channel-list@1.0.0:
@@ -11213,40 +11220,40 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  sherif-darwin-arm64@1.12.0:
+  sherif-darwin-arm64@1.13.0:
     optional: true
 
-  sherif-darwin-x64@1.12.0:
+  sherif-darwin-x64@1.13.0:
     optional: true
 
-  sherif-linux-arm64-musl@1.12.0:
+  sherif-linux-arm64-musl@1.13.0:
     optional: true
 
-  sherif-linux-arm64@1.12.0:
+  sherif-linux-arm64@1.13.0:
     optional: true
 
-  sherif-linux-x64-musl@1.12.0:
+  sherif-linux-x64-musl@1.13.0:
     optional: true
 
-  sherif-linux-x64@1.12.0:
+  sherif-linux-x64@1.13.0:
     optional: true
 
-  sherif-windows-arm64@1.12.0:
+  sherif-windows-arm64@1.13.0:
     optional: true
 
-  sherif-windows-x64@1.12.0:
+  sherif-windows-x64@1.13.0:
     optional: true
 
-  sherif@1.12.0:
+  sherif@1.13.0:
     optionalDependencies:
-      sherif-darwin-arm64: 1.12.0
-      sherif-darwin-x64: 1.12.0
-      sherif-linux-arm64: 1.12.0
-      sherif-linux-arm64-musl: 1.12.0
-      sherif-linux-x64: 1.12.0
-      sherif-linux-x64-musl: 1.12.0
-      sherif-windows-arm64: 1.12.0
-      sherif-windows-x64: 1.12.0
+      sherif-darwin-arm64: 1.13.0
+      sherif-darwin-x64: 1.13.0
+      sherif-linux-arm64: 1.13.0
+      sherif-linux-arm64-musl: 1.13.0
+      sherif-linux-x64: 1.13.0
+      sherif-linux-x64-musl: 1.13.0
+      sherif-windows-arm64: 1.13.0
+      sherif-windows-x64: 1.13.0
 
   side-channel-list@1.0.0:
     dependencies:
