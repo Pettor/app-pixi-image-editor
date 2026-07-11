@@ -50,9 +50,9 @@ catalogs:
   tanstack:
     '@tanstack/react-form': 1.33.0
     '@tanstack/react-query': 5.101.2
-    '@tanstack/react-router': 1.170.16
+    '@tanstack/react-router': 1.170.17
     # Codegen plugin kept with the router so they bump together.
-    '@tanstack/router-plugin': 1.168.18
+    '@tanstack/router-plugin': 1.168.19
   pixi:
     '@pixi/react': 8.0.5
     pixi-filters: 6.1.5
