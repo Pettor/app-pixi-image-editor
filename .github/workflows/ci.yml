@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-turbo-
 
       - name: Setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 
@@ -79,7 +79,7 @@ jobs:
             ${{ runner.os }}-turbo-
 
       - name: Setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 
@@ -127,7 +127,7 @@ jobs:
             ${{ runner.os }}-turbo-
 
       - name: Setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 
@@ -216,7 +216,7 @@ jobs:
             ${{ runner.os }}-turbo-
 
       - name: Setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 
@@ -304,7 +304,7 @@ jobs:
             ${{ runner.os }}-turbo-
 
       - name: Setup node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 
