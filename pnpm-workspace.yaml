@@ -114,7 +114,7 @@ catalogs:
     storybook: 10.4.6
     # test
     vitest: 4.1.9
-    '@vitest/browser': 4.1.9
+    '@vitest/browser': 4.1.10
     '@vitest/browser-playwright': 4.1.9
     '@vitest/coverage-v8': 4.1.9
     '@playwright/test': 1.61.1
