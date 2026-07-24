@@ -43,7 +43,7 @@
     "@commitlint/types": "21.2.0",
     "@types/node": "24.13.2",
     "husky": "9.1.7",
-    "fast-xml-parser": "5.9.3",
+    "fast-xml-parser": "5.10.1",
     "lint-staged": "17.0.8",
     "move-cli": "catalog:dev",
     "nyc": "catalog:dev",
