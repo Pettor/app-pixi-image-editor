@@ -169,11 +169,11 @@ catalogs:
       version: 19.1.0-rc.3
   state:
     immer:
-      specifier: 11.1.11
-      version: 11.1.11
+      specifier: 11.1.15
+      version: 11.1.15
     jotai:
-      specifier: 2.20.1
-      version: 2.20.1
+      specifier: 2.20.2
+      version: 2.20.2
     jotai-effect:
       specifier: 2.3.1
       version: 2.3.1
@@ -427,13 +427,13 @@ importers:
         version: 5.6.18
       immer:
         specifier: catalog:state
-        version: 11.1.11
+        version: 11.1.15
       jotai:
         specifier: catalog:state
-        version: 2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
+        version: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
       jotai-effect:
         specifier: catalog:state
-        version: 2.3.1(jotai@2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7))
+        version: 2.3.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7))
       pixi-filters:
         specifier: catalog:pixi
         version: 6.1.5(pixi.js@8.19.0)
@@ -692,7 +692,7 @@ importers:
         version: 2.1.1
       jotai:
         specifier: catalog:state
-        version: 2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
+        version: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
       react:
         specifier: 19.2.7
         version: 19.2.7
@@ -4360,8 +4360,8 @@ packages:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
 
-  immer@11.1.11:
-    resolution: {integrity: sha512-qzXuyXAkPySAGYkfsAwodDPWT8Zm7/Uo5BNt4BjhMhG5WlWyZZ4wQqnWwdS8kjlQ1Cwu6gjw3A6+0gTQwlyYtw==}
+  immer@11.1.15:
+    resolution: {integrity: sha512-VrNANlmnWQnh5COXIIOQXM9oOJw7naGKlBT74ZOOR6lpVXc3gFEu9FJLDFcpCJ2j+NWr8TIwtWD//T6ZX6TKiQ==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -4630,8 +4630,8 @@ packages:
     peerDependencies:
       jotai: '>=2.20.0'
 
-  jotai@2.20.1:
-    resolution: {integrity: sha512-dnuKfU/GLi8B28RRMjQ3AfoN7kfzP8o41+AX2FmITZqEMY8PHnjABq+VkEooomLwYaGjda+pgy0yFSjaHX/ZPg==}
+  jotai@2.20.2:
+    resolution: {integrity: sha512-aHB4CNb9qRcyf0mwSB6EO5bCGAjx8cTwFgOFCE2leOnTzqACbnSWG8XoWB3LxCT1Qoj03I1OWAHszDmN4uHb/w==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@babel/core': '>=7.0.0'
@@ -10028,7 +10028,7 @@ snapshots:
 
   ignore@7.0.5: {}
 
-  immer@11.1.11: {}
+  immer@11.1.15: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -10294,11 +10294,11 @@ snapshots:
 
   jiti@2.7.0: {}
 
-  jotai-effect@2.3.1(jotai@2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)):
+  jotai-effect@2.3.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)):
     dependencies:
-      jotai: 2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
+      jotai: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7)
 
-  jotai@2.20.1(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7):
+  jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.7):
     optionalDependencies:
       '@babel/core': 7.29.7(supports-color@7.2.0)
       '@babel/template': 7.29.7
