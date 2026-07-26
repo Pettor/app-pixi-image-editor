@@ -52,7 +52,7 @@ catalogs:
     '@tanstack/react-query': 5.101.2
     '@tanstack/react-router': 1.170.18
     # Codegen plugin kept with the router so they bump together.
-    '@tanstack/router-plugin': 1.168.22
+    '@tanstack/router-plugin': 1.168.23
   pixi:
     '@pixi/react': 8.0.5
     pixi-filters: 6.1.5
