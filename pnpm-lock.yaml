@@ -186,8 +186,8 @@ catalogs:
       version: 1.168.22
   ui:
     '@fontsource/rubik':
-      specifier: 5.2.8
-      version: 5.2.8
+      specifier: 5.3.0
+      version: 5.3.0
     '@heroicons/react':
       specifier: 2.2.0
       version: 2.2.0
@@ -198,8 +198,8 @@ catalogs:
       specifier: 5.6.18
       version: 5.6.18
     react-dropzone:
-      specifier: 19.0.2
-      version: 19.0.2
+      specifier: 19.1.1
+      version: 19.1.1
     react-intl:
       specifier: 10.1.18
       version: 10.1.18
@@ -318,7 +318,7 @@ importers:
         version: link:../../configs/tailwind
       '@fontsource/rubik':
         specifier: catalog:ui
-        version: 5.2.8
+        version: 5.3.0
       '@package/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -400,7 +400,7 @@ importers:
     dependencies:
       '@fontsource/rubik':
         specifier: catalog:ui
-        version: 5.2.8
+        version: 5.3.0
       '@heroicons/react':
         specifier: catalog:ui
         version: 2.2.0(react@19.2.7)
@@ -451,7 +451,7 @@ importers:
         version: 19.2.7(react@19.2.7)
       react-dropzone:
         specifier: catalog:ui
-        version: 19.0.2(@types/react@19.2.17)(react@19.2.7)
+        version: 19.1.1(@types/react@19.2.17)(react@19.2.7)
       react-intl:
         specifier: catalog:ui
         version: 10.1.18(@types/react@19.2.17)(react@19.2.7)
@@ -1596,8 +1596,8 @@ packages:
     resolution: {integrity: sha512-bsxD8WLS5lIj7aaoCx1YJkktqYj5vlBUE6HWzu2Q51ksrGJ0H737ECCKlFU7Yf8Br45z9t99frBp/J7kzbMPAg==}
     engines: {node: ^20.19.0 || ^22.13.0 || ^23.5.0 || >=24.0.0, npm: '>=10'}
 
-  '@fontsource/rubik@5.2.8':
-    resolution: {integrity: sha512-PIc8QR7FqWPcYhbdRiGff56vQlKqg/ytES1YqecSq1GkgxiH4TBshrFvDEOZ9JonUF9m1qQ+qXxJj7wD5zgXEw==}
+  '@fontsource/rubik@5.3.0':
+    resolution: {integrity: sha512-Nks2mn7vlE1jZVHuVgoKU2Ejqjvd+GJzLRdraCjo1xc79oo7O6vJ8pcvSfmKPGX3/Ln7nt09XWFzPeu2jWf0xQ==}
 
   '@formatjs/fast-memoize@3.1.7':
     resolution: {integrity: sha512-zXfhLpvA6T7+efdt9JLbBwZ00tT7NsBMDVnDu8rpHeNNv8KfRZAMo2gkG0k9lK/Nzc//3kJ9pImsfuJxk3KhUA==}
@@ -5331,8 +5331,8 @@ packages:
     peerDependencies:
       react: 19.2.7
 
-  react-dropzone@19.0.2:
-    resolution: {integrity: sha512-WZI5Dgg2xvmP7WcKWlmTDIDT2C8VTHfe/CEZp5adWG5vzii3tSDdiZAEzBMmYxrAQay7U6lsehF75HlisW6bVQ==}
+  react-dropzone@19.1.1:
+    resolution: {integrity: sha512-zxuTwbyvP+FSdesiHafT/0UMTX/Ne1ri8XPTn7KM97ZinHKFy3N6KiKEGRiG28ibYV+nG6sHxoJlkVoDxIMHxQ==}
     engines: {node: '>= 20'}
     peerDependencies:
       '@types/react': '*'
@@ -7402,7 +7402,7 @@ snapshots:
 
   '@faker-js/faker@10.5.0': {}
 
-  '@fontsource/rubik@5.2.8': {}
+  '@fontsource/rubik@5.3.0': {}
 
   '@formatjs/fast-memoize@3.1.7': {}
 
@@ -10969,7 +10969,7 @@ snapshots:
       react: 19.2.7
       scheduler: 0.27.0
 
-  react-dropzone@19.0.2(@types/react@19.2.17)(react@19.2.7):
+  react-dropzone@19.1.1(@types/react@19.2.17)(react@19.2.7):
     dependencies:
       attr-accept: 2.2.5
       file-selector: 4.0.2
