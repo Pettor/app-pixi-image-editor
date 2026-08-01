@@ -175,8 +175,8 @@ catalogs:
       specifier: 2.20.2
       version: 2.20.2
     jotai-effect:
-      specifier: 2.3.1
-      version: 2.3.1
+      specifier: 2.4.1
+      version: 2.4.1
   tanstack:
     '@tanstack/react-router':
       specifier: 1.170.18
@@ -433,7 +433,7 @@ importers:
         version: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8)
       jotai-effect:
         specifier: catalog:state
-        version: 2.3.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8))
+        version: 2.4.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8))
       pixi-filters:
         specifier: catalog:pixi
         version: 6.1.5(pixi.js@8.19.0)
@@ -4624,11 +4624,11 @@ packages:
     resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
 
-  jotai-effect@2.3.1:
-    resolution: {integrity: sha512-FBBVXDM2podbbxJsZ19+uDv45LxeXoVA5yh6CfkQ35AVCuRHj7Lanlcjiea3b67Q7+/MMGXWf8+GeB73JcbeMg==}
+  jotai-effect@2.4.1:
+    resolution: {integrity: sha512-wptUnVOEeU8SkBA+sKGzXGnR3rbSfXLXrRxcj5QF3ukxH7CUbo5hoO2iMwUzsJSYaZM804ZpPoAxUY9nmksu8w==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
-      jotai: '>=2.20.0'
+      jotai: '>=2.20.0 || >=3.0.0-alpha.0'
 
   jotai@2.20.2:
     resolution: {integrity: sha512-aHB4CNb9qRcyf0mwSB6EO5bCGAjx8cTwFgOFCE2leOnTzqACbnSWG8XoWB3LxCT1Qoj03I1OWAHszDmN4uHb/w==}
@@ -10296,7 +10296,7 @@ snapshots:
 
   jiti@2.7.0: {}
 
-  jotai-effect@2.3.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8)):
+  jotai-effect@2.4.1(jotai@2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8)):
     dependencies:
       jotai: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.17)(react@19.2.8)
 
