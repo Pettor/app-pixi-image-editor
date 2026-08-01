@@ -62,7 +62,7 @@ catalogs:
     '@fontsource/rubik': 5.3.0
     '@heroicons/react': 2.2.0
     clsx: 2.1.1
-    daisyui: 5.6.18
+    daisyui: 5.7.1
     framer-motion: 12.42.2
     react-dropzone: 19.1.1
     react-intl: 10.1.18
