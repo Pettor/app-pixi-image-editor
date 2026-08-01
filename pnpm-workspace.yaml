@@ -41,8 +41,8 @@ overrides:
 catalogs:
   # Runtime dependencies (Renovate: `fix(deps)`)
   react:
-    react: 19.2.7
-    react-dom: 19.2.7
+    react: 19.2.8
+    react-dom: 19.2.8
     # Version-locked helpers kept alongside React so they bump together.
     '@types/react': 19.2.17
     '@types/react-dom': 19.2.3
