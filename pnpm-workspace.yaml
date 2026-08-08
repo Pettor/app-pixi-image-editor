@@ -64,7 +64,7 @@ catalogs:
     clsx: 2.1.1
     daisyui: 5.7.9
     framer-motion: 12.43.0
-    react-dropzone: 19.1.1
+    react-dropzone: 19.2.0
     react-intl: 10.1.19
   state:
     immer: 11.1.15
