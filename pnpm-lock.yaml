@@ -195,11 +195,11 @@ catalogs:
       specifier: 2.1.1
       version: 2.1.1
     daisyui:
-      specifier: 5.7.9
-      version: 5.7.9
+      specifier: 5.7.14
+      version: 5.7.14
     react-dropzone:
-      specifier: 19.2.0
-      version: 19.2.0
+      specifier: 20.0.0
+      version: 20.0.0
     react-intl:
       specifier: 10.1.19
       version: 10.1.19
@@ -424,7 +424,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:ui
-        version: 5.7.9
+        version: 5.7.14
       immer:
         specifier: catalog:state
         version: 11.1.15
@@ -451,7 +451,7 @@ importers:
         version: 19.2.8(react@19.2.8)
       react-dropzone:
         specifier: catalog:ui
-        version: 19.2.0(@types/react@19.2.18)(react@19.2.8)
+        version: 20.0.0(@types/react@19.2.18)(react@19.2.8)
       react-intl:
         specifier: catalog:ui
         version: 10.1.19(@types/react@19.2.18)(react@19.2.8)
@@ -2618,7 +2618,7 @@ packages:
     resolution: {integrity: sha512-NILLxDqpA/JR/AazGWpsz+4fadJwRU4uhHephGtYpVOWnQA/DkJfKT6zpcJVq8+QA8A2zKMLX3GVKsXIrxjuDA==}
     peerDependencies:
       esbuild: '*'
-      rollup: ^4.59.0
+      rollup: ^4.0.0
       storybook: ^10.4.6
       vite: '*'
       webpack: '*'
@@ -3745,8 +3745,8 @@ packages:
   daisyui@5.6.13:
     resolution: {integrity: sha512-0UHyNG3TzF7pDIbPcWyLKQfgtGhJcIq2x26jwsDKp7ZhL0GwaqIMZ12+TWfp8p+mE4NNc29SJk63hEXTz3MQkg==}
 
-  daisyui@5.7.9:
-    resolution: {integrity: sha512-oPL7yddYPQrMsDmYtxNqPGBYc+gqm14GTwu7cDxAaUq0bPg5ZcaeR/DVMgSwgo26InVn8AECbUBUCK0rMs96Kg==}
+  daisyui@5.7.14:
+    resolution: {integrity: sha512-mbEBc49mp6ueUNxVNPIQiX3mzYIirkST8EA3lLMKCkrWzpiM8Iy8eHjj+G6gitFQB73m9qFLPg75S4D1LDUw0g==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -5331,9 +5331,9 @@ packages:
     peerDependencies:
       react: 19.2.8
 
-  react-dropzone@19.2.0:
-    resolution: {integrity: sha512-/tIFow8ymZYnGGzO7KhsLaEUV+NKr04TBAIreBj4qXztPkQN2XwlmYFswUh2koQZvoTOTBK4kVpys4Nq4UqFYw==}
-    engines: {node: '>= 20'}
+  react-dropzone@20.0.0:
+    resolution: {integrity: sha512-Xw8tvvVPJQzj8ir5wivUMzA+G6R+aGhdU5KQzUMvVBlJNb26AW/0137VoYVmb5UgZcbhM9OCpjE4KOqqSL9QuQ==}
+    engines: {node: '>= 22'}
     peerDependencies:
       '@types/react': '*'
       react: 19.2.8
@@ -9292,7 +9292,7 @@ snapshots:
 
   daisyui@5.6.13: {}
 
-  daisyui@5.7.9: {}
+  daisyui@5.7.14: {}
 
   data-view-buffer@1.0.2:
     dependencies:
@@ -10969,7 +10969,7 @@ snapshots:
       react: 19.2.8
       scheduler: 0.27.0
 
-  react-dropzone@19.2.0(@types/react@19.2.18)(react@19.2.8):
+  react-dropzone@20.0.0(@types/react@19.2.18)(react@19.2.8):
     dependencies:
       attr-accept: 2.2.5
       file-selector: 4.1.0
