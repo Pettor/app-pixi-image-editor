@@ -169,8 +169,8 @@ catalogs:
       version: 19.1.0-rc.3
   state:
     immer:
-      specifier: 11.1.15
-      version: 11.1.15
+      specifier: 11.1.16
+      version: 11.1.16
     jotai:
       specifier: 2.20.2
       version: 2.20.2
@@ -427,7 +427,7 @@ importers:
         version: 5.7.14
       immer:
         specifier: catalog:state
-        version: 11.1.15
+        version: 11.1.16
       jotai:
         specifier: catalog:state
         version: 2.20.2(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.18)(react@19.2.8)
@@ -3326,6 +3326,7 @@ packages:
   '@xmldom/xmldom@0.8.13':
     resolution: {integrity: sha512-KRYzxepc14G/CEpEGc3Yn+JKaAeT63smlDr+vjB8jRfgTBBI9wRj/nkQEO+ucV8p8I9bfKLWp37uHgFrbntPvw==}
     engines: {node: '>=10.0.0'}
+    deprecated: this version has critical issues, please update to the latest version
 
   '@zip.js/zip.js@2.7.62':
     resolution: {integrity: sha512-OaLvZ8j4gCkLn048ypkZu29KX30r8/OfFF2w4Jo5WXFr+J04J+lzJ5TKZBVgFXhlvSkqNFQdfnY1Q8TMTCyBVA==}
@@ -4360,8 +4361,8 @@ packages:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
 
-  immer@11.1.15:
-    resolution: {integrity: sha512-VrNANlmnWQnh5COXIIOQXM9oOJw7naGKlBT74ZOOR6lpVXc3gFEu9FJLDFcpCJ2j+NWr8TIwtWD//T6ZX6TKiQ==}
+  immer@11.1.16:
+    resolution: {integrity: sha512-Xs7H9rBc+kti1J6RueUvbEBkmOz7jqj11XYgf+YMXAYzu8EeE7hwZ9poLXdVfVnGmJu7QAf41T7H2KuF6QoK6Q==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -10030,7 +10031,7 @@ snapshots:
 
   ignore@7.0.5: {}
 
-  immer@11.1.15: {}
+  immer@11.1.16: {}
 
   import-fresh@3.3.1:
     dependencies:
