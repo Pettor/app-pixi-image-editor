@@ -67,7 +67,7 @@ catalogs:
     react-dropzone: 20.0.0
     react-intl: 10.1.19
   state:
-    immer: 11.1.15
+    immer: 11.1.16
     jotai: 2.20.2
     jotai-effect: 2.4.1
   validation:
