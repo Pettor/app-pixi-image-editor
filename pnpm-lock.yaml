@@ -195,14 +195,14 @@ catalogs:
       specifier: 2.1.1
       version: 2.1.1
     daisyui:
-      specifier: 5.7.14
-      version: 5.7.14
+      specifier: 5.7.16
+      version: 5.7.16
     react-dropzone:
       specifier: 20.0.0
       version: 20.0.0
     react-intl:
-      specifier: 10.1.19
-      version: 10.1.19
+      specifier: 10.1.20
+      version: 10.1.20
 
 overrides:
   '@tanstack/react-query': 5.101.4
@@ -330,7 +330,7 @@ importers:
         version: 19.2.8(react@19.2.8)
       react-intl:
         specifier: catalog:ui
-        version: 10.1.19(@types/react@19.2.18)(react@19.2.8)
+        version: 10.1.20(@types/react@19.2.18)(react@19.2.8)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -424,7 +424,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:ui
-        version: 5.7.14
+        version: 5.7.16
       immer:
         specifier: catalog:state
         version: 11.1.16
@@ -454,7 +454,7 @@ importers:
         version: 20.0.0(@types/react@19.2.18)(react@19.2.8)
       react-intl:
         specifier: catalog:ui
-        version: 10.1.19(@types/react@19.2.18)(react@19.2.8)
+        version: 10.1.20(@types/react@19.2.18)(react@19.2.8)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -3746,8 +3746,8 @@ packages:
   daisyui@5.6.13:
     resolution: {integrity: sha512-0UHyNG3TzF7pDIbPcWyLKQfgtGhJcIq2x26jwsDKp7ZhL0GwaqIMZ12+TWfp8p+mE4NNc29SJk63hEXTz3MQkg==}
 
-  daisyui@5.7.14:
-    resolution: {integrity: sha512-mbEBc49mp6ueUNxVNPIQiX3mzYIirkST8EA3lLMKCkrWzpiM8Iy8eHjj+G6gitFQB73m9qFLPg75S4D1LDUw0g==}
+  daisyui@5.7.16:
+    resolution: {integrity: sha512-V9CJxvrWIXTDuP/0tpijjWaKaKJNYo2IrULJfTWs3/DjW9rPqswk1n8NCLQRLrTutmlG2Ech7nkJDpCnF+6Dzw==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -5342,8 +5342,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-intl@10.1.19:
-    resolution: {integrity: sha512-gND9+pkCXyE4/gBt01c37w3TkvhHOxChzQ1wYGilVIdONeZrjg1A5q8oUp2y9aU/MB1WZpBVlPa1TvrRrxE/eA==}
+  react-intl@10.1.20:
+    resolution: {integrity: sha512-dvD9F7CqjlB/cIWakFzScGVPDmhWk34cFWY0etWuVNc07Zmc56OKjQwqu9q74evbttSto5wFXchZtvdRXy/Tkg==}
     peerDependencies:
       '@types/react': '>=18.0.0'
       react: 19.2.8
@@ -9293,7 +9293,7 @@ snapshots:
 
   daisyui@5.6.13: {}
 
-  daisyui@5.7.14: {}
+  daisyui@5.7.16: {}
 
   data-view-buffer@1.0.2:
     dependencies:
@@ -10978,7 +10978,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  react-intl@10.1.19(@types/react@19.2.18)(react@19.2.8):
+  react-intl@10.1.20(@types/react@19.2.18)(react@19.2.8):
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.16
       '@formatjs/intl': 4.1.18
