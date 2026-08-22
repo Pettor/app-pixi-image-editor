@@ -71,7 +71,7 @@ catalogs:
     jotai: 2.20.2
     jotai-effect: 2.4.1
   validation:
-    '@hookform/resolvers': 5.8.0
+    '@hookform/resolvers': 5.9.0
     zod: 4.4.3
   # Dev tooling (Renovate: `chore(deps)`)
   dev:
