@@ -195,8 +195,8 @@ catalogs:
       specifier: 2.1.1
       version: 2.1.1
     daisyui:
-      specifier: 5.7.20
-      version: 5.7.20
+      specifier: 5.7.21
+      version: 5.7.21
     react-dropzone:
       specifier: 20.1.1
       version: 20.1.1
@@ -424,7 +424,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:ui
-        version: 5.7.20
+        version: 5.7.21
       immer:
         specifier: catalog:state
         version: 11.1.18
@@ -3746,8 +3746,8 @@ packages:
   daisyui@5.6.13:
     resolution: {integrity: sha512-0UHyNG3TzF7pDIbPcWyLKQfgtGhJcIq2x26jwsDKp7ZhL0GwaqIMZ12+TWfp8p+mE4NNc29SJk63hEXTz3MQkg==}
 
-  daisyui@5.7.20:
-    resolution: {integrity: sha512-qoL9qXXo/K/MzcteD1SvZOSeBaL8F9qBJvwX3KEpiVHQLzIEtGkNl/ZznSI7J0d+qnQJa2dAAFzTFDAx9df1rw==}
+  daisyui@5.7.21:
+    resolution: {integrity: sha512-DyJvCwrclM8K3Jp8TB9n2WZ+QUd+0/dSEY0WRvTE26wL06e8I6nEpKYYJWJ5SDRwc7FRDp3CyeREqYTHi9hM3A==}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -9293,7 +9293,7 @@ snapshots:
 
   daisyui@5.6.13: {}
 
-  daisyui@5.7.20: {}
+  daisyui@5.7.21: {}
 
   data-view-buffer@1.0.2:
     dependencies:
