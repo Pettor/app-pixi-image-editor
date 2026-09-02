@@ -88,7 +88,7 @@ catalogs:
     eslint-plugin-storybook: 10.5.10
     typescript-eslint: 8.68.0
     # typescript
-    typescript: 7.0.2
+    typescript: 6.0.3
     # tailwind
     tailwindcss: 4.3.3
     '@tailwindcss/aspect-ratio': 0.4.2

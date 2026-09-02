@@ -51,7 +51,7 @@ export function AppDrawer({
         />
         <div className="drawer-content" />
         <div className="drawer-side">
-          <label htmlFor="app-drawer" aria-label="close sidebar" className="drawer-overlay" onClick={onClose} />
+          <label htmlFor="app-drawer" aria-hidden="true" className="drawer-overlay" onClick={onClose} />
           <div className="bg-base-100 text-base-content flex min-h-full w-64 flex-col shadow-2xl md:w-80">
             <div className="border-base-200 flex items-center gap-3 border-b px-5 py-4">
               <img

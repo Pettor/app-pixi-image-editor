@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@config/eslint": "workspace:*",
-    "eslint": "catalog:dev",
     "@config/typescript": "workspace:*",
     "@faker-js/faker": "catalog:dev",
     "@package/storybook": "workspace:*",
@@ -43,6 +42,7 @@
     "@vitejs/plugin-react": "catalog:dev",
     "@vitest/browser": "catalog:dev",
     "@vitest/coverage-v8": "catalog:dev",
+    "eslint": "catalog:dev",
     "storybook": "catalog:dev",
     "tailwindcss": "catalog:dev",
     "vite": "catalog:dev",

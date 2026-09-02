@@ -9,13 +9,13 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root/route'
-import { Route as EditorRouteRouteImport } from './routes/editor/route'
-import { Route as SplatRouteRouteImport } from './routes/$/route'
 import { Route as IndexRouteRouteImport } from './routes/index/route'
+import { Route as SplatRouteRouteImport } from './routes/$/route'
+import { Route as EditorRouteRouteImport } from './routes/editor/route'
 
-const EditorRouteRoute = EditorRouteRouteImport.update({
-  id: '/editor',
-  path: '/editor',
+const IndexRouteRoute = IndexRouteRouteImport.update({
+  id: '/',
+  path: '',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SplatRouteRoute = SplatRouteRouteImport.update({
@@ -23,9 +23,9 @@ const SplatRouteRoute = SplatRouteRouteImport.update({
   path: '/$',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRouteRoute = IndexRouteRouteImport.update({
-  id: '/',
-  path: '',
+const EditorRouteRoute = EditorRouteRouteImport.update({
+  id: '/editor',
+  path: '/editor',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -61,11 +61,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/editor': {
-      id: '/editor'
-      path: '/editor'
-      fullPath: '/editor'
-      preLoaderRoute: typeof EditorRouteRouteImport
+    '/': {
+      id: '/'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$': {
@@ -75,11 +75,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SplatRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteRouteImport
+    '/editor': {
+      id: '/editor'
+      path: '/editor'
+      fullPath: '/editor'
+      preLoaderRoute: typeof EditorRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

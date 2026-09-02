@@ -55,7 +55,7 @@ export function FilterDrawer({
       />
       <div className="drawer-content" />
       <div className="drawer-side">
-        <label htmlFor="filter-drawer" aria-label="close sidebar" className="drawer-overlay" onClick={onClose} />
+        <label htmlFor="filter-drawer" aria-hidden="true" className="drawer-overlay" onClick={onClose} />
         <div className="bg-base-100 text-base-content flex min-h-full w-64 flex-col overflow-y-auto shadow-2xl md:w-96">
           <div className="border-base-200 flex items-center justify-between border-b px-5 py-4">
             <h2 className="text-lg font-bold">

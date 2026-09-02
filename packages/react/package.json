@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@config/eslint": "workspace:*",
-    "eslint": "catalog:dev",
     "@config/typescript": "workspace:*",
     "@types/react": "catalog:react",
+    "eslint": "catalog:dev",
     "rimraf": "catalog:dev"
   }
 }
