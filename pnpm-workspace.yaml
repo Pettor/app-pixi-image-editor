@@ -45,7 +45,7 @@ catalogs:
     react-dom: 19.2.8
     # Version-locked helpers kept alongside React so they bump together.
     '@types/react': 19.2.18
-    '@types/react-dom': 19.2.4
+    '@types/react-dom': 19.2.5
     babel-plugin-react-compiler: 19.1.0-rc.3
   tanstack:
     '@tanstack/react-form': 1.33.5
