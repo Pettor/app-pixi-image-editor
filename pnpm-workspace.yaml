@@ -57,7 +57,7 @@ catalogs:
     '@pixi/react': 8.0.5
     pixi-filters: 6.1.5
     pixi-viewport: 6.0.3
-    pixi.js: 8.20.0
+    pixi.js: 8.20.1
   ui:
     '@fontsource/rubik': 5.3.0
     '@heroicons/react': 2.2.0

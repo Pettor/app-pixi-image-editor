@@ -155,8 +155,8 @@ catalogs:
       specifier: 6.0.3
       version: 6.0.3
     pixi.js:
-      specifier: 8.20.0
-      version: 8.20.0
+      specifier: 8.20.1
+      version: 8.20.1
   react:
     '@types/react':
       specifier: 19.2.18
@@ -418,7 +418,7 @@ importers:
         version: link:../../packages/ui
       '@pixi/react':
         specifier: catalog:pixi
-        version: 8.0.5(@types/react@19.2.18)(pixi.js@8.20.0)(react@19.2.8)
+        version: 8.0.5(@types/react@19.2.18)(pixi.js@8.20.1)(react@19.2.8)
       '@tanstack/react-router':
         specifier: catalog:tanstack
         version: 1.170.32(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -439,13 +439,13 @@ importers:
         version: 2.4.1(jotai@2.20.3(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.2.18)(react@19.2.8))
       pixi-filters:
         specifier: catalog:pixi
-        version: 6.1.5(pixi.js@8.20.0)
+        version: 6.1.5(pixi.js@8.20.1)
       pixi-viewport:
         specifier: catalog:pixi
-        version: 6.0.3(pixi.js@8.20.0)
+        version: 6.0.3(pixi.js@8.20.1)
       pixi.js:
         specifier: catalog:pixi
-        version: 8.20.0
+        version: 8.20.1
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -5406,8 +5406,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8'
 
-  pixi.js@8.20.0:
-    resolution: {integrity: sha512-WL7+yhxgNnI87AbucMR2X7yXmi/XhhYA25w2wV1QaNv6WMByM02kSX2ryreSq38OavHytFD0zY0bX6Nqgj/WAA==}
+  pixi.js@8.20.1:
+    resolution: {integrity: sha512-akLVBMLvQbaEViqsmVraK0Njer1q4Q4lm4iNKuzvBiFrV8q+6/+HluJN3sWIwO663IBeQtUUS/CaXFJZs6ffXQ==}
 
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
@@ -8178,10 +8178,10 @@ snapshots:
 
   '@pixi/colord@2.9.6': {}
 
-  '@pixi/react@8.0.5(@types/react@19.2.18)(pixi.js@8.20.0)(react@19.2.8)':
+  '@pixi/react@8.0.5(@types/react@19.2.18)(pixi.js@8.20.1)(react@19.2.8)':
     dependencies:
       its-fine: 2.0.0(@types/react@19.2.18)(react@19.2.8)
-      pixi.js: 8.20.0
+      pixi.js: 8.20.1
       react: 19.2.8
       react-reconciler: 0.31.0(react@19.2.8)
     transitivePeerDependencies:
@@ -11239,16 +11239,16 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  pixi-filters@6.1.5(pixi.js@8.20.0):
+  pixi-filters@6.1.5(pixi.js@8.20.1):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.20.0
+      pixi.js: 8.20.1
 
-  pixi-viewport@6.0.3(pixi.js@8.20.0):
+  pixi-viewport@6.0.3(pixi.js@8.20.1):
     dependencies:
-      pixi.js: 8.20.0
+      pixi.js: 8.20.1
 
-  pixi.js@8.20.0:
+  pixi.js@8.20.1:
     dependencies:
       '@pixi/colord': 2.9.6
       '@types/earcut': 3.0.0
