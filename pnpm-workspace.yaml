@@ -68,7 +68,7 @@ catalogs:
     react-intl: 10.1.23
   state:
     immer: 11.1.18
-    jotai: 2.20.2
+    jotai: 2.20.3
     jotai-effect: 2.4.1
   validation:
     '@hookform/resolvers': 5.9.1
