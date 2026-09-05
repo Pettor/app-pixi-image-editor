@@ -72,7 +72,7 @@ catalogs:
     jotai-effect: 2.4.1
   validation:
     '@hookform/resolvers': 5.9.1
-    zod: 4.4.3
+    zod: 4.5.4
   # Dev tooling (Renovate: `chore(deps)`)
   dev:
     # eslint
