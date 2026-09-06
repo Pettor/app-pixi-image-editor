@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";import{i as n,n as r,r as i,t as a}from"./LinkedInIcon-DxyY9kdY.js";function o(e){return(0,s.jsx)(`div`,{className:`h-8 w-8`,children:e})}var s,c,l,u,d;function f(){return(f=e((()=>{n(),r(),s=t(),c={title:`Shared/Icons/Social`,tags:[`autodocs`]},l={render:e=>o((0,s.jsx)(i,{...e}))},u={render:e=>o((0,s.jsx)(a,{...e}))},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  render: args => render(<GithubIcon {...args} />)
+}`,...l.parameters?.docs?.source}}},u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  render: args => render(<LinkedInIcon {...args} />)
+}`,...u.parameters?.docs?.source}}},d=[`Github`,`Linkedin`]})))()}f();export{l as Github,u as Linkedin,d as __namedExportsOrder,c as default};

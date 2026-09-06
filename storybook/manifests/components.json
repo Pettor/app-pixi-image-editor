@@ -1,0 +1,2098 @@
+{
+  "v": 0,
+  "components": {
+    "design-system-colors": {
+      "id": "design-system-colors",
+      "name": "Colors",
+      "path": "../web/src/storybook/foundation/Colors.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component found",
+        "message": "We could not detect the component from your story file. Specify meta.component.\n  2 | import { DocumentationDecorator, DocumentationLayout } from \"@package/storybook\";\n  3 |\n> 4 | export default {\n    | ^\n  5 |   title: \"Design System/Colors\",\n  6 |   tags: [\"no-tests\"],\n  7 |   decorators: [DocumentationDecorator],\n\n../web/src/storybook/foundation/Colors.stories.tsx:\nimport type { ReactElement, ReactNode } from \"react\";\nimport { DocumentationDecorator, DocumentationLayout } from \"@package/storybook\";\n\nexport default {\n  title: \"Design System/Colors\",\n  tags: [\"no-tests\"],\n  decorators: [DocumentationDecorator],\n  parameters: {\n    a11y: {\n      test: \"off\",\n    },\n    layout: \"fullscreen\",\n  },\n};\n\nfunction ColorSection({ title, children }: { title: string; children: ReactNode }): ReactElement {\n  return (\n    <div>\n      <p className=\"text-xl font-medium\">{title}</p>\n      <div className=\"h-2\" />\n      <div className=\"flex h-full w-full flex-row flex-wrap items-center justify-start gap-3 px-4 py-1\">{children}</div>\n    </div>\n  );\n}\n\nfunction ColorItem({ name, bgClass, textClass }: { name: string; bgClass: string; textClass: string }): ReactElement {\n  return (\n    <div\n      className={`${bgClass} ${textClass} flex h-14 w-36 items-center justify-center rounded-lg px-2 text-xs font-medium`}\n    >\n      {name}\n    </div>\n  );\n}\n\nexport function Colors(): ReactElement {\n  return (\n    <DocumentationLayout label=\"Colors\">\n      <div className=\"h-4\" />\n      <div className=\"flex flex-col gap-6\">\n        <ColorSection title=\"Brand\">\n          <ColorItem name=\"primary\" bgClass=\"bg-primary\" textClass=\"text-primary-content\" />\n          <ColorItem name=\"primary-content\" bgClass=\"bg-primary-content\" textClass=\"text-primary\" />\n          <ColorItem name=\"secondary\" bgClass=\"bg-secondary\" textClass=\"text-secondary-content\" />\n          <ColorItem name=\"secondary-content\" bgClass=\"bg-secondary-content\" textClass=\"text-secondary\" />\n          <ColorItem name=\"accent\" bgClass=\"bg-accent\" textClass=\"text-accent-content\" />\n          <ColorItem name=\"accent-content\" bgClass=\"bg-accent-content\" textClass=\"text-accent\" />\n          <ColorItem name=\"neutral\" bgClass=\"bg-neutral\" textClass=\"text-neutral-content\" />\n          <ColorItem name=\"neutral-content\" bgClass=\"bg-neutral-content\" textClass=\"text-neutral\" />\n        </ColorSection>\n        <ColorSection title=\"Base\">\n          <ColorItem name=\"base-100\" bgClass=\"bg-base-100\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-200\" bgClass=\"bg-base-200\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-300\" bgClass=\"bg-base-300\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-content\" bgClass=\"bg-base-content\" textClass=\"text-base-100\" />\n        </ColorSection>\n        <ColorSection title=\"State\">\n          <ColorItem name=\"info\" bgClass=\"bg-info\" textClass=\"text-info-content\" />\n          <ColorItem name=\"info-content\" bgClass=\"bg-info-content\" textClass=\"text-info\" />\n          <ColorItem name=\"success\" bgClass=\"bg-success\" textClass=\"text-success-content\" />\n          <ColorItem name=\"success-content\" bgClass=\"bg-success-content\" textClass=\"text-success\" />\n          <ColorItem name=\"warning\" bgClass=\"bg-warning\" textClass=\"text-warning-content\" />\n          <ColorItem name=\"warning-content\" bgClass=\"bg-warning-content\" textClass=\"text-warning\" />\n          <ColorItem name=\"error\" bgClass=\"bg-error\" textClass=\"text-error-content\" />\n          <ColorItem name=\"error-content\" bgClass=\"bg-error-content\" textClass=\"text-error\" />\n        </ColorSection>\n      </div>\n    </DocumentationLayout>\n  );\n}\n"
+      },
+      "stories": [
+        {
+          "id": "design-system-colors--colors",
+          "name": "Colors",
+          "snippet": "function Colors() {\n  return (\n    <DocumentationLayout label=\"Colors\">\n      <div className=\"h-4\" />\n      <div className=\"flex flex-col gap-6\">\n        <ColorSection title=\"Brand\">\n          <ColorItem name=\"primary\" bgClass=\"bg-primary\" textClass=\"text-primary-content\" />\n          <ColorItem name=\"primary-content\" bgClass=\"bg-primary-content\" textClass=\"text-primary\" />\n          <ColorItem name=\"secondary\" bgClass=\"bg-secondary\" textClass=\"text-secondary-content\" />\n          <ColorItem name=\"secondary-content\" bgClass=\"bg-secondary-content\" textClass=\"text-secondary\" />\n          <ColorItem name=\"accent\" bgClass=\"bg-accent\" textClass=\"text-accent-content\" />\n          <ColorItem name=\"accent-content\" bgClass=\"bg-accent-content\" textClass=\"text-accent\" />\n          <ColorItem name=\"neutral\" bgClass=\"bg-neutral\" textClass=\"text-neutral-content\" />\n          <ColorItem name=\"neutral-content\" bgClass=\"bg-neutral-content\" textClass=\"text-neutral\" />\n        </ColorSection>\n        <ColorSection title=\"Base\">\n          <ColorItem name=\"base-100\" bgClass=\"bg-base-100\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-200\" bgClass=\"bg-base-200\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-300\" bgClass=\"bg-base-300\" textClass=\"text-base-content\" />\n          <ColorItem name=\"base-content\" bgClass=\"bg-base-content\" textClass=\"text-base-100\" />\n        </ColorSection>\n        <ColorSection title=\"State\">\n          <ColorItem name=\"info\" bgClass=\"bg-info\" textClass=\"text-info-content\" />\n          <ColorItem name=\"info-content\" bgClass=\"bg-info-content\" textClass=\"text-info\" />\n          <ColorItem name=\"success\" bgClass=\"bg-success\" textClass=\"text-success-content\" />\n          <ColorItem name=\"success-content\" bgClass=\"bg-success-content\" textClass=\"text-success\" />\n          <ColorItem name=\"warning\" bgClass=\"bg-warning\" textClass=\"text-warning-content\" />\n          <ColorItem name=\"warning-content\" bgClass=\"bg-warning-content\" textClass=\"text-warning\" />\n          <ColorItem name=\"error\" bgClass=\"bg-error\" textClass=\"text-error-content\" />\n          <ColorItem name=\"error-content\" bgClass=\"bg-error-content\" textClass=\"text-error\" />\n        </ColorSection>\n      </div>\n    </DocumentationLayout>\n  );\n}"
+        }
+      ],
+      "import": "import { DocumentationLayout } from \"@package/storybook\";"
+    },
+    "design-system-typography": {
+      "id": "design-system-typography",
+      "name": "Typography",
+      "path": "../web/src/storybook/foundation/Typography.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component found",
+        "message": "We could not detect the component from your story file. Specify meta.component.\n  2 | import { DocumentationDecorator, DocumentationLayout } from \"@package/storybook\";\n  3 |\n> 4 | export default {\n    | ^\n  5 |   title: \"Design System/Typography\",\n  6 |   tags: [\"no-tests\"],\n  7 |   decorators: [DocumentationDecorator],\n\n../web/src/storybook/foundation/Typography.stories.tsx:\nimport type { ReactElement } from \"react\";\nimport { DocumentationDecorator, DocumentationLayout } from \"@package/storybook\";\n\nexport default {\n  title: \"Design System/Typography\",\n  tags: [\"no-tests\"],\n  decorators: [DocumentationDecorator],\n  parameters: {\n    a11y: {\n      test: \"off\",\n    },\n    layout: \"fullscreen\",\n  },\n};\n\nconst codeExample = `function greet(name: string): string {\n  return \\`Hello, \\${name}!\\`;\n}`;\n\nexport function Typography(): ReactElement {\n  return (\n    <DocumentationLayout label=\"Typography\">\n      <div className=\"prose dark:prose-invert mt-8 max-w-none\">\n        <h2>Headings</h2>\n        <h1>h1. The quick brown fox jumps over the lazy dog</h1>\n        <h2>h2. The quick brown fox jumps over the lazy dog</h2>\n        <h3>h3. The quick brown fox jumps over the lazy dog</h3>\n        <h4>h4. The quick brown fox jumps over the lazy dog</h4>\n        <h5>h5. The quick brown fox jumps over the lazy dog</h5>\n        <h6>h6. The quick brown fox jumps over the lazy dog</h6>\n\n        <h2>Body text</h2>\n        <p>\n          Regular paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\n          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.\n        </p>\n        <p>\n          <strong>Bold text.</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac\n          turpis egestas.\n        </p>\n        <p>\n          <em>Italic text.</em> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n        </p>\n        <p>\n          Inline <code>code snippet</code> and an <a href=\"#\">anchor link</a> inside a paragraph.\n        </p>\n\n        <h2>Font weights</h2>\n        <p className=\"not-prose font-thin\">Thin — font-thin</p>\n        <p className=\"not-prose font-extralight\">Extra Light — font-extralight</p>\n        <p className=\"not-prose font-light\">Light — font-light</p>\n        <p className=\"not-prose font-normal\">Normal — font-normal</p>\n        <p className=\"not-prose font-medium\">Medium — font-medium</p>\n        <p className=\"not-prose font-semibold\">Semibold — font-semibold</p>\n        <p className=\"not-prose font-bold\">Bold — font-bold</p>\n        <p className=\"not-prose font-extrabold\">Extra Bold — font-extrabold</p>\n        <p className=\"not-prose font-black\">Black — font-black</p>\n\n        <h2>Lists</h2>\n        <ul>\n          <li>Unordered list item one</li>\n          <li>Unordered list item two</li>\n          <li>\n            Nested list\n            <ul>\n              <li>Nested item one</li>\n              <li>Nested item two</li>\n            </ul>\n          </li>\n        </ul>\n        <ol>\n          <li>Ordered list item one</li>\n          <li>Ordered list item two</li>\n          <li>Ordered list item three</li>\n        </ol>\n\n        <h2>Blockquote</h2>\n        <blockquote>\n          \"Design is not just what it looks like and feels like. Design is how it works.\" — Steve Jobs\n        </blockquote>\n\n        <h2>Code block</h2>\n        <pre>\n          <code>{codeExample}</code>\n        </pre>\n\n        <h2>Table</h2>\n        <table>\n          <thead>\n            <tr>\n              <th>Name</th>\n              <th>Type</th>\n              <th>Default</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>children</td>\n              <td>ReactNode</td>\n              <td>—</td>\n            </tr>\n            <tr>\n              <td>className</td>\n              <td>string</td>\n              <td>undefined</td>\n            </tr>\n            <tr>\n              <td>onClick</td>\n              <td>() =&gt; void</td>\n              <td>undefined</td>\n            </tr>\n          </tbody>\n        </table>\n\n        <hr />\n      </div>\n    </DocumentationLayout>\n  );\n}\n"
+      },
+      "stories": [
+        {
+          "id": "design-system-typography--typography",
+          "name": "Typography",
+          "snippet": "function Typography() {\n  return (\n    <DocumentationLayout label=\"Typography\">\n      <div className=\"prose dark:prose-invert mt-8 max-w-none\">\n        <h2>Headings</h2>\n        <h1>h1. The quick brown fox jumps over the lazy dog</h1>\n        <h2>h2. The quick brown fox jumps over the lazy dog</h2>\n        <h3>h3. The quick brown fox jumps over the lazy dog</h3>\n        <h4>h4. The quick brown fox jumps over the lazy dog</h4>\n        <h5>h5. The quick brown fox jumps over the lazy dog</h5>\n        <h6>h6. The quick brown fox jumps over the lazy dog</h6>\n\n        <h2>Body text</h2>\n        <p>\n          Regular paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt\n          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.\n        </p>\n        <p>\n          <strong>Bold text.</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac\n          turpis egestas.\n        </p>\n        <p>\n          <em>Italic text.</em> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.\n        </p>\n        <p>\n          Inline <code>code snippet</code> and an <a href=\"#\">anchor link</a> inside a paragraph.\n        </p>\n\n        <h2>Font weights</h2>\n        <p className=\"not-prose font-thin\">Thin — font-thin</p>\n        <p className=\"not-prose font-extralight\">Extra Light — font-extralight</p>\n        <p className=\"not-prose font-light\">Light — font-light</p>\n        <p className=\"not-prose font-normal\">Normal — font-normal</p>\n        <p className=\"not-prose font-medium\">Medium — font-medium</p>\n        <p className=\"not-prose font-semibold\">Semibold — font-semibold</p>\n        <p className=\"not-prose font-bold\">Bold — font-bold</p>\n        <p className=\"not-prose font-extrabold\">Extra Bold — font-extrabold</p>\n        <p className=\"not-prose font-black\">Black — font-black</p>\n\n        <h2>Lists</h2>\n        <ul>\n          <li>Unordered list item one</li>\n          <li>Unordered list item two</li>\n          <li>\n            Nested list\n            <ul>\n              <li>Nested item one</li>\n              <li>Nested item two</li>\n            </ul>\n          </li>\n        </ul>\n        <ol>\n          <li>Ordered list item one</li>\n          <li>Ordered list item two</li>\n          <li>Ordered list item three</li>\n        </ol>\n\n        <h2>Blockquote</h2>\n        <blockquote>\n          \"Design is not just what it looks like and feels like. Design is how it works.\" — Steve Jobs\n        </blockquote>\n\n        <h2>Code block</h2>\n        <pre>\n          <code>{codeExample}</code>\n        </pre>\n\n        <h2>Table</h2>\n        <table>\n          <thead>\n            <tr>\n              <th>Name</th>\n              <th>Type</th>\n              <th>Default</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>children</td>\n              <td>ReactNode</td>\n              <td>—</td>\n            </tr>\n            <tr>\n              <td>className</td>\n              <td>string</td>\n              <td>undefined</td>\n            </tr>\n            <tr>\n              <td>onClick</td>\n              <td>() =&gt; void</td>\n              <td>undefined</td>\n            </tr>\n          </tbody>\n        </table>\n\n        <hr />\n      </div>\n    </DocumentationLayout>\n  );\n}"
+        }
+      ],
+      "import": "import { DocumentationLayout } from \"@package/storybook\";"
+    },
+    "views-editor": {
+      "id": "views-editor",
+      "name": "Component",
+      "path": "../web/src/views/editor/EditorView.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "EditorView",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/views/editor/EditorView.tsx",
+        "actualName": "EditorView",
+        "exportName": "EditorView",
+        "props": {
+          "onBack": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        },
+        "composes": [
+          "Omit"
+        ]
+      },
+      "stories": [
+        {
+          "id": "views-editor--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <Component />;"
+        },
+        {
+          "id": "views-editor--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { EditorView as Component } from \"@app/web\";"
+    },
+    "views-error": {
+      "id": "views-error",
+      "name": "Component",
+      "path": "../web/src/views/error/ErrorView.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ErrorView",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/views/error/ErrorView.tsx",
+        "actualName": "ErrorView",
+        "exportName": "ErrorView",
+        "props": {
+          "message": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "views-error--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <Component />;"
+        },
+        {
+          "id": "views-error--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { ErrorView as Component } from \"@app/web\";"
+    },
+    "views-home": {
+      "id": "views-home",
+      "name": "Component",
+      "path": "../web/src/views/home/HomeView.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "HomeView",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/views/home/HomeView.tsx",
+        "actualName": "HomeView",
+        "exportName": "HomeView",
+        "props": {
+          "themeSwitchProps": {
+            "required": true,
+            "tsType": {
+              "name": "ThemeSwitchProps"
+            },
+            "description": ""
+          },
+          "socialLinkProps": {
+            "required": false,
+            "tsType": {
+              "name": "SocialLinkProps"
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "{}",
+              "computed": false
+            }
+          },
+          "onDrop": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(acceptedFiles: File[]) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "Array",
+                      "elements": [
+                        {
+                          "name": "File"
+                        }
+                      ],
+                      "raw": "File[]"
+                    },
+                    "name": "acceptedFiles"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "views-home--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <Component />;"
+        },
+        {
+          "id": "views-home--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { HomeView as Component } from \"@app/web\";"
+    },
+    "views-loading": {
+      "id": "views-loading",
+      "name": "Component",
+      "path": "../web/src/views/loading/LoadingView.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "LoadingView",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/views/loading/LoadingView.tsx",
+        "actualName": "LoadingView",
+        "exportName": "LoadingView"
+      },
+      "stories": [
+        {
+          "id": "views-loading--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <Component />;"
+        },
+        {
+          "id": "views-loading--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { LoadingView as Component } from \"@app/web\";"
+    },
+    "views-notfound": {
+      "id": "views-notfound",
+      "name": "Component",
+      "path": "../web/src/views/not-found/NotFoundView.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "NotFoundView",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/views/not-found/NotFoundView.tsx",
+        "actualName": "NotFoundView",
+        "exportName": "NotFoundView"
+      },
+      "stories": [
+        {
+          "id": "views-notfound--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <Component />;"
+        },
+        {
+          "id": "views-notfound--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { NotFoundView as Component } from \"@app/web\";"
+    },
+    "actions-about-modal": {
+      "id": "actions-about-modal",
+      "name": "Component",
+      "path": "../web/src/components/actions/about-modal/AboutModal.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "AboutModal",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/actions/about-modal/AboutModal.tsx",
+        "actualName": "AboutModal",
+        "exportName": "AboutModal",
+        "props": {
+          "isOpen": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "onClose": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "actions-about-modal--open",
+          "name": "Open",
+          "snippet": "const Open = () => <Component />;"
+        },
+        {
+          "id": "actions-about-modal--closed",
+          "name": "Closed",
+          "snippet": "const Closed = () => <Component isOpen={false} />;"
+        },
+        {
+          "id": "actions-about-modal--close-button",
+          "name": "Close Button",
+          "snippet": "const CloseButton = () => <Component onClose={fn()} />;"
+        },
+        {
+          "id": "actions-about-modal--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        }
+      ],
+      "import": "import { AboutModal as Component } from \"@app/web\";"
+    },
+    "actions-command-palette": {
+      "id": "actions-command-palette",
+      "name": "Component",
+      "path": "../web/src/components/actions/command-palette/CommandPalette.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "CommandPalette",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/actions/command-palette/CommandPalette.tsx",
+        "actualName": "CommandPalette",
+        "exportName": "CommandPalette",
+        "props": {
+          "isOpen": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "commands": {
+            "required": true,
+            "tsType": {
+              "name": "Array",
+              "elements": [
+                {
+                  "name": "Command"
+                }
+              ],
+              "raw": "Command[]"
+            },
+            "description": ""
+          },
+          "onClose": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "actions-command-palette--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--empty",
+          "name": "Empty",
+          "snippet": "const Empty = () => <Component commands={[]} />;"
+        },
+        {
+          "id": "actions-command-palette--phone",
+          "name": "Phone",
+          "snippet": "const Phone = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--search-filters",
+          "name": "Search Filters",
+          "snippet": "const SearchFilters = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--search-no-results",
+          "name": "Search No Results",
+          "snippet": "const SearchNoResults = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--keyboard-navigation",
+          "name": "Keyboard Navigation",
+          "snippet": "const KeyboardNavigation = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--command-execution",
+          "name": "Command Execution",
+          "snippet": "const CommandExecution = () => <Component onClose={fn()} />;"
+        },
+        {
+          "id": "actions-command-palette--escape-close",
+          "name": "Escape Close",
+          "snippet": "const EscapeClose = () => <Component onClose={fn()} />;"
+        },
+        {
+          "id": "actions-command-palette--enter-execute",
+          "name": "Enter Execute",
+          "snippet": "const EnterExecute = () => <Component onClose={fn()} />;"
+        },
+        {
+          "id": "actions-command-palette--home-key",
+          "name": "Home Key",
+          "snippet": "const HomeKey = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--end-key",
+          "name": "End Key",
+          "snippet": "const EndKey = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--mouse-hover-activates",
+          "name": "Mouse Hover Activates",
+          "snippet": "const MouseHoverActivates = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--keyboard-on-empty-results",
+          "name": "Keyboard On Empty Results",
+          "snippet": "const KeyboardOnEmptyResults = () => <Component />;"
+        },
+        {
+          "id": "actions-command-palette--with-command-without-icon",
+          "name": "With Command Without Icon",
+          "snippet": "const WithCommandWithoutIcon = () => <Component\n    commands={[\n      ...commands,\n      { id: \"no-icon\", label: \"No Icon Command\", group: \"Test\", keywords: [], perform: () => {} },\n    ]} />;"
+        },
+        {
+          "id": "actions-command-palette--with-default-group",
+          "name": "With Default Group",
+          "snippet": "const WithDefaultGroup = () => <Component\n    commands={[{ id: \"ungrouped\", label: \"Ungrouped Command\", keywords: [], perform: () => {} }]} />;"
+        }
+      ],
+      "import": "import {\n    ArrowDownTrayIcon,\n    ArrowsPointingOutIcon,\n    ArrowsRightLeftIcon,\n    ArrowsUpDownIcon,\n    ArrowUturnLeftIcon,\n    ArrowUturnRightIcon,\n    CommandPalette as Component,\n    DocumentPlusIcon,\n    LockClosedIcon,\n    MagnifyingGlassIcon,\n    MagnifyingGlassMinusIcon,\n    MagnifyingGlassPlusIcon,\n    MoonIcon,\n    SunIcon,\n} from \"@app/web\";"
+    },
+    "actions-command-palette-command-shortcut": {
+      "id": "actions-command-palette-command-shortcut",
+      "name": "CommandShortcutHarness",
+      "path": "../web/src/components/actions/command-palette/CommandShortcut.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component import found",
+        "message": "No component file found for the \"CommandShortcutHarness\" component.\n   8 | }\n   9 |\n> 10 | const meta: Meta<typeof CommandShortcutHarness> = {\n     | ^\n  11 |   component: CommandShortcutHarness,\n  12 |   title: \"Actions/Command Palette/Command Shortcut\",\n  13 |   tags: [\"autodocs\"],\n\n../web/src/components/actions/command-palette/CommandShortcut.stories.tsx:\nimport type { ReactElement } from \"react\";\nimport type { Meta, StoryObj } from \"@storybook/react-vite\";\nimport { expect } from \"storybook/test\";\nimport { isMac, matchesShortcut } from \"./CommandShortcut\";\n\nfunction CommandShortcutHarness(): ReactElement {\n  return <div data-testid=\"harness\" />;\n}\n\nconst meta: Meta<typeof CommandShortcutHarness> = {\n  component: CommandShortcutHarness,\n  title: \"Actions/Command Palette/Command Shortcut\",\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const IsMacReturnsBool: Story = {\n  play: async () => {\n    const result = isMac();\n    expect(typeof result).toBe(\"boolean\");\n  },\n} satisfies Story;\n\n// matchesShortcut — mod key maps to ctrlKey on non-Mac and metaKey on Mac\nexport const MatchesModKey: Story = {\n  play: async () => {\n    const mac = isMac();\n    const event = new KeyboardEvent(\"keydown\", {\n      key: \"s\",\n      ctrlKey: !mac,\n      metaKey: mac,\n    });\n    expect(matchesShortcut(event, { mod: true, key: \"s\" })).toBe(true);\n    expect(matchesShortcut(event, { mod: true, key: \"k\" })).toBe(false);\n  },\n} satisfies Story;\n\n// matchesShortcut — shift modifier must match exactly\nexport const MatchesShiftKey: Story = {\n  play: async () => {\n    const withShift = new KeyboardEvent(\"keydown\", { key: \"a\", shiftKey: true });\n    const noShift = new KeyboardEvent(\"keydown\", { key: \"a\" });\n\n    expect(matchesShortcut(withShift, { shift: true, key: \"a\" })).toBe(true);\n    expect(matchesShortcut(noShift, { shift: true, key: \"a\" })).toBe(false);\n    expect(matchesShortcut(withShift, { key: \"a\" })).toBe(false);\n  },\n} satisfies Story;\n\n// matchesShortcut — alt modifier must match exactly\nexport const MatchesAltKey: Story = {\n  play: async () => {\n    const withAlt = new KeyboardEvent(\"keydown\", { key: \"d\", altKey: true });\n    const noAlt = new KeyboardEvent(\"keydown\", { key: \"d\" });\n\n    expect(matchesShortcut(withAlt, { alt: true, key: \"d\" })).toBe(true);\n    expect(matchesShortcut(noAlt, { alt: true, key: \"d\" })).toBe(false);\n  },\n} satisfies Story;\n\n// matchesShortcut — key comparison is case-insensitive\nexport const KeyCaseInsensitive: Story = {\n  play: async () => {\n    const event = new KeyboardEvent(\"keydown\", { key: \"K\" });\n    expect(matchesShortcut(event, { key: \"k\" })).toBe(true);\n    expect(matchesShortcut(event, { key: \"K\" })).toBe(true);\n  },\n} satisfies Story;\n"
+      },
+      "stories": [
+        {
+          "id": "actions-command-palette-command-shortcut--is-mac-returns-bool",
+          "name": "Is Mac Returns Bool",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-command-shortcut--matches-mod-key",
+          "name": "Matches Mod Key",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-command-shortcut--matches-shift-key",
+          "name": "Matches Shift Key",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-command-shortcut--matches-alt-key",
+          "name": "Matches Alt Key",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-command-shortcut--key-case-insensitive",
+          "name": "Key Case Insensitive",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        }
+      ],
+      "import": "import { CommandShortcutHarness } from \"@app/web\";"
+    },
+    "actions-command-palette-use-command-palette": {
+      "id": "actions-command-palette-use-command-palette",
+      "name": "Wrapper",
+      "path": "../web/src/components/actions/command-palette/UseCommandPalette.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component import found",
+        "message": "No component file found for the \"Wrapper\" component.\n  31 | }\n  32 |\n> 33 | const meta: Meta<typeof Wrapper> = {\n     | ^\n  34 |   component: Wrapper,\n  35 |   title: \"Actions/Command Palette/Use Command Palette\",\n  36 |   tags: [\"autodocs\"],\n\n../web/src/components/actions/command-palette/UseCommandPalette.stories.tsx:\nimport type { ReactElement } from \"react\";\nimport type { Meta, StoryObj } from \"@storybook/react-vite\";\nimport { Provider } from \"jotai\";\nimport { expect } from \"storybook/test\";\nimport { useCommandPalette } from \"./UseCommandPalette\";\n\nfunction UseCommandPaletteHarness(): ReactElement {\n  const { isOpen, open, close, toggle } = useCommandPalette();\n  return (\n    <div>\n      <span data-testid=\"is-open\">{String(isOpen)}</span>\n      <button data-testid=\"btn-open\" onClick={open}>\n        Open\n      </button>\n      <button data-testid=\"btn-close\" onClick={close}>\n        Close\n      </button>\n      <button data-testid=\"btn-toggle\" onClick={toggle}>\n        Toggle\n      </button>\n    </div>\n  );\n}\n\nfunction Wrapper(): ReactElement {\n  return (\n    <Provider>\n      <UseCommandPaletteHarness />\n    </Provider>\n  );\n}\n\nconst meta: Meta<typeof Wrapper> = {\n  component: Wrapper,\n  title: \"Actions/Command Palette/Use Command Palette\",\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  play: async ({ canvas }) => {\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n  },\n} satisfies Story;\n\nexport const OpenAndClose: Story = {\n  play: async ({ canvas, userEvent }) => {\n    await userEvent.click(canvas.getByTestId(\"btn-open\"));\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"true\");\n\n    await userEvent.click(canvas.getByTestId(\"btn-close\"));\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n  },\n} satisfies Story;\n\nexport const ToggleState: Story = {\n  play: async ({ canvas, userEvent }) => {\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n\n    await userEvent.click(canvas.getByTestId(\"btn-toggle\"));\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"true\");\n\n    await userEvent.click(canvas.getByTestId(\"btn-toggle\"));\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n  },\n} satisfies Story;\n"
+      },
+      "stories": [
+        {
+          "id": "actions-command-palette-use-command-palette--default",
+          "name": "Default",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-palette--open-and-close",
+          "name": "Open And Close",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-palette--toggle-state",
+          "name": "Toggle State",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        }
+      ],
+      "import": "import { Provider } from \"jotai\";"
+    },
+    "actions-command-palette-use-command-palette-shortcut": {
+      "id": "actions-command-palette-use-command-palette-shortcut",
+      "name": "Wrapper",
+      "path": "../web/src/components/actions/command-palette/UseCommandPaletteShortcut.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component import found",
+        "message": "No component file found for the \"Wrapper\" component.\n  25 | }\n  26 |\n> 27 | const meta: Meta<typeof Wrapper> = {\n     | ^\n  28 |   component: Wrapper,\n  29 |   title: \"Actions/Command Palette/Use Command Palette Shortcut\",\n  30 |   tags: [\"autodocs\"],\n\n../web/src/components/actions/command-palette/UseCommandPaletteShortcut.stories.tsx:\nimport type { ReactElement } from \"react\";\nimport type { Meta, StoryObj } from \"@storybook/react-vite\";\nimport { Provider } from \"jotai\";\nimport { expect } from \"storybook/test\";\nimport { useCommandPalette } from \"./UseCommandPalette\";\nimport { useCommandPaletteShortcut } from \"./UseCommandPaletteShortcut\";\n\nfunction UseCommandPaletteShortcutHarness(): ReactElement {\n  const { isOpen } = useCommandPalette();\n  useCommandPaletteShortcut();\n  return (\n    <div>\n      <span data-testid=\"is-open\">{String(isOpen)}</span>\n      <button data-testid=\"btn\">Focusable</button>\n    </div>\n  );\n}\n\nfunction Wrapper(): ReactElement {\n  return (\n    <Provider>\n      <UseCommandPaletteShortcutHarness />\n    </Provider>\n  );\n}\n\nconst meta: Meta<typeof Wrapper> = {\n  component: Wrapper,\n  title: \"Actions/Command Palette/Use Command Palette Shortcut\",\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  play: async ({ canvas }) => {\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n  },\n} satisfies Story;\n\n// Ctrl+K (Windows/Linux) or Cmd+K (Mac) toggles the palette open and closed.\nexport const CtrlKToggles: Story = {\n  play: async ({ canvas, userEvent }) => {\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n\n    await userEvent.click(canvas.getByTestId(\"btn\"));\n    await userEvent.keyboard(\"{Control>}k{/Control}\");\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"true\");\n\n    await userEvent.keyboard(\"{Control>}k{/Control}\");\n    await expect(canvas.getByTestId(\"is-open\")).toHaveTextContent(\"false\");\n  },\n} satisfies Story;\n"
+      },
+      "stories": [
+        {
+          "id": "actions-command-palette-use-command-palette-shortcut--default",
+          "name": "Default",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-palette-shortcut--ctrl-k-toggles",
+          "name": "Ctrl K Toggles",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        }
+      ],
+      "import": "import { Provider } from \"jotai\";"
+    },
+    "actions-command-palette-use-command-shortcuts": {
+      "id": "actions-command-palette-use-command-shortcuts",
+      "name": "UseCommandShortcutsHarness",
+      "path": "../web/src/components/actions/command-palette/UseCommandShortcuts.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component import found",
+        "message": "No component file found for the \"UseCommandShortcutsHarness\" component.\n  28 | }\n  29 |\n> 30 | const meta: Meta<typeof UseCommandShortcutsHarness> = {\n     | ^\n  31 |   component: UseCommandShortcutsHarness,\n  32 |   title: \"Actions/Command Palette/Use Command Shortcuts\",\n  33 |   tags: [\"autodocs\"],\n\n../web/src/components/actions/command-palette/UseCommandShortcuts.stories.tsx:\nimport { useMemo, type ReactElement } from \"react\";\nimport type { Meta, StoryObj } from \"@storybook/react-vite\";\nimport { expect, fn } from \"storybook/test\";\nimport type { Command } from \"./Command\";\nimport { isMac } from \"./CommandShortcut\";\nimport { useCommandShortcuts } from \"./UseCommandShortcuts\";\n\ninterface HarnessProps {\n  onCommand: () => void;\n}\n\nfunction UseCommandShortcutsHarness({ onCommand }: HarnessProps): ReactElement {\n  const commands = useMemo<Command[]>(\n    () => [\n      { id: \"mod-cmd\", label: \"Mod Command\", shortcut: { mod: true, key: \"j\" }, perform: onCommand },\n      { id: \"bare-cmd\", label: \"Bare Command\", shortcut: { key: \"q\" }, perform: onCommand },\n    ],\n    [onCommand]\n  );\n  useCommandShortcuts(commands);\n  return (\n    <div>\n      <label htmlFor=\"test-input\">Test input</label>\n      <input id=\"test-input\" data-testid=\"input\" />\n      <button data-testid=\"btn\">Button</button>\n    </div>\n  );\n}\n\nconst meta: Meta<typeof UseCommandShortcutsHarness> = {\n  component: UseCommandShortcutsHarness,\n  title: \"Actions/Command Palette/Use Command Shortcuts\",\n  tags: [\"autodocs\"],\n  args: {\n    onCommand: fn(),\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {} satisfies Story;\n\n// Modifier shortcut (Ctrl+J on non-Mac, Cmd+J on Mac) fires the command.\nexport const ModShortcutFires: Story = {\n  play: async ({ canvas, userEvent, args }) => {\n    await userEvent.click(canvas.getByTestId(\"btn\"));\n    await userEvent.keyboard(isMac() ? \"{Meta>}j{/Meta}\" : \"{Control>}j{/Control}\");\n    expect(args.onCommand).toHaveBeenCalledOnce();\n  },\n} satisfies Story;\n\n// Non-modifier shortcut is suppressed when an input element has focus.\nexport const BareShortcutBlockedInInput: Story = {\n  play: async ({ canvas, userEvent, args }) => {\n    await userEvent.click(canvas.getByTestId(\"input\"));\n    await userEvent.keyboard(\"q\");\n    expect(args.onCommand).not.toHaveBeenCalled();\n  },\n} satisfies Story;\n\n// Non-modifier shortcut fires when focus is outside an editable element.\nexport const BareShortcutFiresOutsideInput: Story = {\n  play: async ({ canvas, userEvent, args }) => {\n    await userEvent.click(canvas.getByTestId(\"btn\"));\n    await userEvent.keyboard(\"q\");\n    expect(args.onCommand).toHaveBeenCalledOnce();\n  },\n} satisfies Story;\n"
+      },
+      "stories": [
+        {
+          "id": "actions-command-palette-use-command-shortcuts--default",
+          "name": "Default",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-shortcuts--mod-shortcut-fires",
+          "name": "Mod Shortcut Fires",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-shortcuts--bare-shortcut-blocked-in-input",
+          "name": "Bare Shortcut Blocked In Input",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        },
+        {
+          "id": "actions-command-palette-use-command-shortcuts--bare-shortcut-fires-outside-input",
+          "name": "Bare Shortcut Fires Outside Input",
+          "error": {
+            "name": "Error",
+            "message": "Could not generate snippet without component name."
+          }
+        }
+      ],
+      "import": "import { UseCommandShortcutsHarness } from \"@app/web\";"
+    },
+    "actions-theme-switch": {
+      "id": "actions-theme-switch",
+      "name": "Component",
+      "path": "../web/src/components/actions/theme-switch/ThemeSwitch.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ThemeSwitch",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/actions/theme-switch/ThemeSwitch.tsx",
+        "actualName": "ThemeSwitch",
+        "exportName": "ThemeSwitch",
+        "props": {
+          "mode": {
+            "required": true,
+            "tsType": {
+              "name": "union",
+              "raw": "\"light\" | \"dark\"",
+              "elements": [
+                {
+                  "name": "literal",
+                  "value": "\"light\""
+                },
+                {
+                  "name": "literal",
+                  "value": "\"dark\""
+                }
+              ]
+            },
+            "description": ""
+          },
+          "onSwitch": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "actions-theme-switch--light",
+          "name": "Light",
+          "snippet": "const Light = () => <Component mode=\"light\" onSwitch={() => {}} />;"
+        },
+        {
+          "id": "actions-theme-switch--dark",
+          "name": "Dark",
+          "snippet": "const Dark = () => <Component mode=\"dark\" onSwitch={() => {}} />;"
+        }
+      ],
+      "import": "import { ThemeSwitch as Component } from \"@app/web\";"
+    },
+    "editor-app-drawer": {
+      "id": "editor-app-drawer",
+      "name": "Component",
+      "path": "../web/src/components/editor/drawer/app-drawer/AppDrawer.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "AppDrawer",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/drawer/app-drawer/AppDrawer.tsx",
+        "actualName": "AppDrawer",
+        "exportName": "AppDrawer",
+        "props": {
+          "open": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "themeSwitchProps": {
+            "required": true,
+            "tsType": {
+              "name": "ThemeSwitchProps"
+            },
+            "description": ""
+          },
+          "onClose": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onNewImage": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onSaveImage": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onAbout": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-app-drawer--open",
+          "name": "Open",
+          "snippet": "const Open = () => <Component />;"
+        },
+        {
+          "id": "editor-app-drawer--closed",
+          "name": "Closed",
+          "snippet": "const Closed = () => <Component open={false} />;"
+        },
+        {
+          "id": "editor-app-drawer--with-interactions",
+          "name": "With Interactions",
+          "snippet": "const WithInteractions = () => <Component />;"
+        },
+        {
+          "id": "editor-app-drawer--controller-open",
+          "name": "Controller Open",
+          "snippet": "const ControllerOpen = () => <AppDrawerControllerOpen />;"
+        }
+      ],
+      "import": "import { AppDrawerController, AppDrawer as Component, HydrateAtoms } from \"@app/web\";\nimport { Provider } from \"jotai\";"
+    },
+    "editor-filter-drawer": {
+      "id": "editor-filter-drawer",
+      "name": "Component",
+      "path": "../web/src/components/editor/drawer/filter-drawer/FilterDrawer.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "FilterDrawer",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/drawer/filter-drawer/FilterDrawer.tsx",
+        "actualName": "FilterDrawer",
+        "exportName": "FilterDrawer",
+        "props": {
+          "open": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "blur": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "brightness": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "contrast": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "saturation": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "pixelate": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "red": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "green": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "blue": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "onFilterChange": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(filter: Partial<StagedFilter>) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "Partial",
+                      "elements": [
+                        {
+                          "name": "StagedFilter"
+                        }
+                      ],
+                      "raw": "Partial<StagedFilter>"
+                    },
+                    "name": "filter"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onClose": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-filter-drawer--open",
+          "name": "Open",
+          "snippet": "const Open = () => <Component />;"
+        },
+        {
+          "id": "editor-filter-drawer--closed",
+          "name": "Closed",
+          "snippet": "const Closed = () => <Component open={false} />;"
+        },
+        {
+          "id": "editor-filter-drawer--with-interactions",
+          "name": "With Interactions",
+          "snippet": "const WithInteractions = () => <Component />;"
+        },
+        {
+          "id": "editor-filter-drawer--with-rgb-reset",
+          "name": "With Rgb Reset",
+          "snippet": "const WithRgbReset = () => <Component />;"
+        },
+        {
+          "id": "editor-filter-drawer--with-all-filter-slider-resets",
+          "name": "With All Filter Slider Resets",
+          "snippet": "const WithAllFilterSliderResets = () => <Component onFilterChange={fn()} />;"
+        },
+        {
+          "id": "editor-filter-drawer--controller-open",
+          "name": "Controller Open",
+          "snippet": "const ControllerOpen = () => <FilterDrawerControllerOpen />;"
+        }
+      ],
+      "import": "import { FilterDrawer as Component, FilterDrawerController, HydrateAtoms } from \"@app/web\";\nimport { Provider } from \"jotai\";"
+    },
+    "editor-filter-drawer-filter-slider": {
+      "id": "editor-filter-drawer-filter-slider",
+      "name": "Component",
+      "path": "../web/src/components/editor/drawer/filter-drawer/filter-slider/FilterSlider.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "FilterSlider",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/drawer/filter-drawer/filter-slider/FilterSlider.tsx",
+        "actualName": "FilterSlider",
+        "exportName": "FilterSlider",
+        "props": {
+          "label": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "resetLabel": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "icon": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "value": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "min": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "max": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "step": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "rangeClassName": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "ariaLabel": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "onReset": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onChange": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(value: number) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "number"
+                    },
+                    "name": "value"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-filter-drawer-filter-slider--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component />;"
+        },
+        {
+          "id": "editor-filter-drawer-filter-slider--at-minimum",
+          "name": "At Minimum",
+          "snippet": "const AtMinimum = () => <Component value={0} />;"
+        },
+        {
+          "id": "editor-filter-drawer-filter-slider--at-maximum",
+          "name": "At Maximum",
+          "snippet": "const AtMaximum = () => <Component value={2} />;"
+        }
+      ],
+      "import": "import { FilterSlider as Component } from \"@app/web\";"
+    },
+    "editor-toolbar-menu": {
+      "id": "editor-toolbar-menu",
+      "name": "Component",
+      "path": "../web/src/components/editor/toolbar/toolbar-menu/ToolbarMenu.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ToolbarMenu",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/toolbar/toolbar-menu/ToolbarMenu.tsx",
+        "actualName": "ToolbarMenu",
+        "exportName": "ToolbarMenu",
+        "props": {
+          "onToggle": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-toolbar-menu--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component onToggle={fn()} />;"
+        },
+        {
+          "id": "editor-toolbar-menu--with-interaction",
+          "name": "With Interaction",
+          "snippet": "const WithInteraction = () => <Component onToggle={fn()} />;"
+        },
+        {
+          "id": "editor-toolbar-menu--controller-default",
+          "name": "Controller Default",
+          "snippet": "const ControllerDefault = () => <ToolbarMenuControllerWrapper />;"
+        }
+      ],
+      "import": "import { ToolbarMenu as Component, ToolbarMenuController } from \"@app/web\";\nimport { Provider } from \"jotai\";"
+    },
+    "editor-toolbar-tools": {
+      "id": "editor-toolbar-tools",
+      "name": "Component",
+      "path": "../web/src/components/editor/toolbar/toolbar-tools/ToolbarTools.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ToolbarTools",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/toolbar/toolbar-tools/ToolbarTools.tsx",
+        "actualName": "ToolbarTools",
+        "exportName": "ToolbarTools",
+        "props": {
+          "lock": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "showFitScreen": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "onToggleFilterMenu": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onSwapLock": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onRotate": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(value: \"rotate-left\" | \"rotate-right\") => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "union",
+                      "raw": "\"rotate-left\" | \"rotate-right\"",
+                      "elements": [
+                        {
+                          "name": "literal",
+                          "value": "\"rotate-left\""
+                        },
+                        {
+                          "name": "literal",
+                          "value": "\"rotate-right\""
+                        }
+                      ]
+                    },
+                    "name": "value"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onFlip": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(value: \"flip-horizontal\" | \"flip-vertical\") => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "union",
+                      "raw": "\"flip-horizontal\" | \"flip-vertical\"",
+                      "elements": [
+                        {
+                          "name": "literal",
+                          "value": "\"flip-horizontal\""
+                        },
+                        {
+                          "name": "literal",
+                          "value": "\"flip-vertical\""
+                        }
+                      ]
+                    },
+                    "name": "value"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onAdjustZoom": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-toolbar-tools--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component />;"
+        },
+        {
+          "id": "editor-toolbar-tools--locked",
+          "name": "Locked",
+          "snippet": "const Locked = () => <Component lock />;"
+        },
+        {
+          "id": "editor-toolbar-tools--with-fit-to-window",
+          "name": "With Fit To Window",
+          "snippet": "const WithFitToWindow = () => <Component showFitScreen={false} />;"
+        },
+        {
+          "id": "editor-toolbar-tools--with-all-interactions",
+          "name": "With All Interactions",
+          "snippet": "const WithAllInteractions = () => <Component />;"
+        },
+        {
+          "id": "editor-toolbar-tools--with-locked-interactions",
+          "name": "With Locked Interactions",
+          "snippet": "const WithLockedInteractions = () => <Component lock />;"
+        },
+        {
+          "id": "editor-toolbar-tools--with-fit-to-window-interaction",
+          "name": "With Fit To Window Interaction",
+          "snippet": "const WithFitToWindowInteraction = () => <Component showFitScreen={false} />;"
+        },
+        {
+          "id": "editor-toolbar-tools--controller-default",
+          "name": "Controller Default",
+          "snippet": "const ControllerDefault = () => <ToolbarToolsControllerWrapper />;"
+        }
+      ],
+      "import": "import { ToolbarTools as Component, ToolbarToolsController } from \"@app/web\";\nimport { Provider } from \"jotai\";"
+    },
+    "editor-toolbar-zoom": {
+      "id": "editor-toolbar-zoom",
+      "name": "Component",
+      "path": "../web/src/components/editor/toolbar/toolbar-zoom/ToolbarZoom.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "ToolbarZoom",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/editor/toolbar/toolbar-zoom/ToolbarZoom.tsx",
+        "actualName": "ToolbarZoom",
+        "exportName": "ToolbarZoom",
+        "props": {
+          "zoom": {
+            "required": true,
+            "tsType": {
+              "name": "number"
+            },
+            "description": ""
+          },
+          "onZoomIn": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onZoomOut": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onResetZoom": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "editor-toolbar-zoom--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component />;"
+        },
+        {
+          "id": "editor-toolbar-zoom--zoomed-in",
+          "name": "Zoomed In",
+          "snippet": "const ZoomedIn = () => <Component zoom={200} />;"
+        },
+        {
+          "id": "editor-toolbar-zoom--with-interactions",
+          "name": "With Interactions",
+          "snippet": "const WithInteractions = () => <Component />;"
+        },
+        {
+          "id": "editor-toolbar-zoom--controller-default",
+          "name": "Controller Default",
+          "snippet": "const ControllerDefault = () => <ToolbarZoomControllerWrapper />;"
+        }
+      ],
+      "import": "import { ToolbarZoom as Component, ToolbarZoomController } from \"@app/web\";\nimport { Provider } from \"jotai\";"
+    },
+    "feedback-pwa-offline-dialog": {
+      "id": "feedback-pwa-offline-dialog",
+      "name": "Component",
+      "path": "../web/src/components/feedback/pwa-offline-dialog/PwaOfflineDialog.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "PwaOfflineDialog",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/feedback/pwa-offline-dialog/PwaOfflineDialog.tsx",
+        "actualName": "PwaOfflineDialog",
+        "exportName": "PwaOfflineDialog",
+        "props": {
+          "open": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "feedback-pwa-offline-dialog--open",
+          "name": "Open",
+          "snippet": "const Open = () => <Component open onClose={() => {}} />;"
+        },
+        {
+          "id": "feedback-pwa-offline-dialog--closed",
+          "name": "Closed",
+          "snippet": "const Closed = () => <Component open={false} onClose={() => {}} />;"
+        }
+      ],
+      "import": "import { PwaOfflineDialog as Component } from \"@app/web\";"
+    },
+    "feedback-pwa-update-dialog": {
+      "id": "feedback-pwa-update-dialog",
+      "name": "Component",
+      "path": "../web/src/components/feedback/pwa-update-dialog/PwaUpdateDialog.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "PwaUpdateDialog",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/feedback/pwa-update-dialog/PwaUpdateDialog.tsx",
+        "actualName": "PwaUpdateDialog",
+        "exportName": "PwaUpdateDialog",
+        "props": {
+          "open": {
+            "required": true,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "feedback-pwa-update-dialog--open",
+          "name": "Open",
+          "snippet": "const Open = () => <Component open onUpdate={() => {}} />;"
+        },
+        {
+          "id": "feedback-pwa-update-dialog--closed",
+          "name": "Closed",
+          "snippet": "const Closed = () => <Component open={false} onUpdate={() => {}} />;"
+        }
+      ],
+      "import": "import { PwaUpdateDialog as Component } from \"@app/web\";"
+    },
+    "icons-filters-filter-icons": {
+      "id": "icons-filters-filter-icons",
+      "name": "BlurIcon",
+      "path": "../web/src/components/icons/filters/FilterIcons.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "BlurIcon",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/icons/filters/BlurIcon.tsx",
+        "actualName": "BlurIcon",
+        "exportName": "BlurIcon"
+      },
+      "stories": [
+        {
+          "id": "icons-filters-filter-icons--blur",
+          "name": "Blur",
+          "snippet": "const Blur = () => <BlurIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--contrast",
+          "name": "Contrast",
+          "snippet": "const Contrast = () => <ContrastIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--droplet",
+          "name": "Droplet",
+          "snippet": "const Droplet = () => <DropletIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--pixelate",
+          "name": "Pixelate",
+          "snippet": "const Pixelate = () => <PixelateIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--rgb",
+          "name": "Rgb",
+          "snippet": "const Rgb = () => <RgbIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--sparkles",
+          "name": "Sparkles",
+          "snippet": "const Sparkles = () => <SparklesIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--sun-dim",
+          "name": "Sun Dim",
+          "snippet": "const SunDim = () => <SunDimIcon />;"
+        },
+        {
+          "id": "icons-filters-filter-icons--sun-high",
+          "name": "Sun High",
+          "snippet": "const SunHigh = () => <SunHighIcon />;"
+        }
+      ],
+      "import": "import {\n    BlurIcon,\n    ContrastIcon,\n    DropletIcon,\n    PixelateIcon,\n    RgbIcon,\n    SparklesIcon,\n    SunDimIcon,\n    SunHighIcon,\n} from \"@app/web\";"
+    },
+    "icons-social-github": {
+      "id": "icons-social-github",
+      "name": "GithubIcon",
+      "path": "../web/src/components/icons/social/SocialIcons.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "GithubIcon",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/icons/social/GithubIcon.tsx",
+        "actualName": "GithubIcon",
+        "exportName": "GithubIcon"
+      },
+      "stories": [
+        {
+          "id": "icons-social-github--default",
+          "name": "Default",
+          "snippet": "const Default = () => <GithubIcon />;"
+        },
+        {
+          "id": "icons-social-github--linked-in",
+          "name": "Linked In",
+          "snippet": "const LinkedIn = () => <LinkedInIcon />;"
+        }
+      ],
+      "import": "import { GithubIcon, LinkedInIcon } from \"@app/web\";"
+    },
+    "icons-tools-tool-icons": {
+      "id": "icons-tools-tool-icons",
+      "name": "FitViewIcon",
+      "path": "../web/src/components/icons/tools/ToolIcons.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "FitViewIcon",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/icons/tools/FitViewIcon.tsx",
+        "actualName": "FitViewIcon",
+        "exportName": "FitViewIcon"
+      },
+      "stories": [
+        {
+          "id": "icons-tools-tool-icons--fit-view",
+          "name": "Fit View",
+          "snippet": "const FitView = () => <FitViewIcon />;"
+        },
+        {
+          "id": "icons-tools-tool-icons--flip-horizontal",
+          "name": "Flip Horizontal",
+          "snippet": "const FlipHorizontal = () => <FlipHorizontalIcon />;"
+        },
+        {
+          "id": "icons-tools-tool-icons--flip-vertical",
+          "name": "Flip Vertical",
+          "snippet": "const FlipVertical = () => <FlipVerticalIcon />;"
+        },
+        {
+          "id": "icons-tools-tool-icons--fullscreen",
+          "name": "Fullscreen",
+          "snippet": "const Fullscreen = () => <FullscreenIcon />;"
+        },
+        {
+          "id": "icons-tools-tool-icons--rotate-ccw",
+          "name": "Rotate Ccw",
+          "snippet": "const RotateCcw = () => <RotateCcwIcon />;"
+        },
+        {
+          "id": "icons-tools-tool-icons--rotate-cw",
+          "name": "Rotate Cw",
+          "snippet": "const RotateCw = () => <RotateCwIcon />;"
+        }
+      ],
+      "import": "import {\n    FitViewIcon,\n    FlipHorizontalIcon,\n    FlipVerticalIcon,\n    FullscreenIcon,\n    RotateCcwIcon,\n    RotateCwIcon,\n} from \"@app/web\";"
+    },
+    "input-dropzone": {
+      "id": "input-dropzone",
+      "name": "Component",
+      "path": "../web/src/components/input/dropzone/Dropzone.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "Dropzone",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/apps/web/src/components/input/dropzone/Dropzone.tsx",
+        "actualName": "Dropzone",
+        "exportName": "Dropzone",
+        "props": {
+          "onDrop": {
+            "required": true,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "(acceptedFiles: File[]) => void",
+              "signature": {
+                "arguments": [
+                  {
+                    "type": {
+                      "name": "Array",
+                      "elements": [
+                        {
+                          "name": "File"
+                        }
+                      ],
+                      "raw": "File[]"
+                    },
+                    "name": "acceptedFiles"
+                  }
+                ],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "input-dropzone--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component onDrop={() => {}} />;"
+        }
+      ],
+      "import": "import { Dropzone as Component } from \"@app/web\";"
+    },
+    "shared-branding-logo": {
+      "id": "shared-branding-logo",
+      "name": "Component",
+      "path": "../../packages/ui/src/Branding/Logo/Logo.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "Logo",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Branding/Logo/Logo.tsx",
+        "actualName": "Logo",
+        "exportName": "Logo",
+        "props": {
+          "size": {
+            "required": false,
+            "tsType": {
+              "name": "union",
+              "raw": "\"small\" | \"medium\" | \"large\"",
+              "elements": [
+                {
+                  "name": "literal",
+                  "value": "\"small\""
+                },
+                {
+                  "name": "literal",
+                  "value": "\"medium\""
+                },
+                {
+                  "name": "literal",
+                  "value": "\"large\""
+                }
+              ]
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "\"large\"",
+              "computed": false
+            }
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-branding-logo--small",
+          "name": "Small",
+          "snippet": "const Small = () => <Component size=\"small\" />;"
+        },
+        {
+          "id": "shared-branding-logo--medium",
+          "name": "Medium",
+          "snippet": "const Medium = () => <Component size=\"medium\" />;"
+        },
+        {
+          "id": "shared-branding-logo--large",
+          "name": "Large",
+          "snippet": "const Large = () => <Component size=\"large\" />;"
+        }
+      ],
+      "import": "import { Logo as Component } from \"@package/ui\";"
+    },
+    "shared-branding-logo-full": {
+      "id": "shared-branding-logo-full",
+      "name": "Component",
+      "path": "../../packages/ui/src/Branding/LogoFull/LogoFull.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "LogoFull",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Branding/LogoFull/LogoFull.tsx",
+        "actualName": "LogoFull",
+        "exportName": "LogoFull",
+        "props": {
+          "appName": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "size": {
+            "required": false,
+            "tsType": {
+              "name": "union",
+              "raw": "\"small\" | \"medium\" | \"large\"",
+              "elements": [
+                {
+                  "name": "literal",
+                  "value": "\"small\""
+                },
+                {
+                  "name": "literal",
+                  "value": "\"medium\""
+                },
+                {
+                  "name": "literal",
+                  "value": "\"large\""
+                }
+              ]
+            },
+            "description": "",
+            "defaultValue": {
+              "value": "\"large\"",
+              "computed": false
+            }
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-branding-logo-full--full-small",
+          "name": "Full Small",
+          "snippet": "const FullSmall = () => <Component appName=\"My App\" size=\"small\" />;"
+        },
+        {
+          "id": "shared-branding-logo-full--full-medium",
+          "name": "Full Medium",
+          "snippet": "const FullMedium = () => <Component appName=\"My App\" size=\"medium\" />;"
+        },
+        {
+          "id": "shared-branding-logo-full--full-large",
+          "name": "Full Large",
+          "snippet": "const FullLarge = () => <Component appName=\"My App\" size=\"large\" />;"
+        }
+      ],
+      "import": "import { LogoFull as Component } from \"@package/ui\";"
+    },
+    "shared-icons-social": {
+      "id": "shared-icons-social",
+      "name": "Social",
+      "path": "../../packages/ui/src/Icons/Social/SocialIcons.stories.tsx",
+      "jsDocTags": {},
+      "error": {
+        "name": "No component found",
+        "message": "We could not detect the component from your story file. Specify meta.component.\n  4 | import { LinkedInIcon } from \"./LinkedInIcon\";\n  5 |\n> 6 | const meta: Meta = {\n    | ^\n  7 |   title: \"Shared/Icons/Social\",\n  8 |   tags: [\"autodocs\"],\n  9 | };\n\n../../packages/ui/src/Icons/Social/SocialIcons.stories.tsx:\nimport type { ReactNode } from \"react\";\nimport type { Meta, StoryObj } from \"@storybook/react-vite\";\nimport { GithubIcon } from \"./GithubIcon\";\nimport { LinkedInIcon } from \"./LinkedInIcon\";\n\nconst meta: Meta = {\n  title: \"Shared/Icons/Social\",\n  tags: [\"autodocs\"],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nfunction render(children?: ReactNode) {\n  return <div className=\"h-8 w-8\">{children}</div>;\n}\n\nexport const Github: Story = {\n  render: (args) => render(<GithubIcon {...args} />),\n};\n\nexport const Linkedin: Story = {\n  render: (args) => render(<LinkedInIcon {...args} />),\n};\n"
+      },
+      "stories": [
+        {
+          "id": "shared-icons-social--github",
+          "name": "Github",
+          "snippet": "const Github = (args) => render(<GithubIcon {...args} />);"
+        },
+        {
+          "id": "shared-icons-social--linkedin",
+          "name": "Linkedin",
+          "snippet": "const Linkedin = (args) => render(<LinkedInIcon {...args} />);"
+        }
+      ],
+      "import": "import { GithubIcon, LinkedInIcon } from \"@package/ui\";"
+    },
+    "shared-layout-background-blue-fade": {
+      "id": "shared-layout-background-blue-fade",
+      "name": "BlueFadeBackground",
+      "path": "../../packages/ui/src/Layout/Background/Background.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "BlueFadeBackground",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Layout/Background/BlueFadeBackground.tsx",
+        "actualName": "BlueFadeBackground",
+        "exportName": "BlueFadeBackground"
+      },
+      "stories": [
+        {
+          "id": "shared-layout-background-blue-fade--default",
+          "name": "Default",
+          "snippet": "const Default = () => <BlueFadeBackground />;"
+        },
+        {
+          "id": "shared-layout-background-blue-fade--grid-background-story",
+          "name": "Grid Background",
+          "snippet": "const GridBackgroundStory = () => <GridBackground />;"
+        }
+      ],
+      "import": "import { BlueFadeBackground, GridBackground } from \"@package/ui\";"
+    },
+    "shared-layout-basic": {
+      "id": "shared-layout-basic",
+      "name": "Component",
+      "path": "../../packages/ui/src/Layout/BasicLayout/BasicLayout.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "BasicLayout",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Layout/BasicLayout/BasicLayout.tsx",
+        "actualName": "BasicLayout",
+        "exportName": "BasicLayout",
+        "props": {
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "backgroundElement": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "children": {
+            "required": true,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-layout-basic--basic-layout",
+          "name": "Basic Layout",
+          "snippet": "const BasicLayout = () => <Component><StorybookTableContentComponent /></Component>;"
+        }
+      ],
+      "import": "import { BasicLayout as Component, StorybookTableContentComponent } from \"@package/ui\";"
+    },
+    "shared-layout-fullscreen": {
+      "id": "shared-layout-fullscreen",
+      "name": "Component",
+      "path": "../../packages/ui/src/Layout/FullscreenLayout/FullscreenLayout.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "FullscreenLayout",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Layout/FullscreenLayout/FullscreenLayout.tsx",
+        "actualName": "FullscreenLayout",
+        "exportName": "FullscreenLayout",
+        "props": {
+          "onGithubClick": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "onLinkedInClick": {
+            "required": false,
+            "tsType": {
+              "name": "signature",
+              "type": "function",
+              "raw": "() => void",
+              "signature": {
+                "arguments": [],
+                "return": {
+                  "name": "void"
+                }
+              }
+            },
+            "description": ""
+          },
+          "container": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "footer": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "className": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "children": {
+            "required": true,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-layout-fullscreen--default",
+          "name": "Default",
+          "snippet": "const Default = () => <Component><StorybookTableContentComponent /></Component>;"
+        },
+        {
+          "id": "shared-layout-fullscreen--with-footer",
+          "name": "With Footer",
+          "snippet": "const WithFooter = () => <Component footer onGithubClick={() => {}} onLinkedInClick={() => {}}><StorybookTableContentComponent /></Component>;"
+        },
+        {
+          "id": "shared-layout-fullscreen--with-container",
+          "name": "With Container",
+          "snippet": "const WithContainer = () => <Component container><StorybookTableContentComponent /></Component>;"
+        }
+      ],
+      "import": "import { FullscreenLayout as Component, StorybookTableContentComponent } from \"@package/ui\";"
+    },
+    "shared-layout-navbar": {
+      "id": "shared-layout-navbar",
+      "name": "Component",
+      "path": "../../packages/ui/src/Layout/NavbarLayout/NavbarLayout.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "NavbarLayout",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Layout/NavbarLayout/NavbarLayout.tsx",
+        "actualName": "NavbarLayout",
+        "exportName": "NavbarLayout",
+        "props": {
+          "navbarElement": {
+            "required": true,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "backgroundElement": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "footer": {
+            "required": false,
+            "tsType": {
+              "name": "boolean"
+            },
+            "description": ""
+          },
+          "footerText": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "footerCopyright": {
+            "required": false,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "footerContent": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "children": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-layout-navbar--navbar-layout",
+          "name": "Navbar Layout",
+          "snippet": "function NavbarLayout() {\n    return (\n        <Component>\n            <StorybookTableContentComponent />\n        </Component>\n    );\n}"
+        }
+      ],
+      "import": "import {\n    NavbarLayout as Component,\n    StorybookNavbarComponent,\n    StorybookTableContentComponent,\n} from \"@package/ui\";"
+    },
+    "shared-navigation-navbar": {
+      "id": "shared-navigation-navbar",
+      "name": "Component",
+      "path": "../../packages/ui/src/Navigation/Navbar/Navbar.stories.tsx",
+      "jsDocTags": {},
+      "reactDocgen": {
+        "description": "",
+        "methods": [],
+        "displayName": "Navbar",
+        "definedInFile": "/home/runner/work/app-pixi-image-editor/app-pixi-image-editor/packages/ui/src/Navigation/Navbar/Navbar.tsx",
+        "actualName": "Navbar",
+        "exportName": "Navbar",
+        "props": {
+          "title": {
+            "required": true,
+            "tsType": {
+              "name": "string"
+            },
+            "description": ""
+          },
+          "centerElement": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "endElement": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          },
+          "startElement": {
+            "required": false,
+            "tsType": {
+              "name": "ReactNode"
+            },
+            "description": ""
+          }
+        }
+      },
+      "stories": [
+        {
+          "id": "shared-navigation-navbar--standard",
+          "name": "Standard",
+          "snippet": "const Standard = () => <Component />;"
+        },
+        {
+          "id": "shared-navigation-navbar--with-components",
+          "name": "With Components",
+          "snippet": "const WithComponents = () => <Component endElement={<StorybookNavbarContentComponent />} />;"
+        },
+        {
+          "id": "shared-navigation-navbar--with-scroll-interaction",
+          "name": "With Scroll Interaction",
+          "snippet": "const WithScrollInteraction = () => <Component />;"
+        }
+      ],
+      "import": "import { Navbar as Component, StorybookNavbarContentComponent } from \"@package/ui\";"
+    }
+  },
+  "meta": {
+    "docgen": "react-docgen",
+    "durationMs": 1248
+  }
+}
