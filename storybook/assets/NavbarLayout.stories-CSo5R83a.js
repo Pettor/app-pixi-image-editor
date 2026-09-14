@@ -1,0 +1,4 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./jsx-runtime-DeHZSEgm.js";import{i as n,n as r,r as i,t as a}from"./StorybookNavbarComponent-C11n46rU.js";import{n as o,t as s}from"./StorybookTableContentComponent-BCUiU2hH.js";function c(e){return(0,l.jsx)(i,{...e,children:(0,l.jsx)(s,{})})}var l,u,d,f,p;function m(){return(m=e((()=>{r(),o(),n(),l=t(),u={component:i,title:`Shared/Layout/Navbar`,parameters:{a11y:{config:{rules:[{id:`color-contrast`,enabled:!1},{id:`list`,enabled:!1},{id:`th-has-data-cells`,enabled:!1}]}},layout:`fullscreen`}},d={navbarElement:(0,l.jsx)(a,{}),footer:!0},f={args:d,render:c},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+  args: defaultArgs,
+  render
+}`,...f.parameters?.docs?.source}}},p=[`NavbarLayout`]})))()}m();export{f as NavbarLayout,p as __namedExportsOrder,u as default};
