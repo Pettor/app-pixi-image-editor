@@ -353,14 +353,14 @@ catalogs:
       specifier: 2.1.1
       version: 2.1.1
     daisyui:
-      specifier: 5.7.28
-      version: 5.7.28
+      specifier: 5.7.37
+      version: 5.7.37
     react-dropzone:
       specifier: 20.1.1
       version: 20.1.1
     react-intl:
-      specifier: 10.1.26
-      version: 10.1.26
+      specifier: 10.2.1
+      version: 10.2.1
 
 overrides:
   '@tanstack/react-query': 5.102.8
@@ -491,7 +491,7 @@ importers:
         version: 19.2.8(react@19.2.8)
       react-intl:
         specifier: catalog:ui
-        version: 10.1.26(@types/react@19.2.18)(react@19.2.8)
+        version: 10.2.1(@types/react@19.2.18)(react@19.2.8)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -585,7 +585,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:ui
-        version: 5.7.28
+        version: 5.7.37
       immer:
         specifier: catalog:state
         version: 11.1.18
@@ -615,7 +615,7 @@ importers:
         version: 20.1.1(@types/react@19.2.18)(react@19.2.8)
       react-intl:
         specifier: catalog:ui
-        version: 10.1.26(@types/react@19.2.18)(react@19.2.8)
+        version: 10.2.1(@types/react@19.2.18)(react@19.2.8)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -1924,8 +1924,8 @@ packages:
   '@formatjs/icu-skeleton-parser@2.1.11':
     resolution: {integrity: sha512-j8cUmOJzVgkHuS0QiQ6ga76UIoLOFSAMWhs7aZJztH3aAdCOAE6vpC8KVvFB4cU10ON0y2/5oOVmPJ43s2lTwA==}
 
-  '@formatjs/intl@4.1.20':
-    resolution: {integrity: sha512-q3gaFvc1mXrl0fcSY2QKSS+WzJxpbIXs48O+QLA3UsRtIwVhazvxtLrLGKEse5Mq4U8hAYyTB6Y9buU2ZRFz/w==}
+  '@formatjs/intl@4.2.0':
+    resolution: {integrity: sha512-FbiaRjnQjjqo8FzayDEuuFLj+lCrSEDEmeXXGRpBUioaukr/+4djq4TYIpXnsVh2DWqYyOrMu8cLpc/rGmVHlw==}
 
   '@formatjs/ts-transformer@4.4.19':
     resolution: {integrity: sha512-TWxL1btx29333yEQc1/eJsU9SUjDJBruzkrR4TVXBLgPaCWbhxg7haOztGXTLgLx+X3ONat7F0kRzcCHksyJyA==}
@@ -4119,6 +4119,9 @@ packages:
   daisyui@5.7.28:
     resolution: {integrity: sha512-BxQap2QOj7NQy5nEsjTHRmybmUZP3t+O5G6vfdidZuptBsh/QyKN9wbdrGDZk198fMI3UyYnA/rCWlggZIhGnw==}
 
+  daisyui@5.7.37:
+    resolution: {integrity: sha512-PVcdAcL0ni6/wmcNwvldARZuO0HdzxtjVEAT86ie9GMgFjwmqIWeXsPaM2/eYqLb4WMexqj146C5Z1xmzZDnjg==}
+
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
     engines: {node: '>= 0.4'}
@@ -5753,8 +5756,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-intl@10.1.26:
-    resolution: {integrity: sha512-3Sf4enrUzJqyPpH/NxIJtlwrNzuR7Cu1qey/ZxKXs3XGUxmwyAV2OZUTL4cFY3L+ebUBtkB1mf0KzpvmQ6ZfFA==}
+  react-intl@10.2.1:
+    resolution: {integrity: sha512-KQ4pjV31gf4s5AAlSRDnheG/hiime6kHfwFcAPgnzQdN5SnZMix0JtS7BSjp82kd7VYh6bwxYrJW4xvos5pfag==}
     peerDependencies:
       '@types/react': '>=18.0.0'
       react: 19.2.8
@@ -7894,7 +7897,7 @@ snapshots:
 
   '@formatjs/icu-skeleton-parser@2.1.11': {}
 
-  '@formatjs/intl@4.1.20':
+  '@formatjs/intl@4.2.0':
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
       '@formatjs/icu-messageformat-parser': 3.5.17
@@ -9859,6 +9862,8 @@ snapshots:
 
   daisyui@5.7.28: {}
 
+  daisyui@5.7.37: {}
+
   data-view-buffer@1.0.2:
     dependencies:
       call-bound: 1.0.4
@@ -11594,10 +11599,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.18
 
-  react-intl@10.1.26(@types/react@19.2.18)(react@19.2.8):
+  react-intl@10.2.1(@types/react@19.2.18)(react@19.2.8):
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.17
-      '@formatjs/intl': 4.1.20
+      '@formatjs/intl': 4.2.0
       '@types/react': 19.2.18
       intl-messageformat: 11.2.14
       react: 19.2.8
