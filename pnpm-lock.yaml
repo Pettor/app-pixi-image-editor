@@ -273,8 +273,8 @@ catalogs:
       specifier: 10.6.0
       version: 10.6.0
     style-dictionary:
-      specifier: 5.5.4
-      version: 5.5.4
+      specifier: 5.5.5
+      version: 5.5.5
     tailwindcss:
       specifier: 4.3.3
       version: 4.3.3
@@ -785,7 +785,7 @@ importers:
     dependencies:
       style-dictionary:
         specifier: catalog:dev
-        version: 5.5.4
+        version: 5.5.5
     devDependencies:
       '@config/typescript':
         specifier: workspace:*
@@ -5772,11 +5772,6 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.9.6:
-    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
-    engines: {node: '>=14'}
-    hasBin: true
-
   prettier@3.9.8:
     resolution: {integrity: sha512-WRFq3Wn3WId7LLROfMLdH7xaFr2jR62wU8nLO6rQUOLOxNZUviyJQs1M0iIhLexSFy+L+w0ch66wtoO2jRjG0A==}
     engines: {node: '>=14'}
@@ -6298,8 +6293,8 @@ packages:
   strnum@2.4.2:
     resolution: {integrity: sha512-rDG3Ah4TV0k1hWvLSzkZtMmLN9+eS+h3knq4MP6A42Y3Yh5qGNnOUs1jJkoSr8FG5dsL28c7KgkIBzSEykqtuw==}
 
-  style-dictionary@5.5.4:
-    resolution: {integrity: sha512-7wxrDIwaoAL4UF3OHqDaqJNDUkfUkqMLGRl+S+zDoWaPc8onlhitEUhseIETrD0IzC7E6n9by4sMADap/S2Qhw==}
+  style-dictionary@5.5.5:
+    resolution: {integrity: sha512-BG+o8U7MUcU6iLUtl1OWApF9hmfTSJcrhY6iWdXDU9xjt7VMZOHQMTsGx5AvsHyytWmeWybP2LzQxIKHUm9Svg==}
     engines: {node: '>=22.0.0'}
     hasBin: true
 
@@ -11749,8 +11744,6 @@ snapshots:
     dependencies:
       prettier: 3.9.8
 
-  prettier@3.9.6: {}
-
   prettier@3.9.8: {}
 
   pretty-bytes@5.6.0: {}
@@ -12404,7 +12397,7 @@ snapshots:
     dependencies:
       anynum: 1.0.1
 
-  style-dictionary@5.5.4:
+  style-dictionary@5.5.5:
     dependencies:
       '@bundled-es-modules/deepmerge': 4.3.2
       '@bundled-es-modules/glob': 13.0.6
@@ -12417,7 +12410,7 @@ snapshots:
       is-plain-obj: 4.1.0
       json5: 2.2.3
       path-unified: 0.2.0
-      prettier: 3.9.6
+      prettier: 3.9.8
       tinycolor2: 1.6.0
 
   sucrase@3.35.1:
