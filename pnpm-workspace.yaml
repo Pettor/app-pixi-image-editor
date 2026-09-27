@@ -72,7 +72,7 @@ catalogs:
     daisyui: 5.7.42
     framer-motion: 13.4.0
     react-dropzone: 20.1.2
-    react-intl: 12.1.1
+    react-intl: 12.1.2
   state:
     immer: 11.1.18
     jotai: 3.0.0
