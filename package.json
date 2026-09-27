@@ -38,9 +38,9 @@
     "test:e2e:env:coverage": "turbo run test:e2e:env:coverage"
   },
   "devDependencies": {
-    "@commitlint/cli": "21.2.2",
-    "@commitlint/config-conventional": "21.2.2",
-    "@commitlint/types": "21.2.0",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@commitlint/types": "21.2.3",
     "@types/node": "24.13.6",
     "fast-xml-parser": "5.11.1",
     "husky": "9.1.7",
