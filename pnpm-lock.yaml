@@ -330,8 +330,8 @@ catalogs:
       specifier: 3.0.1
       version: 3.0.1
     jotai-effect:
-      specifier: 2.4.1
-      version: 2.4.1
+      specifier: 2.4.2
+      version: 2.4.2
   tanstack:
     '@tanstack/react-router':
       specifier: 1.170.41
@@ -592,7 +592,7 @@ importers:
         version: 3.0.1(@types/react@19.3.0)(react@19.3.0)
       jotai-effect:
         specifier: catalog:state
-        version: 2.4.1(jotai@3.0.1(@types/react@19.3.0)(react@19.3.0))
+        version: 2.4.2(jotai@3.0.1(@types/react@19.3.0)(react@19.3.0))
       pixi-filters:
         specifier: catalog:pixi
         version: 6.1.5(pixi.js@8.22.0)
@@ -5058,8 +5058,8 @@ packages:
     resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
 
-  jotai-effect@2.4.1:
-    resolution: {integrity: sha512-wptUnVOEeU8SkBA+sKGzXGnR3rbSfXLXrRxcj5QF3ukxH7CUbo5hoO2iMwUzsJSYaZM804ZpPoAxUY9nmksu8w==}
+  jotai-effect@2.4.2:
+    resolution: {integrity: sha512-YACEgYedHkSH0p3QkcBN3p41Ebhw8EOs+4hmyeApZ7eUINrQjs9ZITSap30WtC7kU4Jbz9RIpQ3v58qLv9/WGA==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       jotai: '>=2.20.0 || >=3.0.0-alpha.0'
@@ -10971,7 +10971,7 @@ snapshots:
 
   jiti@2.7.0: {}
 
-  jotai-effect@2.4.1(jotai@3.0.1(@types/react@19.3.0)(react@19.3.0)):
+  jotai-effect@2.4.2(jotai@3.0.1(@types/react@19.3.0)(react@19.3.0)):
     dependencies:
       jotai: 3.0.1(@types/react@19.3.0)(react@19.3.0)
 
