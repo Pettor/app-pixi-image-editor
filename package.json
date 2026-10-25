@@ -51,8 +51,8 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "rimraf": "catalog:dev",
     "sherif": "1.13.0",
-    "tsup": "8.5.1",
-    "turbo": "2.11.7",
+    "tsup": "9.0.0",
+    "turbo": "2.11.9",
     "typescript": "catalog:dev"
   },
   "lint-staged": {
