@@ -9,7 +9,7 @@ import istanbul from "vite-plugin-istanbul";
 const repoRoot = path.resolve(import.meta.dirname, "../..");
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, isPreview }) => {
   const config = mergeConfigs([
     createBaseConfig(),
     createReactConfig({ enableReactCompiler: command === "build" }),
@@ -37,7 +37,7 @@ export default defineConfig(({ command }) => {
     case "serve":
       return mergeConfig(config, {
         plugins: [
-          basicSsl(),
+          ...(isPreview ? [] : [basicSsl()]),
           // Istanbul instrumentation is only active when VITE_COVERAGE is set (E2E coverage runs).
           ...(process.env.VITE_COVERAGE
             ? [

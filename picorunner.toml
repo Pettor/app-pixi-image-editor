@@ -1,0 +1,28 @@
+schema = 1
+name = "Pixi Image Editor"
+
+[runtime]
+kind = "node"
+version = "24"
+package_manager = "pnpm"
+
+[[setup.steps]]
+kind = "dependencies"
+locked = true
+
+[[setup.steps]]
+run = ["pnpm", "build"]
+
+[launch]
+command = ["pnpm", "--filter", "@app/web", "exec", "vite", "preview", "--host", "{host}", "--port", "{port}", "--strictPort"]
+host = "127.0.0.1"
+port = 3000
+
+[health]
+type = "http"
+path = "/"
+timeout_seconds = 90
+
+# Images are explicitly exported to user-chosen files; the editor session is in memory.
+[persistence]
+paths = []
