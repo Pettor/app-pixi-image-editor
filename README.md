@@ -36,6 +36,8 @@ A browser-based image editor built with [PixiJS](https://pixijs.com/) and React.
 
 ## Quick Start
 
+[![Launch on PicoRunner](https://picorunner.com/badges/launch.svg)](https://picorunner.com/launch/?repository=https%3A%2F%2Fgithub.com%2FPettor%2Fapp-pixi-image-editor)
+
 ### Prerequisites
 
 - Node.js 21–24
