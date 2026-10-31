@@ -324,8 +324,8 @@ catalogs:
       version: 19.1.0-rc.3
   state:
     immer:
-      specifier: 11.1.21
-      version: 11.1.21
+      specifier: 11.2.9
+      version: 11.2.9
     jotai:
       specifier: 3.0.1
       version: 3.0.1
@@ -586,7 +586,7 @@ importers:
         version: 5.7.50
       immer:
         specifier: catalog:state
-        version: 11.1.21
+        version: 11.2.9
       jotai:
         specifier: catalog:state
         version: 3.0.1(@types/react@19.3.0)(react@19.3.1)
@@ -4617,8 +4617,8 @@ packages:
     resolution: {integrity: sha512-YYNsSlXBjMk92SKnkwvB5LOVSa6OznlFUGcsvrFgNJbJCd0M1XKeFVRc8ZByeCqz32FivYNHJVooLmdqrmvp/Q==}
     engines: {node: '>= 4'}
 
-  immer@11.1.21:
-    resolution: {integrity: sha512-bZSadeCPGdaY5/qRLgr6mDSH1ra21rD3rqpiWk7+QTr4ayYPTE9qZYdLh/NdPhMe0wSrTvHD/Lk8q5EwhUs0aw==}
+  immer@11.2.9:
+    resolution: {integrity: sha512-IQ4UEtXjZjyefyWjtLEDXUSrF6T2hwjKPi6BIJl3bY/2XXW24d6cNGdXJSBOA/+KNnuiXkZY6DR0C3efolhitA==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -10412,7 +10412,7 @@ snapshots:
 
   ignore@7.0.8: {}
 
-  immer@11.1.21: {}
+  immer@11.2.9: {}
 
   import-fresh@3.3.1:
     dependencies:
