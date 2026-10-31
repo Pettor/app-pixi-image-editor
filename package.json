@@ -41,7 +41,7 @@
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
     "@commitlint/types": "21.2.3",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.5",
     "fast-xml-parser": "5.11.2",
     "husky": "9.1.7",
     "lint-staged": "17.6.0",
@@ -52,7 +52,7 @@
     "rimraf": "catalog:dev",
     "sherif": "1.13.0",
     "tsup": "9.0.0",
-    "turbo": "2.11.9",
+    "turbo": "2.11.10",
     "typescript": "catalog:dev"
   },
   "lint-staged": {
