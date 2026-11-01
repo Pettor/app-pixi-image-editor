@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./useSetAtom-DDx0HV6G.js";import{n as r,t as i}from"./useAtomValue-D3Ul-TVC.js";function a(e,n){return[r(e,n),t(e,n)]}function o(){return(o=e((()=>{i(),n()})))()}export{a as n,o as t};
