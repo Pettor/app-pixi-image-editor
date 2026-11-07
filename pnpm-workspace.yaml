@@ -41,7 +41,7 @@ overrides:
   tmp: ^0.2.4
   yaml@1: ^2.0.0
   yaml@2: ^2.8.3
-  glob@10: ^13.0.0
+  glob@10: ^14.0.0
 # Catalogs are organised by grouping intent so their names map 1:1 to Renovate
 # update groups (see renovate.json). Runtime dependencies are split into domain
 # catalogs; all dev tooling lives in the single `dev` catalog.
