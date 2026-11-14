@@ -24,7 +24,7 @@ overrides:
   # 3.1.x is past the ReDoS fix (3.0.5), so security intent is preserved.
   minimatch@3: ^3.1.4
   minimatch@5: ^11.0.0
-  minimatch@9: ^10.0.0
+  minimatch@9: ^11.0.0
   path-to-regexp@0: ^9.0.0
   picomatch@2: ^4.0.0
   picomatch@4: ^4.0.4
