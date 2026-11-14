@@ -307,8 +307,8 @@ catalogs:
       specifier: 6.1.5
       version: 6.1.5
     pixi-viewport:
-      specifier: 6.0.3
-      version: 6.0.3
+      specifier: 7.0.2
+      version: 7.0.2
     pixi.js:
       specifier: 8.22.0
       version: 8.22.0
@@ -598,7 +598,7 @@ importers:
         version: 6.1.5(pixi.js@8.22.0)
       pixi-viewport:
         specifier: catalog:pixi
-        version: 6.0.3(pixi.js@8.22.0)
+        version: 7.0.2(pixi.js@8.22.0)
       pixi.js:
         specifier: catalog:pixi
         version: 8.22.0
@@ -5347,8 +5347,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8.0.0-0'
 
-  pixi-viewport@6.0.3:
-    resolution: {integrity: sha512-2+qPJ0/n+8hQYhWvY+795+x9y3MiUrCOWacK0DY53whowWaGdx9iDocy7z1pBwjkZhC52YvrJQuZKK0sdVLtBw==}
+  pixi-viewport@7.0.2:
+    resolution: {integrity: sha512-DuNcc5/kGfUn4r6jDo8tkFg+ITdJOb+/PBRvveECjoEWlMryQ7fYgLBrh+p0PvXuW5/9MCksbYeq12ZiUmbC1Q==}
     peerDependencies:
       pixi.js: '>=8'
 
@@ -11052,7 +11052,7 @@ snapshots:
       '@types/gradient-parser': 0.1.5
       pixi.js: 8.22.0
 
-  pixi-viewport@6.0.3(pixi.js@8.22.0):
+  pixi-viewport@7.0.2(pixi.js@8.22.0):
     dependencies:
       pixi.js: 8.22.0
 
