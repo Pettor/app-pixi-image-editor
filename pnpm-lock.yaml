@@ -362,8 +362,8 @@ catalogs:
       specifier: 5.7.50
       version: 5.7.50
     react-dropzone:
-      specifier: 20.1.4
-      version: 20.1.4
+      specifier: 20.2.0
+      version: 20.2.0
     react-intl:
       specifier: 12.1.6
       version: 12.1.6
@@ -619,7 +619,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-dropzone:
         specifier: catalog:ui
-        version: 20.1.4(@types/react@19.3.0)(react@19.3.1)
+        version: 20.2.0(@types/react@19.3.0)(react@19.3.1)
       react-intl:
         specifier: catalog:ui
         version: 12.1.6(@types/react@19.3.0)(react@19.3.1)
@@ -3707,8 +3707,8 @@ packages:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
 
-  attr-accept@4.0.0:
-    resolution: {integrity: sha512-hmCnJClmeKNKlsBHgbM8yLZRiQZ4/20UXbLJb6OUT16eWcM5/xNZerr80a/zCYob768KIGq++aLrQNTuwPsIOQ==}
+  attr-accept@4.0.1:
+    resolution: {integrity: sha512-rOKAGOwbnTUvwTL8rNA0hWnU3uX9tOI20di4KjR5I1ez/RJmnA37W3zz4EMxGC2YnI289yPjRy63CdAZeQFZ4Q==}
     engines: {node: '>= 22'}
 
   available-typed-arrays@1.0.7:
@@ -5542,8 +5542,8 @@ packages:
     peerDependencies:
       react: 19.3.1
 
-  react-dropzone@20.1.4:
-    resolution: {integrity: sha512-LyjT9iQySNkJGC6yL+XTlmfTRxHhPx0eSoTh+WlR0Ge+W35rLcRH/oH7w5bzijfPHeCFcLnO9G7i+hX+LINAAA==}
+  react-dropzone@20.2.0:
+    resolution: {integrity: sha512-FRlcSp6UFT9Etg57U4+g6O6qF/jH7sUh2Hz67lQlrZJa/3FjfAFvw7DwDSItiG2vBUXTdh2wroEwXPPg7o/jkg==}
     engines: {node: '>= 22'}
     peerDependencies:
       '@types/react': '*'
@@ -9250,7 +9250,7 @@ snapshots:
 
   at-least-node@1.0.0: {}
 
-  attr-accept@4.0.0: {}
+  attr-accept@4.0.1: {}
 
   available-typed-arrays@1.0.7:
     dependencies:
@@ -11192,9 +11192,9 @@ snapshots:
       react: 19.3.1
       scheduler: 0.28.0
 
-  react-dropzone@20.1.4(@types/react@19.3.0)(react@19.3.1):
+  react-dropzone@20.2.0(@types/react@19.3.0)(react@19.3.1):
     dependencies:
-      attr-accept: 4.0.0
+      attr-accept: 4.0.1
       file-selector: 5.0.1
       react: 19.3.1
     optionalDependencies:
