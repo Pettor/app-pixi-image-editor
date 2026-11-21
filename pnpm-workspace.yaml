@@ -74,8 +74,8 @@ catalogs:
     react-dropzone: 20.2.0
     react-intl: 12.1.6
   state:
-    immer: 11.2.9
-    jotai: 3.0.1
+    immer: 11.2.10
+    jotai: 3.0.2
     jotai-effect: 2.4.2
   validation:
     '@hookform/resolvers': 7.0.6
