@@ -333,11 +333,11 @@ catalogs:
       version: 19.1.0-rc.3
   state:
     immer:
-      specifier: 11.2.9
-      version: 11.2.9
+      specifier: 11.2.10
+      version: 11.2.10
     jotai:
-      specifier: 3.0.1
-      version: 3.0.1
+      specifier: 3.0.2
+      version: 3.0.2
     jotai-effect:
       specifier: 2.4.2
       version: 2.4.2
@@ -595,13 +595,13 @@ importers:
         version: 5.7.50
       immer:
         specifier: catalog:state
-        version: 11.2.9
+        version: 11.2.10
       jotai:
         specifier: catalog:state
-        version: 3.0.1(@types/react@19.3.0)(react@19.3.1)
+        version: 3.0.2(@types/react@19.3.0)(react@19.3.1)
       jotai-effect:
         specifier: catalog:state
-        version: 2.4.2(jotai@3.0.1(@types/react@19.3.0)(react@19.3.1))
+        version: 2.4.2(jotai@3.0.2(@types/react@19.3.0)(react@19.3.1))
       pixi-filters:
         specifier: catalog:pixi
         version: 6.1.5(pixi.js@8.22.0)
@@ -860,7 +860,7 @@ importers:
         version: 2.1.1
       jotai:
         specifier: catalog:state
-        version: 3.0.1(@types/react@19.3.0)(react@19.3.1)
+        version: 3.0.2(@types/react@19.3.0)(react@19.3.1)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -4593,8 +4593,8 @@ packages:
     resolution: {integrity: sha512-YYNsSlXBjMk92SKnkwvB5LOVSa6OznlFUGcsvrFgNJbJCd0M1XKeFVRc8ZByeCqz32FivYNHJVooLmdqrmvp/Q==}
     engines: {node: '>= 4'}
 
-  immer@11.2.9:
-    resolution: {integrity: sha512-IQ4UEtXjZjyefyWjtLEDXUSrF6T2hwjKPi6BIJl3bY/2XXW24d6cNGdXJSBOA/+KNnuiXkZY6DR0C3efolhitA==}
+  immer@11.2.10:
+    resolution: {integrity: sha512-pzANBj+0A9u+prdhBJ14DVi44vCvVUQzBa8DKt6I0AMCokPHtt722BK9IX5bFC70xUSU9TnzLRIJLTGqIzjEFw==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -4863,8 +4863,8 @@ packages:
     peerDependencies:
       jotai: '>=2.20.0 || >=3.0.0-alpha.0'
 
-  jotai@3.0.1:
-    resolution: {integrity: sha512-6tS7wY9otdiNp26Wqb/1ds3OuVJVoV+tJlN4hpLrYmfFf/t9bauVt+zKBNSpS5qSl5h6GieVQ+OknVraZX+udQ==}
+  jotai@3.0.2:
+    resolution: {integrity: sha512-1h+H6BQN+D048zv8hRGVeNxghxRLFZCB+l2WhFe7RhRiF0JlC8516G2BtRUXhPvMQTGB9OHst2N/BW9aNpp5aA==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@types/react': '>=18.0.0'
@@ -10255,7 +10255,7 @@ snapshots:
 
   ignore@7.0.8: {}
 
-  immer@11.2.9: {}
+  immer@11.2.10: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -10521,11 +10521,11 @@ snapshots:
 
   jiti@2.7.0: {}
 
-  jotai-effect@2.4.2(jotai@3.0.1(@types/react@19.3.0)(react@19.3.1)):
+  jotai-effect@2.4.2(jotai@3.0.2(@types/react@19.3.0)(react@19.3.1)):
     dependencies:
-      jotai: 3.0.1(@types/react@19.3.0)(react@19.3.1)
+      jotai: 3.0.2(@types/react@19.3.0)(react@19.3.1)
 
-  jotai@3.0.1(@types/react@19.3.0)(react@19.3.1):
+  jotai@3.0.2(@types/react@19.3.0)(react@19.3.1):
     optionalDependencies:
       '@types/react': 19.3.0
       react: 19.3.1
