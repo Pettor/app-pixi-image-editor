@@ -319,8 +319,8 @@ catalogs:
       specifier: 7.0.2
       version: 7.0.2
     pixi.js:
-      specifier: 8.22.0
-      version: 8.22.0
+      specifier: 8.23.0
+      version: 8.23.0
   react:
     '@types/react':
       specifier: 19.3.0
@@ -583,7 +583,7 @@ importers:
         version: link:../../packages/ui
       '@pixi/react':
         specifier: catalog:pixi
-        version: 8.0.5(@types/react@19.3.0)(pixi.js@8.22.0)(react@19.3.1)
+        version: 8.0.5(@types/react@19.3.0)(pixi.js@8.23.0)(react@19.3.1)
       '@tanstack/react-router':
         specifier: catalog:tanstack
         version: 1.170.46(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -604,13 +604,13 @@ importers:
         version: 2.4.2(jotai@3.0.2(@types/react@19.3.0)(react@19.3.1))
       pixi-filters:
         specifier: catalog:pixi
-        version: 6.1.5(pixi.js@8.22.0)
+        version: 6.1.5(pixi.js@8.23.0)
       pixi-viewport:
         specifier: catalog:pixi
-        version: 7.0.2(pixi.js@8.22.0)
+        version: 7.0.2(pixi.js@8.23.0)
       pixi.js:
         specifier: catalog:pixi
-        version: 8.22.0
+        version: 8.23.0
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -2531,9 +2531,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@pixi/colord@2.9.6':
-    resolution: {integrity: sha512-nezytU2pw587fQstUu1AsJZDVEynjskwOL+kibwcdxsMBFqPsFFNA7xl0ii/gXuDi6M0xj3mfRJj8pBSc2jCfA==}
-
   '@pixi/react@8.0.5':
     resolution: {integrity: sha512-Z1VRdnv9Gh+lTLzNKjpS7GaTNDjUxRVJNtIdtK2i0sCpigvjx5mvJ72EPLhBFgepB6j3ZCkL0YBb6BqgTGbhGA==}
     peerDependencies:
@@ -3883,6 +3880,9 @@ packages:
   color@4.2.3:
     resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
     engines: {node: '>=12.5.0'}
+
+  colord@2.14.0:
+    resolution: {integrity: sha512-eSdMel9EBvdFxnchObp7gljRoqYQLr+zXhaxjkym7syVphw1FIhfQwgsA5Bv3jArflZPJEa1rmQtGpa7NRc7Rw==}
 
   colorjs.io@0.5.2:
     resolution: {integrity: sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw==}
@@ -5361,8 +5361,8 @@ packages:
     peerDependencies:
       pixi.js: '>=8'
 
-  pixi.js@8.22.0:
-    resolution: {integrity: sha512-QbTANHMZ751MIjLiLSUSM8a7LNMWwMIf0KbRCqlW+SPS9hNLfSVS+cl1O2SEp9g1K/wyLzj/OJHv+1TUfiPr/w==}
+  pixi.js@8.23.0:
+    resolution: {integrity: sha512-RkWSwo+mAR0d7MKnJ20IjKkWGPdFh1C0adBRYYLa+SGdxTfbrr6RnQyZZRwjBaG/bDAIQqgBcTBbiNsN6iKFVQ==}
 
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
@@ -8180,12 +8180,10 @@ snapshots:
   '@oxc-resolver/binding-win32-x64-msvc@11.21.2':
     optional: true
 
-  '@pixi/colord@2.9.6': {}
-
-  '@pixi/react@8.0.5(@types/react@19.3.0)(pixi.js@8.22.0)(react@19.3.1)':
+  '@pixi/react@8.0.5(@types/react@19.3.0)(pixi.js@8.23.0)(react@19.3.1)':
     dependencies:
       its-fine: 2.0.0(@types/react@19.3.0)(react@19.3.1)
-      pixi.js: 8.22.0
+      pixi.js: 8.23.0
       react: 19.3.1
       react-reconciler: 0.31.0(react@19.3.1)
     transitivePeerDependencies:
@@ -9444,6 +9442,8 @@ snapshots:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
+
+  colord@2.14.0: {}
 
   colorjs.io@0.5.2: {}
 
@@ -11059,21 +11059,21 @@ snapshots:
 
   pirates@4.0.7: {}
 
-  pixi-filters@6.1.5(pixi.js@8.22.0):
+  pixi-filters@6.1.5(pixi.js@8.23.0):
     dependencies:
       '@types/gradient-parser': 0.1.5
-      pixi.js: 8.22.0
+      pixi.js: 8.23.0
 
-  pixi-viewport@7.0.2(pixi.js@8.22.0):
+  pixi-viewport@7.0.2(pixi.js@8.23.0):
     dependencies:
-      pixi.js: 8.22.0
+      pixi.js: 8.23.0
 
-  pixi.js@8.22.0:
+  pixi.js@8.23.0:
     dependencies:
-      '@pixi/colord': 2.9.6
       '@types/earcut': 3.0.0
       '@webgpu/types': 0.1.72
       '@xmldom/xmldom': 0.8.15
+      colord: 2.14.0
       earcut: 3.2.3
       eventemitter3: 5.0.4
       gifuct-js: 2.1.2
