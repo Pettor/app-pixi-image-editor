@@ -359,14 +359,14 @@ catalogs:
       specifier: 2.1.1
       version: 2.1.1
     daisyui:
-      specifier: 5.8.1
-      version: 5.8.1
+      specifier: 5.8.2
+      version: 5.8.2
     react-dropzone:
-      specifier: 20.2.0
-      version: 20.2.0
+      specifier: 20.2.1
+      version: 20.2.1
     react-intl:
-      specifier: 12.1.7
-      version: 12.1.7
+      specifier: 12.2.0
+      version: 12.2.0
 
 overrides:
   '@tanstack/react-query': 5.107.1
@@ -498,7 +498,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-intl:
         specifier: catalog:ui
-        version: 12.1.7(@types/react@19.3.0)(react@19.3.1)
+        version: 12.2.0(@types/react@19.3.0)(react@19.3.1)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -592,7 +592,7 @@ importers:
         version: 2.1.1
       daisyui:
         specifier: catalog:ui
-        version: 5.8.1
+        version: 5.8.2
       immer:
         specifier: catalog:state
         version: 11.2.10
@@ -619,10 +619,10 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-dropzone:
         specifier: catalog:ui
-        version: 20.2.0(@types/react@19.3.0)(react@19.3.1)
+        version: 20.2.1(@types/react@19.3.0)(react@19.3.1)
       react-intl:
         specifier: catalog:ui
-        version: 12.1.7(@types/react@19.3.0)(react@19.3.1)
+        version: 12.2.0(@types/react@19.3.0)(react@19.3.1)
     devDependencies:
       '@config/eslint':
         specifier: workspace:*
@@ -1793,8 +1793,8 @@ packages:
   '@formatjs/icu-skeleton-parser@2.1.13':
     resolution: {integrity: sha512-IdAJ9NrHn7AF0zqncD9UpxQozTYyJtbwwrZnJMEKVxTcOOXtVkUb2XYTpNOGTAv58NCsk0rjRB9G+i2SvBmGAQ==}
 
-  '@formatjs/intl@6.1.5':
-    resolution: {integrity: sha512-WicSXzsz4wO1ksJb6Pp9a+vdOpIkidcEm8ldVtXkqFoMB/o/ETEikyPeCFgTVuSTLBb7ZNJ3ZLKXSQ/X/0+BAg==}
+  '@formatjs/intl@6.2.0':
+    resolution: {integrity: sha512-HVu+quR1XS8L/yK+5bdPsiTwdDx0NJ7+9RfyqzEgOOlIdDW4fCu74eXLkVyYYVHdRsrdPdCaVBAJmG5rxWEDXA==}
 
   '@formatjs/ts-transformer@4.5.3':
     resolution: {integrity: sha512-QaxIG1ycc3CG4TNNJenmuqm1KRdLBCdw+cXo9YzaJKNbBeKXuwTm3NbI2EjtF/MBYznnb5lJGb4+txbgaKqpzA==}
@@ -4040,6 +4040,9 @@ packages:
   daisyui@5.8.1:
     resolution: {integrity: sha512-ptP4WHOJ6WltNnA5zwkg3GypOLhsyUM2FHuXCckWVEpWviioInFKsjnShCWYGYHsQ5P9bUCOH1tn45cKLeTUpg==}
 
+  daisyui@5.8.2:
+    resolution: {integrity: sha512-InScsDXX0pbfgvWyPQ8iTHV4rNMZdfbMo85KqlQUn62/PCIjwczViw5lbotzoXy/nPrn4qjDMmx/fspuUnjBtA==}
+
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
     engines: {node: '>= 0.4'}
@@ -4416,8 +4419,8 @@ packages:
   file-entry-cache@11.1.5:
     resolution: {integrity: sha512-+PFTHITI08JIGhnNpGNI8T8inUpgZfk3GNEqfT9R2zZV2iFXg3CvqzSl/uEhs7TSGujYRELEANyDvS8Fj7+S7Q==}
 
-  file-selector@5.0.1:
-    resolution: {integrity: sha512-v0g/PTeuQgvKCBrVRsfVudvwXlRHSWHEQkVgKawgCGHkEpKA1clp3Om5jvEVhz8G9W/mOYjJH9FhkH4C888PgQ==}
+  file-selector@5.0.3:
+    resolution: {integrity: sha512-d15nlW+KKq82TlItRvCHtJ8NXCX0nwz2SEUR1MOT8W50c5q2se551ZFdhITFrWohl/5wbRPfMMF9jq4Oj1xRGQ==}
     engines: {node: '>= 22'}
 
   filelist@1.0.6:
@@ -4681,8 +4684,8 @@ packages:
     resolution: {integrity: sha512-4gd7VpWNQNB4UKKCFFVcp1AVv+FMOgs9NKzjHKusc8jTMhd5eL1NqQqOpE0KzMds804/yHlglp3uxgluOqAPLw==}
     engines: {node: '>= 0.4'}
 
-  intl-messageformat@12.1.5:
-    resolution: {integrity: sha512-quhcDFAxy4wr/GrgWgmMjuegoedNUIxGNLORfXgDgdjuv8cBM88ClLTLXmfYC1roMSR1PPc55yUEkpJ5m67W2g==}
+  intl-messageformat@12.2.0:
+    resolution: {integrity: sha512-zFzW80iYSSJm4V185g3ItJQ96lBZ2RDO8O8qmRiPAAVKYXJeHfDQN2ITdtLlV+CjSi9Lo7zVW9xGt9CPCx7J6A==}
 
   is-arguments@1.2.0:
     resolution: {integrity: sha512-7bVbi0huj/wrIAOzb8U1aszg9kdi3KN/CyU19CTI7tAoZYEZoL9yCDXpbXN+uPsuWnP02cyug1gleqq+TU+YCA==}
@@ -5597,8 +5600,8 @@ packages:
     peerDependencies:
       react: 19.3.1
 
-  react-dropzone@20.2.0:
-    resolution: {integrity: sha512-FRlcSp6UFT9Etg57U4+g6O6qF/jH7sUh2Hz67lQlrZJa/3FjfAFvw7DwDSItiG2vBUXTdh2wroEwXPPg7o/jkg==}
+  react-dropzone@20.2.1:
+    resolution: {integrity: sha512-8ldzI42a+iz6jlC5t0HoOO5ce65dU8ZGo8ZpesL2E57JByC8LBUieMrkGj97YYfgMaYKwkhpkfYxKOCKAekywA==}
     engines: {node: '>= 22'}
     peerDependencies:
       '@types/react': '*'
@@ -5607,8 +5610,8 @@ packages:
       '@types/react':
         optional: true
 
-  react-intl@12.1.7:
-    resolution: {integrity: sha512-DKPrDYGQfQpyW8g8dbEPd6abvinwHPw85LcAT6nmd8+kzexea5egLQu6KZTEGDgP+3ap8dn+sX3JTuS7v0xD4g==}
+  react-intl@12.2.0:
+    resolution: {integrity: sha512-GUSrHGBmOzPqiINvII3x2h8VwLyyhDaZFymSmN7gYQj0pGT1y4eiL6SbLVHelP2z5ItgIikrwXTIx05XgZllUw==}
     peerDependencies:
       '@types/react': '>=18.0.0'
       react: 19.3.1
@@ -7693,11 +7696,11 @@ snapshots:
 
   '@formatjs/icu-skeleton-parser@2.1.13': {}
 
-  '@formatjs/intl@6.1.5':
+  '@formatjs/intl@6.2.0':
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
       '@formatjs/icu-messageformat-parser': 3.5.23
-      intl-messageformat: 12.1.5
+      intl-messageformat: 12.2.0
 
   '@formatjs/ts-transformer@4.5.3':
     dependencies:
@@ -9652,6 +9655,8 @@ snapshots:
 
   daisyui@5.8.1: {}
 
+  daisyui@5.8.2: {}
+
   data-view-buffer@1.0.2:
     dependencies:
       call-bound: 1.0.4
@@ -10152,7 +10157,7 @@ snapshots:
     dependencies:
       flat-cache: 6.1.23
 
-  file-selector@5.0.1: {}
+  file-selector@5.0.3: {}
 
   filelist@1.0.6:
     dependencies:
@@ -10415,7 +10420,7 @@ snapshots:
       hasown: 2.0.4
       side-channel: 1.1.1
 
-  intl-messageformat@12.1.5:
+  intl-messageformat@12.2.0:
     dependencies:
       '@formatjs/fast-memoize': 3.1.7
       '@formatjs/icu-messageformat-parser': 3.5.23
@@ -11327,20 +11332,20 @@ snapshots:
       react: 19.3.1
       scheduler: 0.28.0
 
-  react-dropzone@20.2.0(@types/react@19.3.0)(react@19.3.1):
+  react-dropzone@20.2.1(@types/react@19.3.0)(react@19.3.1):
     dependencies:
       attr-accept: 4.0.1
-      file-selector: 5.0.1
+      file-selector: 5.0.3
       react: 19.3.1
     optionalDependencies:
       '@types/react': 19.3.0
 
-  react-intl@12.1.7(@types/react@19.3.0)(react@19.3.1):
+  react-intl@12.2.0(@types/react@19.3.0)(react@19.3.1):
     dependencies:
       '@formatjs/icu-messageformat-parser': 3.5.23
-      '@formatjs/intl': 6.1.5
+      '@formatjs/intl': 6.2.0
       '@types/react': 19.3.0
-      intl-messageformat: 12.1.5
+      intl-messageformat: 12.2.0
       react: 19.3.1
 
   react-is@16.13.1: {}
